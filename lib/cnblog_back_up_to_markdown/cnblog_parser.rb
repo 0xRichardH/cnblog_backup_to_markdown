@@ -5,8 +5,10 @@ module CnblogBackUpToMarkdown
 
     desc "convert  XML_NAME", "输入一个博客园备份文件的名称"
     def convert(xml_name)
-      parse = ParseXml.new(xml_name)
-      ConvertMarkdown.new(parse.parse).write_to_md
+      File.open(File.expand_path xml_name) do |f|
+        parse = ParseXml.new(f)
+        ConvertMarkdown.new(parse.parse).write_to_md
+      end
     end
 
   end

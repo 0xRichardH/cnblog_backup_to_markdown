@@ -3,14 +3,14 @@ module CnblogBackUpToMarkdown
     # 定义一个Struct用来存储文章数据
     Article = Struct.new(:title, :author, :pub_date, :description)
 
-    def initialize(xml_path)
-      @xml_path = xml_path
+    def initialize(xml_content)
+      @xml_content = xml_content
     end
 
     # 将xml解析为Article Struct
     def parse
       @articles = []
-      doc = File.open(@xml_path) { |f| Nokogiri::XML(f) }
+      doc = Nokogiri::XML(@xml_content)
       items = doc.xpath('//item')
       items.each do |xml|
         @articles << Article.new( get_xml_text(xml, 'title'),
