@@ -1,0 +1,5 @@
+require 'nokogiri'
+require 'cnblog_back_up_to_markdown/version'
+require 'cnblog_back_up_to_markdown/parse_xml'
+require 'cnblog_back_up_to_markdown/convert_to_markdown'
+require 'cnblog_back_up_to_markdown/cnblog_parser'

@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "cnblog_back_up_to_markdown"
+
+CnblogBackUpToMarkdown::CnblogParser.start( ARGV )

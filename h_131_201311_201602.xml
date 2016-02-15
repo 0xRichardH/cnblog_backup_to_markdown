@@ -1,0 +1,1727 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>博客园-ILife,爱生活！ICode,爱编程！</title><link>http://www.cnblogs.com/haoxilu/</link><description>我的Coding生活！！！：http://haoxilu.net/</description><language>zh-cn</language><lastBuildDate>Sun, 14 Feb 2016 06:46:20 GMT</lastBuildDate><pubDate>Sun, 14 Feb 2016 06:46:20 GMT</pubDate><ttl>60</ttl><item><title>《京东技术解密》读后感</title><link>http://www.cnblogs.com/haoxilu/archive/2015/02/11/4287152.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Wed, 11 Feb 2015 15:41:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2015/02/11/4287152.html</guid><description><![CDATA[<p><img src="http://img10.360buyimg.com/n1/jfs/t520/159/689267778/144891/f0965796/547c4769Na7b06a08.jpg" alt="" />注：本文仅为作者的读后感 <a href="http://images.cnitblog.com/blog/578906/201502/112340519482241.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="xxtCBF6" src="http://images.cnitblog.com/blog/578906/201502/112340531833998.png" alt="xxtCBF6" width="104" height="104" border="0" /></a></p>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: medium;">《京东技术解密》这本书想必园子里的朋友有读过的，也有未曾听说过的。当我第一次拿到这本书的时候，我一直以为是一本纯技术类的讲解，后来才知道我真的是太天真了，这本书向《淘宝技术这十年》这类书差不多，公司成长和发展的心路历程罢了。那么我又为什么拿出来分享呢？我是怎样读下来的呢，其实这本书中有很多内容是我们可以学习和借鉴的。</span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 整本图书从外观看上去非常的简洁，和京东的购物手提袋类似，充分体现了京东的风格。书的整部分由 618、产品演进、技术演进、创新、牛人几个方面全方位的讲解了京东的技术发展，从中穿插着京东商城的发展。纵观淘宝、京东等大型电商网站的发展历程，会发现有一些相同的地方，都是从一个奇妙的点子和简陋的网站（大都是购买的源码）在简短时间内拼凑而成的，随着用户量和交易量的不断上升，技术成为最大的瓶颈，所有各种依靠开源到自主研发，各种分布式集群、大数据挖掘等牛X的技术，就涌上来了。在这本书中，京东的发展历程也是由于当前&ldquo;非典&rdquo;时期，促使京东由门店转为线上销售。当时京东的转变用现在的&ldquo;互联网思维&rdquo;来讲，就是京东当时解决了用户的&ldquo;痛点&rdquo;，那么当时用户的痛点是什么呢？&ldquo;非典&rdquo;时期，人们都很少出门，都非常惧怕这个恶魔，恐怕厄运来到自己的面前，街头的商业门店一些因生意太少而被迫关门。在这个&ldquo;全民抗战&rdquo;的时代，京东从线下转为线上，成功的解决了用户急需购物却又不能涌上街头购物的&ldquo;痛点&rdquo;。</span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在本书中，有一大部分的篇幅在介绍京东的交易系统、海量订单处理系统、供应链、售后系统、财务、内部信息化系统、拍拍易迅对接等系统的演进。从本书的作者 为 京东研发体系著，可以看出本书的每一个章节是出自不同人之手。有一些内容是日记类的记事篇，记录了618时期团队的奋战状态。有一些内容是技术成型类，从无到有，从模仿到创新，如京东的自动补货、虚拟试衣间。其实对于本书中我最关心的一部分也是一些.Net程序猿同样关心的一点，就是京东的去.Net化，即从.Net到Java的转型。我非常喜欢本书中的一个观点，&ldquo;编程语言是技术和宗教的混合物，如果你想对编程语言进行比较，那就做好准备打一场宗教战&rdquo;。仔细想想太有韵味了，想想中世纪的欧洲宗教战争，都视对方为异端分子，现在一些人对于语言之争不也是同宗教战争一样吗？</span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 对于京东为什么选用Java语言，书中给出了两个原因，一个是国内外非常多的大型网站使用Java技术，这是主流，有非常多的经验可以借鉴，也有非常多的成熟开源框架可以使用。二是成本原因，开发工具Visual Studio 是收费的（目前已有社区版），Windows操作系统是收费的，Sql Server是收费的。对于当时发展中的京东来说，他们一定是基于多方面考虑，找到适合公司发展的语言（毕竟整个系统包括那么多子系统，更换语言和架构不是一个容易的事情）。我（纯.Net程序猿）认为，.Net开发人员的整体水平有待提高，.Net社区开源项目和成熟的解决方案没有Java多，但是现在.Net的发展前景是非常看好的，目前微软的开源正在一步一步的推动中，.Net Core 也正一步一步的在GitHub上展现,期待.Net的完美表现。对于数据库我个人不太看好Sql Server，因为如果.Net进一步走向开源和支持跨平台，那么Sql Server就不一定是其完美的搭配，如果想得到好的性能和降低成本,MySql 和PostgreSql也是不错的选择。</span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 刘强东不是一开始就要打造现在的京东商城，而是一步一步的发展来的，待用户量达到一定的程度，不仅仅要做好营销，其更重要的是提高用户的体验。用户体验在没有用户的情况下，你是永远不知道用户应该怎样体验，在现在的互联网浪潮中，一些创业者说我要做一个&ldquo;京东&rdquo;，我要做一个&ldquo;淘宝&rdquo;。一味的模仿京东或淘宝业务流程和商城功能，会成功吗？有人会说，我们先模仿然后再超越。超越，说起简单，但做起来却那么的困难。京东618，淘宝双十一，那么大的用户并发访问量，你可以简单的使用分布式、CDN等解决吗，每天几万T的数据，是能模拟出来吗，基于用户数据的数据挖掘做到定向广告推送和服务优化你能做到吗？我个人认为，电商可以做，我们也可以模仿京东或淘宝的优秀功能，但是我们在搞时，要脚踏实地，遇到问题借鉴京东淘宝的解决方案，而不要一开始就想着百万级千万级用户访问量，在当前时代，技术已不是瓶颈，重要的是创意，一个好的点子会让企业迅速成长起来（如快的、饿了么等）。</span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp; 京东这十年，到底是如何成长，如何一步一步壮大，详情还是需要自己细细品读。</span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp; 第一次在读书之后写读后感，上面可能说了很多废话，如有同感可进一步交流，非常感谢你能耐心的读到这儿，谢谢。</span></p>
+<p><img src="http://news.dlxww.com/news/content/images/attachement/jpg/site102/20150107/B021420563123550_change_B02107b001.jpg" alt="" /></p>
+</blockquote>]]></description></item><item><title>一、ASP.NET MVC 路由（一）--- ASP.NET WebForm路由模拟</title><link>http://www.cnblogs.com/haoxilu/archive/2014/11/08/4083001.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sat, 08 Nov 2014 03:49:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/11/08/4083001.html</guid><description><![CDATA[<blockquote>
+<p>&nbsp; &nbsp; &nbsp; ASP.NET WebForm 应用，用户请求的是物理文件，其中包括静态页面和动态页面，在Url中的显示都是服务器中一个物理文件的相对路径。但是ASP.NET MVC就不同了，用户请求的是Controller中一个Action方法，这种请求是通过路由将Url映射到相对的Controller和Action中。</p>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ASP.NET MVC是在Application_Start时，定义了路由的规则，当用户使用规定的路由规则进行访问时，就会通过路由映射的方式实现用户完整的Url访问。下面我们就开始使用Asp.net WebForm进行简单的路由模拟。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 一、我们新建一个ASP.NET Empty&nbsp; Web Application</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201411/081142263786701.png"><img title="image" src="http://images.cnitblog.com/blog/578906/201411/081142273934758.png" alt="image" width="824" height="158" border="0" /></a></p>
+<p>&nbsp;&nbsp; 二、添加一个Global.asax文件，并在Application_Start事件中模拟ASP.NET ＭＶＣ写路由代码。(注：Application_Start 事件是当整个应用程序部署到IIS等服务器，启动应用程序池时执行一次)</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">protected</span> <span style="color: #0000ff;">void</span> Application_Start(<span style="color: #0000ff;">object</span><span style="color: #000000;"> sender, EventArgs e)
+{
+    </span><span style="color: #0000ff;">var</span> defaults = <span style="color: #0000ff;">new</span><span style="color: #000000;"> RouteValueDictionary
+    {
+        {</span><span style="color: #800000;">"</span><span style="color: #800000;">controller</span><span style="color: #800000;">"</span>,<span style="color: #800000;">"</span><span style="color: #800000;">*</span><span style="color: #800000;">"</span><span style="color: #000000;">},
+        {</span><span style="color: #800000;">"</span><span style="color: #800000;">action</span><span style="color: #800000;">"</span>,<span style="color: #800000;">"</span><span style="color: #800000;">*</span><span style="color: #800000;">"</span><span style="color: #000000;">}
+    };</span><span style="color: #008000;">//</span><span style="color: #008000;">定义一个路由字典</span>
+    RouteTable.Routes.MapPageRoute(<span style="color: #800000;">"</span><span style="color: #800000;">defaults</span><span style="color: #800000;">"</span>, <span style="color: #800000;">"</span><span style="color: #800000;">{controller}/{action}</span><span style="color: #800000;">"</span>, <span style="color: #800000;">"</span><span style="color: #800000;">~/RouteMapping.aspx</span><span style="color: #800000;">"</span>, <span style="color: #0000ff;">true</span>, defaults);<span style="color: #008000;">//</span><span style="color: #008000;">进行默认的路由映射，在整个模拟路由的过程中，所有的用户请求都将交给RouteMapping.aspx这WebForm页面进行处理。</span>
+}</pre>
+</div>
+<p>&nbsp;</p>
+<p>三、用户请求"{controller}/{action}"格式的Url路径，如<a title="http://localhost:1673/Abc" href="http://localhost:1673/Abc">http://localhost:1673/Abc</a>&nbsp;，那么将显示Abc.aspx页面的内容。</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201411/081142281288899.png"><img title="image" src="http://images.cnitblog.com/blog/578906/201411/081142286593570.png" alt="image" width="477" height="211" border="0" /></a></p>
+<p>仅仅在Application_Start中配置信息是达不到上图的效果的。上图配置的路由信息仅仅是映射了RouteMapping.aspx这一个页面，要想达到较好的效果，需要对RouteMapping.as页面获取到的"{controller}/{action}"信息进行稍微的处理。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">protected</span> <span style="color: #0000ff;">void</span> Page_Load(<span style="color: #0000ff;">object</span><span style="color: #000000;"> sender, EventArgs e)
+        {
+            </span><span style="color: #0000ff;">string</span> controller = RouteData.Values[<span style="color: #800000;">"</span><span style="color: #800000;">controller</span><span style="color: #800000;">"</span>] <span style="color: #0000ff;">as</span> String;<span style="color: #008000;">//</span><span style="color: #008000;">获取到路由表中的controller数据
+            </span><span style="color: #008000;">//</span><span style="color: #008000;">string action = RouteData.Values["action"] as String;</span>
+            <span style="color: #0000ff;">if</span> (!<span style="color: #000000;">String.IsNullOrEmpty(controller))
+            {
+                </span><span style="color: #0000ff;">if</span> (controller == <span style="color: #800000;">"</span><span style="color: #800000;">*</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+                {
+                    Server.Transfer(</span><span style="color: #800000;">"</span><span style="color: #800000;">Default.aspx</span><span style="color: #800000;">"</span>);<span style="color: #008000;">//</span><span style="color: #008000;">Url地址如http:</span><span style="color: #008000;">//</span><span style="color: #008000;">localhost:1673/则访问默认页</span>
+<span style="color: #000000;">                }
+                </span><span style="color: #0000ff;">else</span><span style="color: #000000;">
+                {
+                    </span><span style="color: #0000ff;">try</span><span style="color: #000000;">
+                    {
+                        Server.Transfer(controller </span>+ <span style="color: #800000;">"</span><span style="color: #800000;">.aspx</span><span style="color: #800000;">"</span>);<span style="color: #008000;">//</span><span style="color: #008000;">使用Server.Transfer进行服务器端重定向，进而显示了controller对应的页面方法。</span>
+<span style="color: #000000;">                    }
+                    </span><span style="color: #0000ff;">catch</span><span style="color: #000000;">
+                    {
+                        
+                    }
+                }
+
+            }
+        }</span></pre>
+</div>
+<p>&nbsp;</p>
+<pre class="brush: csharp; auto-links: true; collapse: true; first-line: 1; gutter: true; highlight: [１]; html-script: true; light: true; ruler: true; smart-tabs: true; tab-size: 4; toolbar: true;"><a href="http://images.cnitblog.com/blog/578906/201411/081142294091941.png"><img title="image" src="http://images.cnitblog.com/blog/578906/201411/081142300499812.png" alt="image" width="470" height="182" border="0" /></a></pre>]]></description></item><item><title>开源一个常用的小软件的源码——系统数据库服务管理软件</title><link>http://www.cnblogs.com/haoxilu/archive/2014/07/27/3872111.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sun, 27 Jul 2014 14:49:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/07/27/3872111.html</guid><description><![CDATA[<blockquote>郝喜路&nbsp;&nbsp;2014年7月27日22:28:34</blockquote>
+<blockquote>GitHub地址：<a href="https://github.com/haoxilu/ServiceManager">https://github.com/haoxilu/ServiceManager</a>&nbsp;&nbsp;&nbsp;&nbsp;希望编程爱好者&nbsp;更改添加。。。&nbsp;&nbsp;&nbsp;开发环境：Visual Studio 2012&nbsp;&nbsp; .Net Framework 4.0</blockquote>
+<blockquote>　　大家在软件开发过程中，是离不开&nbsp;数据库的，不管你用什么数据库，都会在系统服务上注册一个，当你安装了太多的数据库，是否有感到极大的拖掉了开机时间，影响了计算机的性能。（仅限windows系统）。这时有的朋友可能会想到手动开启或关闭服务（刚开始我就是使用的这个方法，挺见效的，系统的速度有所提升），但是这样有一个很大的弊端，开启关闭的过程非常繁琐，这是我想到了，如果有一个软件能够控制服务的开启和关闭是不是太棒了呢。</blockquote>
+<blockquote>　　在动手写软件的时候，我有两个解决方案。第一个方案是使用软件直接输出一条cmd命令如：&ldquo;net&nbsp;start&nbsp;mssqlserver&rdquo;&nbsp;（软件的第一个版本是使用的这种方式）&nbsp;。第二个方案是&nbsp;直接用软件获取并控制系统服务，软件的第二个版本一直到目前公布的源码是使用的这种方式。由于第一个版本的时间较长，源码和可执行文件已经丢失，因此不能和大家分享。。下面我放上两个版本的截图，这两个版本的软件，都经过我和我朋友的长期使用。。。</blockquote>
+<blockquote>第二个版本：<img src="http://images.cnitblog.com/i/578906/201407/272242149327909.png" alt="" /></blockquote>
+<blockquote>第三个版本：<img src="http://images.cnitblog.com/i/578906/201407/272242464638944.png" alt="" /></blockquote>
+<blockquote>大家看到的图上的按钮都不能点击是因为我写博客的电脑上没有按照任何的数据库服务程序，所以检测不到服务就不能开启和停止。我希望&nbsp;能够&nbsp;做到更完善，希望能做到没有服务时自动隐藏，有服务自动获取，能够支持更多的服务。。</blockquote>
+<blockquote>谢谢，朋友能够耐心的看完~~~</blockquote>
+<blockquote>项目GitHub地址：<a href="https://github.com/haoxilu/ServiceManager">https://github.com/haoxilu/ServiceManager</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QQ群：198478665</blockquote>]]></description></item><item><title>MySql  Windws 下自动备份脚本</title><link>http://www.cnblogs.com/haoxilu/archive/2014/07/20/3856518.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sun, 20 Jul 2014 10:44:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/07/20/3856518.html</guid><description><![CDATA[<p>　　这几天正在做一个 &nbsp;使用MySQL数据库的项目，目前项目已经完成了，当部署好项目之后，正在考虑如何自动备份MySql数据库的问题，我在网上找了一下资料终于解决了，特此记录一下。</p>
+<p>　　</p>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span>  @echo <span style="color: #0000ff;">off</span>
+<span style="color: #008080;"> 2</span> <span style="color: #000000;"> echo.
+</span><span style="color: #008080;"> 3</span> <span style="color: #000000;"> echo      MySQL数据库备份
+</span><span style="color: #008080;"> 4</span> 
+<span style="color: #008080;"> 5</span> echo *****************************
+<span style="color: #008080;"> 6</span> <span style="color: #000000;"> echo.
+</span><span style="color: #008080;"> 7</span>  echo 今天是 %<span style="color: #0000ff;">date</span><span style="color: #000000;">%
+</span><span style="color: #008080;"> 8</span> <span style="color: #000000;"> echo 时间是 %time%
+</span><span style="color: #008080;"> 9</span> <span style="color: #000000;"> echo.
+</span><span style="color: #008080;">10</span>  echo *****************************
+<span style="color: #008080;">11</span> 
+<span style="color: #008080;">12</span> 
+<span style="color: #008080;">13</span>  <span style="color: #0000ff;">set</span> <span style="color: #800000;">"</span><span style="color: #800000;">Ymd=%date:~,4%%date:~5,2%%date:~8,2%</span><span style="color: #800000;">"</span>
+<span style="color: #008080;">14</span> 
+<span style="color: #008080;">15</span>  md <span style="color: #800000;">"</span><span style="color: #800000;">D:\db_back\%Ymd%</span><span style="color: #800000;">"</span>
+<span style="color: #008080;">16</span> 
+<span style="color: #008080;">17</span>  <span style="color: #800000;">"</span><span style="color: #800000;">C:\Program Files\MySQL\MySQL Server 5.5\bin\mysqldump</span><span style="color: #800000;">"</span> --opt -Q -u用户名 -p密码 --<span style="color: #0000ff;">default</span>-character-<span style="color: #0000ff;">set</span>=utf8 数据库名&gt; <span style="color: #800000;">"</span><span style="color: #800000;">D:\db_back\%Ymd%\%Ymd%</span><span style="color: #800000;">"</span>_bak.sql<span style="color: #800000;">"
+</span><span style="color: #008080;">18</span> 
+<span style="color: #008080;">19</span> <span style="color: #000000;"> echo.
+</span><span style="color: #008080;">20</span> 
+<span style="color: #008080;">21</span> <span style="color: #000000;"> echo MySQL数据库备份完成，请进行检查。。。
+</span><span style="color: #008080;">22</span> 
+<span style="color: #008080;">23</span> <span style="color: #000000;">echo.
+</span><span style="color: #008080;">24</span> <span style="color: #000000;"> echo.
+</span><span style="color: #008080;">25</span> 
+<span style="color: #008080;">26</span>  pause</pre>
+</div>
+<p>复制以上代码 生成 bat批处理文件。</p>
+<p>然后在windows计划任务中 添加计划即可。。。</p>
+<p>郝喜路 &nbsp;记录于：2014年7月20日18:42:18 &nbsp; <a href="http://i.cnblogs.com/http:/haoxilu.cnblogs.com">&nbsp;http://haoxilu.cnblogs.com</a></p>]]></description></item><item><title>ubuntu-14.04-server配置Jexus  --安装步骤记录</title><link>http://www.cnblogs.com/haoxilu/archive/2014/06/28/3813907.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sat, 28 Jun 2014 14:43:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/06/28/3813907.html</guid><description><![CDATA[<hr />
+<p>作者：<a href="http://weibo.com/haoxilu">郝喜路</a>&nbsp;&nbsp; 个人主页：<a href="http://www.cnicode.com/"> http://www.cnicode.com </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 博客地址：<a href="http://haoxilu.cnblogs.com/">http://haoxilu.cnblogs.com</a>&nbsp;&nbsp;&nbsp;</p>
+<hr />
+<p>说明：我是Linux菜鸟，自己尝试配置Jexus服务器，中间遇到了很多错误，参考园子里很多大神的博客。才完成配置。如果你和我一样是个菜菜，那么，你不用东奔西跑了，这儿有你想要的。。。</p>
+<p>1、 使用Putty连接远程Ubuntu服务器：</p>
+<p>如果不能连接，可使用如下解决方案;</p>
+<p>参考地址：<a href="http://www.linuxidc.com/Linux/2012-04/59409.htm">http://www.linuxidc.com/Linux/2012-04/59409.htm</a>l</p>
+<p>1.先明确你能ping通远程的Ubuntu或者虚拟机。</p>
+<p>2.如果还不能登录，分析原因是大多都没有真正开启ssh-server服务。最终成功的 方法如下：</p>
+<p>sudo apt-get install openssh-server</p>
+<p>Ubuntu缺省安装了openssh-client,所以在这里就不安装了，如果你的系统没有安 装的话，再用apt-get安装上即可。</p>
+<p>然后确认sshserver是否启动了：</p>
+<p>ps -e |grep ssh</p>
+<p>如果只有ssh-agent那ssh-server还没有启动，需要/etc/init.d/ssh start，如果看 到sshd那说明ssh-server已经启动了。</p>
+<p>ssh-server配置文件位于/ etc/ssh/sshd_config，在这里可以定义SSH的服务端口， 默认端口是22，你可以自己定义成其他端口号，如222。然后重启SSH服务：</p>
+<p>sudo /etc/init.d/ssh resart</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282242446019217.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-26493" src="http://images.cnitblog.com/blog/578906/201406/282242462426518.png" alt="wps_clip_image-26493" width="558" height="184" border="0" /></a></p>
+<p>2、 使用WinSCP 上传安装需要的文件（文件可以上传到自定义文件，我上传的路径是home/icode/software）</p>
+<p>安装文件下载地址：<a href="http://pan.baidu.com/s/1jGFVTyA">http://pan.baidu.com/s/1jGFVTyA </a></p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282242470701405.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-11352" src="http://images.cnitblog.com/blog/578906/201406/282242483044349.png" alt="wps_clip_image-11352" width="557" height="234" border="0" /></a></p>
+<p>3、 文件上传好了，下面开始安装，但是在安装之前需要对当前的系统进行更新</p>
+<p>参考地址：<a href="http://www.linuxdot.net/bbsfile-3090">http://www.linuxdot.net/bbsfile-3090</a></p>
+<p>sudo apt-get update</p>
+<p>sudo apt-get upgrade</p>
+<p>安装第二个更新时耗时较长，此时可以泡杯咖啡静静地等会儿~</p>
+<p>4、 构建编译环境</p>
+<p>sudo apt-get install build-essential</p>
+<p>sudo apt-get install automake autoconf</p>
+<p>5、 安装libgdiplus和mono所依赖的库文件</p>
+<p>sudo apt-get install bison libglib2.0-dev <br />sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev</p>
+<p>6、 安装libgdiplus</p>
+<p>1&gt;解压libgdiplus-2.10.tar.bz2</p>
+<p>tar -jxvf libgdiplus-2.10.tar.bz2</p>
+<p>2&gt;进入libgdiplus-2.10 文件夹 执行命令</p>
+<p>./configure --prefix=/usr    <br />make     <br />sudo make install</p>
+<p>注：在执行编译&nbsp; make 时遇到了错误，</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282242494296793.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-6560" src="http://images.cnitblog.com/blog/578906/201406/282242512268608.png" alt="wps_clip_image-6560" width="558" height="110" border="0" /></a></p>
+<p>参考链接：</p>
+<p><a href="http://www.cnblogs.com/24la/p/libgdiplus-install-error-record.html">http://www.cnblogs.com/24la/p/libgdiplus-install-error-record.html</a></p>
+<p>解决方法：</p>
+<p>ln -s /usr/include/freetype2 /usr/include/freetype</p>
+<p>或者在构建编译环境的时候执行</p>
+<p>sudo apt-get install libgif-dev </p>
+<p>sudo apt-get install libpng12-dev</p>
+<p>安装这两个依赖组件</p>
+<p>然后继续 make&nbsp; 报如下错误：</p>
+<p>/usr/lib64/libglib-2.0.so.0: could not read symbols: Invalid operation</p>
+<p>collect2: error: ld returned 1 exit status</p>
+<p>make[2]: *** [testgdi] Error 1 make[2]: Leaving directory `/usr/local/src/libgdiplus-2.10.9/tests'</p>
+<p>make[1]: *** [all-recursive] Error 1 make[1]: Leaving directory `/usr/local/src/libgdiplus-2.10.9'</p>
+<p>make: *** [all] Error 2</p>
+<p>解决方法：</p>
+<p>先执行 ./configure 命令， 然后编辑 test/Makefile 文件；</p>
+<p>将 130 行的 LIBS = -lpthread -lfontconfig 改为 LIBS = -lpthread -lfontconfig -lglib-2.0 -lX11</p>
+<p>再次执行 make 命令即可。</p>
+<p>最后，继续执行 sudo make install 安装完成</p>
+<p>7、 安装Mono（说明：Mono的安装编译时间非常长，此时可以出去运动一下哦~）</p>
+<p>1&gt;解压&nbsp; tar -zxvf mono-3.4.0.tar.gz</p>
+<p>2&gt;cd mono-3.4.0&nbsp; 进入 mono-3.4.0文件夹执行编译安装操作</p>
+<p>./configure --prefix=/usr    <br />&nbsp; make     <br />&nbsp; sudo make install</p>
+<p>注：</p>
+<p>如果在执行时 ./configure --prefix=/usr遇到如下错误</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282242521482523.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-10284" src="http://images.cnitblog.com/blog/578906/201406/282242531331925.png" alt="wps_clip_image-10284" width="557" height="54" border="0" /></a></p>
+<p>解决方法： sudo apt-get install gettext</p>
+<p>然后继续执行&nbsp; ./configure --prefix=/usr    <br />3&gt;可以通过 mono -V 查看当前的版本 来判断mono是否安装成功，成功显示下图</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282242537268038.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-7057" src="http://images.cnitblog.com/blog/578906/201406/282242544144181.png" alt="wps_clip_image-7057" width="558" height="184" border="0" /></a></p>
+<p>8、 安装Jexus</p>
+<p>1&gt; 解压&nbsp; jexus-5.5.2.tar.gz</p>
+<p>tar -zxvf jexus-5.5.2.tar.gz</p>
+<p>2&gt;&nbsp; cd jexus-5.5.2 进入&nbsp; jexus-5.5.2 文件夹进行安装操作</p>
+<p>sudo ./install</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282242550863553.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-15803" src="http://images.cnitblog.com/blog/578906/201406/282242562115996.png" alt="wps_clip_image-15803" width="556" height="96" border="0" /></a></p>
+<p>看到上图表示安装成功！</p>
+<p>3&gt;启动Jexus服务</p>
+<p>cd /usr/jexus</p>
+<p>sudo ../jws start</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282242575706212.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-5601" src="http://images.cnitblog.com/blog/578906/201406/282242579613798.png" alt="wps_clip_image-5601" width="302" height="33" border="0" /></a>看到此图表示服务启动成功！</p>
+<p>注：</p>
+<p>Jws相关的命令&nbsp; jws {start|stop|restart|regsvr|status|-v}</p>
+<p>sudo ./jws status&nbsp; 可以查看当前jexus服务的状态</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282242596646585.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-30320" src="http://images.cnitblog.com/blog/578906/201406/282243000862414.png" alt="wps_clip_image-30320" width="318" height="36" border="0" /></a></p>
+<p>在客户机浏览器输入服务器IP如果看到下图，也表示安装Jexus成功</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282243016956173.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-27371" src="http://images.cnitblog.com/blog/578906/201406/282243026487331.png" alt="wps_clip_image-27371" width="558" height="316" border="0" /></a></p>
+<p>9、 设置Jexus服务开机自启动</p>
+<p>当Ubuntu服务器重启后，刚刚安装的Jexus服务并为随机启动，当你再次在客户机浏览器输入服务器Ip时将会看到下图</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282243052587262.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-6003" src="http://images.cnitblog.com/blog/578906/201406/282243062113718.png" alt="wps_clip_image-6003" width="548" height="476" border="0" /></a></p>
+<p>当你再次输入 sudo ./jws status 时 会出现下图信息</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282243069141334.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-20134" src="http://images.cnitblog.com/blog/578906/201406/282243072261363.png" alt="wps_clip_image-20134" width="324" height="68" border="0" /></a></p>
+<p>那么如何解决这个问题呢？</p>
+<p>解决方案：</p>
+<p>sudo vi /etc/rc.local</p>
+<p>在这个配置文件中最后添加一条</p>
+<p>/usr/jexus/jws start</p>
+<p>10、 Jexus 的各种使用方法详见<a href="http://www.linuxdot.net/bbsfile-3500">http://www.linuxdot.net/bbsfile-3500</a></p>
+<p>启动：sudo /usr/jexus/jws start    <br />停止：sudo /usr/jexus/jws stop     <br />重启：sudo /usr/jexus/jws restart     <br />重启指定网站：sudo /usr/jexus/jws restart siteName     <br />停止指定网站：sudo /usr/jexus/jws stop siteName</p>
+<p>Jexus升级，最新版本 关注 <a href="http://www.jexus.org">www.jexus.org</a></p>
+<p>cd /tmp    <br />sudo /usr/jexus/jws stop     <br />sudo rm jexus-5.5*     <br />wget http://www.linuxdot.net/down/jexus-5.5.1.tar.gz     <br />tar -zxvf jexus-5.5.1.tar.gz     <br />cd jexus-5.5.1     <br />sudo ./upgrade</p>
+<p>11、 配置Asp.Net Mvc4 测试网站</p>
+<p>1&gt;在vs中创建mvc4项目&nbsp; 然后发布并上传到/home/icode/software/jexusmono</p>
+<p>2&gt;&nbsp; 编辑Jexus配置文件</p>
+<p>sudo vi /usr/jexus/siteconf/default&nbsp; </p>
+<p>将配置文件中/var/www/default 改为/var/www/cnicode</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282243077116976.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-8858" src="http://images.cnitblog.com/blog/578906/201406/282243081641049.png" alt="wps_clip_image-8858" width="407" height="112" border="0" /></a></p>
+<p>将测试网站上传到 /home/icode/software/jexusmono/</p>
+<p>将网站内容，复制到/var/www/cnicode</p>
+<p>cp -Rf /home/icode/software/jexusmono/* /var/www/cnicode</p>
+<p>最后重启Jexus服务sudo /usr/jexus/jws restart</p>
+<p>运行效果：</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201406/282243086482364.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="wps_clip_image-26989" src="http://images.cnitblog.com/blog/578906/201406/282243094458007.png" alt="wps_clip_image-26989" width="515" height="228" border="0" /></a></p>
+<p>&nbsp;</p>
+<p>我今天一天都在一边配置一边记录文档，文档弄得自己感觉还可以，执行语句都加粗加红了，看上去有层次感，但是不知道复制到博客上就没有这个感觉了，所以我把文档上传到百度网盘了，大家如果觉得博客看上去不太舒服，可以去下载文档。</p>
+<p>下载地址：链接: http://pan.baidu.com/s/1sjtwX9F 密码: 9iji</p>
+<p>郝喜路 记录于 2014年6月28日 </p>]]></description></item><item><title>Jexus   服务器部署导航</title><link>http://www.cnblogs.com/haoxilu/archive/2014/06/27/3812524.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Fri, 27 Jun 2014 10:11:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/06/27/3812524.html</guid><description><![CDATA[<p>说明：本索引只是方便本人查找，不涉及版权问题，所有博客，还是到元博客地址访问。</p>
+<p>&lt;script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;<br />&lt;!-- 01 --&gt;<br />&lt;ins class="adsbygoogle"<br />     style="display:block"<br />     data-ad-client="ca-pub-1830236568434788"<br />     data-ad-slot="1865257554"<br />     data-ad-format="auto"&gt;&lt;/ins&gt;<br />&lt;script&gt;<br />(adsbygoogle = window.adsbygoogle || []).push({});<br />&lt;/script&gt;</p>
+<hr />
+<p>&nbsp;Jexus官网 &nbsp;<a href="http://www.jexus.org/">http://www.jexus.org</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;所需文件包下载：<a href="http://pan.baidu.com/s/1jGFVTyA">http://pan.baidu.com/s/1jGFVTyA</a></p>
+<hr />
+<p>&nbsp;《<span style="font-size: 14px;"><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/shanyou/archive/2012/07/28/2612919.html">Mono在国内的发展历程（相关文章汇总）</a></span>》 &nbsp;<a href="http://www.cnblogs.com/shanyou/archive/2012/07/28/2612919.html">http://www.cnblogs.com/shanyou/archive/2012/07/28/2612919.html</a></p>
+<hr />
+<p>&nbsp;《linux上的DotNET,安装mono和Jexus心得体会》 &nbsp;<a href="http://www.cnblogs.com/PandaBamboo/archive/2012/09/05/2672566.html">http://www.cnblogs.com/PandaBamboo/archive/2012/09/05/2672566.html</a></p>
+<hr />
+<p>《<strong>在Ubuntu操作系统上安装mono的具体方法</strong>》 &nbsp;<a href="http://www.linuxdot.net/bbsfile-3090">http://www.linuxdot.net/bbsfile-3090</a></p>
+<hr />
+<p>&nbsp;《Ubuntu(Linux) + mono + jexus +asp.net MVC3 部署》 &nbsp;<a href="http://www.cnblogs.com/cheng5x/p/3811714.html">http://www.cnblogs.com/cheng5x/p/3811714.html</a></p>
+<hr />
+<p>&nbsp;《Ubuntu Server（Ubuntu 14.04 LTS 64位）安装libgdiplus2.10.9出错问题记录》 &nbsp;<a href="http://www.cnblogs.com/24la/p/libgdiplus-install-error-record.html">http://www.cnblogs.com/24la/p/libgdiplus-install-error-record.html</a></p>
+<hr />
+<p>&nbsp;《<a id="CategoryEntryList1_EntryStoryList_Entries_TitleUrl_1" class="entrylistItemTitle" href="http://www.cnblogs.com/24la/p/delete-mono.html">linux下mono的安装与卸载</a>》 <a href="http://www.cnblogs.com/24la/p/delete-mono.html">http://www.cnblogs.com/24la/p/delete-mono.html</a></p>
+<hr />
+<p>《<a id="CategoryEntryList1_EntryStoryList_Entries_TitleUrl_4" class="entrylistItemTitle" href="http://www.cnblogs.com/24la/p/linuxdotnet-about.html">关于asp.net利用mono部署到Linux上的一些说明</a>》 &nbsp;<a href="http://www.cnblogs.com/24la/p/linuxdotnet-about.html">http://www.cnblogs.com/24la/p/linuxdotnet-about.html</a></p>
+<hr />
+<p>《<a id="CategoryEntryList1_EntryStoryList_Entries_TitleUrl_7" class="entrylistItemTitle" href="http://www.cnblogs.com/24la/p/jexus-more-sites.html">在jexus下如何简单的配置多站点</a>》 &nbsp;<a href="http://www.cnblogs.com/24la/p/jexus-more-sites.html">http://www.cnblogs.com/24la/p/jexus-more-sites.html</a></p>
+<hr />
+<p>&nbsp;《Centos5.5安装MONO2.10.8和Jexus 5.0开启Linux平台.net应用新篇章》&nbsp;<a href="http://www.cnblogs.com/andiki/archive/2012/08/16/2642204.html">http://www.cnblogs.com/andiki/archive/2012/08/16/2642204.html</a></p>
+<hr />
+<p>&nbsp;《debain上安装mono3.4.0和jexus5.5.2》 &nbsp;<a href="http://www.cnblogs.com/westonfw/p/3813916.html">http://www.cnblogs.com/westonfw/p/3813916.html</a></p>
+<hr />
+<p>《ubuntu-14.04-server配置Jexus --安装步骤记录》&nbsp;<a href="http://www.cnblogs.com/haoxilu/p/3813907.html">http://www.cnblogs.com/haoxilu/p/3813907.html</a></p>
+<hr />
+<p>&nbsp;《<strong>关于Jexus如何部署著名的博客程序wordpress的要点.</strong>》 &nbsp;<a href="http://linuxdot.net/bbsfile-3703">http://linuxdot.net/bbsfile-3703</a></p>
+<hr />
+<p>《Centos7下安装Mono、Jexus。》<a href="http://www.cnblogs.com/Zendic/p/3862325.html">http://www.cnblogs.com/Zendic/p/3862325.html</a></p>]]></description></item><item><title>Jumony快速抓取网页 ---  Jumony使用笔记--icode</title><link>http://www.cnblogs.com/haoxilu/archive/2014/06/26/3810698.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 26 Jun 2014 12:20:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/06/26/3810698.html</guid><description><![CDATA[<hr />
+<p>&nbsp;</p>
+<p>作者：<a href="http://weibo.com/haoxilu" target="_blank">郝喜路</a>&nbsp; &nbsp;个人主页：<a href="http://www.cnicode.com" target="_blank"> http://www.cnicode.com&nbsp;</a>&nbsp; &nbsp; &nbsp; 博客地址：<a href="http://haoxilu.cnblogs.com" target="_blank">http://haoxilu.cnblogs.com</a>&nbsp; &nbsp; 时间：2014年6月26日 19:25:02</p>
+<hr />
+<p>&nbsp;</p>
+<p>　　刚刚在博客园 看到一篇博文《<a id="cb_post_title_url" class="singleposttitle" href="http://www.cnblogs.com/zskbll/p/3809321.html">使用HttpWebRequest和HtmlAgilityPack抓取网页（拒绝乱码，拒绝正则表达式）</a>》 &nbsp;，感觉不错，作者写的也挺好的，然后在看了园子里的朋友的评论后，我知道了有一个更牛x的工具&mdash;&mdash;<a href="https://github.com/Ivony/Jumony" target="_blank">Jumony</a>&nbsp;。这个工具用起来可谓称之为简单、高效。 特此记录和分享，<a href="https://github.com/Ivony/Jumony" target="_blank">Jumony</a>&nbsp;的使用方法。</p>
+<p>　　<a href="https://github.com/Ivony/Jumony" target="_blank">Jumony</a>是开源项目，目前源代码存放咋GitHub ，源码地址：&nbsp;<a href="https://github.com/Ivony/Jumony">https://github.com/Ivony/Jumony</a>&nbsp;。我测试使用的是Visual Studio 2012 ,测试网页为博客园。</p>
+<p>　　下面介绍使用方法：</p>
+<p>　　一、在新建项目后，需要将<a href="https://github.com/Ivony/Jumony" target="_blank">Jumony</a>添加到项目中，你可以下载源码使用，也可以在NugGet 中 搜索 Jumony Core 将其添加到项目中并且后自动添加所需的引用。<img src="http://images.cnitblog.com/i/578906/201406/261956567466117.png" alt="" /></p>
+<p>　　二、添加引用之后，即可写项目代码。（此处代码为获取 &nbsp;博客园首页文章内容）</p>
+<p>　　</p>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span>  <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">string</span> Html = <span style="color: #0000ff;">string</span>.Empty;<span style="color: #008000;">//</span><span style="color: #008000;">为将拼接好html字符串返回给前台代码</span>
+<span style="color: #008080;"> 2</span>         <span style="color: #0000ff;">protected</span> <span style="color: #0000ff;">void</span> Page_Load(<span style="color: #0000ff;">object</span><span style="color: #000000;"> sender, EventArgs e)
+</span><span style="color: #008080;"> 3</span> <span style="color: #000000;">        {<br /></span><span style="color: #008080;"> 5</span>             <span style="color: #0000ff;">var</span> htmlSource = <span style="color: #0000ff;">new</span> JumonyParser().LoadDocument(<span style="color: #800000;">"</span><span style="color: #800000;">http://www.cnblogs.com</span><span style="color: #800000;">"</span>).Find(<span style="color: #800000;">"</span><span style="color: #800000;">.post_item a.titlelnk</span><span style="color: #800000;">"</span><span style="color: #000000;">);
+</span><span style="color: #008080;"> 6</span>             <span style="color: #0000ff;">int</span> count = <span style="color: #800080;">0</span><span style="color: #000000;">;
+</span><span style="color: #008080;"> 7</span>             <span style="color: #0000ff;">foreach</span> (<span style="color: #0000ff;">var</span> htmlElement <span style="color: #0000ff;">in</span><span style="color: #000000;"> htmlSource)
+</span><span style="color: #008080;"> 8</span> <span style="color: #000000;">            {
+</span><span style="color: #008080;"> 9</span>                 count ++<span style="color: #000000;">;
+</span><span style="color: #008080;">10</span>                 Html += <span style="color: #0000ff;">string</span>.Format(<span style="color: #800000;">"</span><span style="color: #800000;"> &lt;li&gt;{2}、&amp;nbsp;&amp;nbsp;&lt;a href=\"About.aspx?Url={0}\" target=\"_blank\"&gt;{1}&lt;/a&gt;&lt;/li&gt;</span><span style="color: #800000;">"</span>, htmlElement.Attribute(<span style="color: #800000;">"</span><span style="color: #800000;">href</span><span style="color: #800000;">"</span><span style="color: #000000;">).Value(), htmlElement.InnerText(),count);
+</span><span style="color: #008080;">11</span> <span style="color: #000000;">            }
+</span><span style="color: #008080;">12</span>         }</pre>
+</div>
+<p>&nbsp; &nbsp;&nbsp;　　效果图：</p>
+<p>　　　　　　　<img src="http://images.cnitblog.com/i/578906/201406/262003379894701.png" alt="" /></p>
+<p>&nbsp;　　三、下面就是要在点击上图从博客园抓取的文章标题之后，在显示博客全文（并非在打开博客园的文章）</p>
+<p>　　　　代码：　　　</p>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;">1</span>   <span style="color: #0000ff;">string</span> html = Request[<span style="color: #800000;">"</span><span style="color: #800000;">Url</span><span style="color: #800000;">"</span><span style="color: #000000;">];
+</span><span style="color: #008080;">2</span>             <span style="color: #0000ff;">var</span> htmlSource =
+<span style="color: #008080;">3</span>                 <span style="color: #0000ff;">new</span><span style="color: #000000;"> JumonyParser().LoadDocument(html);
+</span><span style="color: #008080;">4</span>             HtmlText = htmlSource.Find(<span style="color: #800000;">"</span><span style="color: #800000;">.postTitle2</span><span style="color: #800000;">"</span><span style="color: #000000;">).FirstOrDefault().InnerText();
+</span><span style="color: #008080;">5</span> 
+<span style="color: #008080;">6</span>             Html = htmlSource.Find(<span style="color: #800000;">"</span><span style="color: #800000;">#cnblogs_post_body</span><span style="color: #800000;">"</span>).FirstOrDefault().InnerHtml();<br /><br /><br /><br />效果图：</pre>
+<img src="http://images.cnitblog.com/i/578906/201406/262009158312381.png" alt="" /></div>
+<div>　　到此，网页抓取写完了，没有什么深奥的道理，只是把他的使用方法简单的把代码贴出来了，还没有研究其源码，有时间需要深究一下。</div>
+<div>　　Jumony更多的使用方式请参见博客&nbsp;<a href="http://www.cnblogs.com/Ivony/p/3447536.html">http://www.cnblogs.com/Ivony/p/3447536.html</a>&nbsp;</div>
+<div>　　</div>
+<div>　　本次演示Jumony快速开发的代码如下（在百度云盘，请自行下载：）：</div>
+<div>　　　　<a href="http://pan.baidu.com/s/1COuCI" target="_blank">http://pan.baidu.com/s/1COuCI</a></div>
+<div>　　谢谢！</div>]]></description></item><item><title>视频教程--ASP.NET MVC 使用 Petapoco 微型ORM框架+NpgSql驱动连接 PostgreSQL数据库</title><link>http://www.cnblogs.com/haoxilu/archive/2014/06/08/3775957.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sun, 08 Jun 2014 03:13:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/06/08/3775957.html</guid><description><![CDATA[<p>　　说好的给园子里的朋友们录制与<a href="http://www.cnblogs.com/haoxilu/p/3730374.html">《ASP.NET MVC 使用 Petapoco 微型ORM框架+NpgSql驱动连接 PostgreSQL数据库》</a>&nbsp;这篇博客相对应的视频，由于一个月一来没有时间录制，今天我兑现了给朋友们的承诺。。</p>
+<p>　　本次视频教程的目录为 视频、代码、资料，其中视频有4段，资料是我收集的相关资料。。</p>
+<p>　<span style="font-size: 14pt;">　<span style="color: #993300;"><strong>视频下载地址：<a href="http://pan.baidu.com/s/1c05sysC"><span style="color: #993300;">http://pan.baidu.com/s/1c05sysC</span></a></strong></span></span></p>
+<p>&nbsp;</p>
+<p>　　希望大家多多支持。。。</p>
+<p>　　</p>
+<p>　　郝喜路 2014年6月8日 11:11:02&nbsp;&nbsp; <a href="http://haoxilu.cnblogs.com">http://haoxilu.cnblogs.com</a>&nbsp;&nbsp; <a href="http://www.cnicode.com">http://www.cnicode.com</a></p>]]></description></item><item><title>收录.NET跨平台及跨数据库的博文...</title><link>http://www.cnblogs.com/haoxilu/archive/2014/06/07/3774953.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sat, 07 Jun 2014 08:59:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/06/07/3774953.html</guid><description><![CDATA[<p>本帖，将持续收录.NET跨平台及跨数据库的博文...</p>
+<p>&nbsp;</p>
+<p><a id="cb_post_title_url" href="http://www.cnblogs.com/gameman/p/3773240.html">VS2012+EF6+Mysql配置心路历程</a>:&nbsp;<a href="http://www.cnblogs.com/gameman/p/3773240.html">http://www.cnblogs.com/gameman/p/3773240.html</a></p>
+<p>&nbsp;</p>
+<p><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/haoxilu/p/3730374.html">ASP.NET MVC 使用 Petapoco 微型ORM框架+NpgSql驱动连接 PostgreSQL数据库</a>&nbsp; <a href="http://www.cnblogs.com/haoxilu/p/3730374.html">http://www.cnblogs.com/haoxilu/p/3730374.html</a></p>
+<p>&nbsp;</p>
+<p><a href="http://www.cnblogs.com/24la/p/linuxdotnet-about.html" target="_blank">关于asp.net利用mono部署到Linux上的一些说明</a></p>
+<p><a href="http://www.cnblogs.com/24la/p/ef6-mysql.html" target="_blank">使用EntityFramework6连接MySql数据库（db first方式）</a></p>
+<p><a id="cb_post_title_url" href="http://www.cnblogs.com/24la/p/ef6-codefirst-mysql.html" target="_blank">使用EntityFramework6连接MySql数据库（code first方式）</a></p>
+<p><a href="http://www.cnblogs.com/24la/p/mysqldatadll.html" target="_blank">关于Linux和Windows下部署mysql.data.dll的注册问题</a></p>
+<p>&nbsp;</p>]]></description></item><item><title>ASP.NET MVC 使用 Petapoco 微型ORM框架+NpgSql驱动连接 PostgreSQL数据库</title><link>http://www.cnblogs.com/haoxilu/archive/2014/05/15/3730374.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 15 May 2014 08:50:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/05/15/3730374.html</guid><description><![CDATA[<blockquote>
+<p><span style="font-size: small;">前段时间在园子里看到了<a href="http://www.cnblogs.com/xiaodiejinghong/">小蝶惊鸿</a> 发布的有关<a href="http://www.cnblogs.com/xiaodiejinghong/p/3720921.html">绿色版的Linux.NET&mdash;&mdash;&ldquo;Jws.Mono&rdquo;</a>。由于我对.Net程序跑在Linux上非常感兴趣，自己也看了一些有关mono的资料，但是一直没有时间抽出时间来研究这个，<a href="http://www.cnblogs.com/xiaodiejinghong/">小蝶惊鸿</a>的博客又激起了我的兴趣，我花了四天的时间，终于在Liunx上跑起了属于我自己的应用程序，其中数据库使用到了PostgreSQL数据库。对于数据库的选用，是在<a href="http://www.cnblogs.com/xiaodiejinghong/">小蝶惊鸿</a> 博客<a href="http://www.cnblogs.com/xiaodiejinghong/archive/2013/05/03/3047317.html">Linux.NET学习手记（4）</a>中，使用了这个数据库。</span></p>
+</blockquote>
+<blockquote>
+<p>今天，我只是单纯讲解使用ASP.NET MVC&nbsp; + 微型orm框架 Petapoco&nbsp; 连接PostgreSQL数据库。C#操作PostgreSQL数据库很多人应该很了解，只需要使用NpgSql驱动即可。有关NpgSql的使用大家可以参考<a href="http://home.cnblogs.com/u/shanyou/">张善友</a>老师的博客<a href="http://www.cnblogs.com/shanyou/p/3201970.html">PostgreSQL的.NET驱动程序Npgsql</a>。关于PetaPoco的介绍和使用方法，各位读者可以参考：<a href="http://www.toptensoftware.com/petapoco/">PetaPoco官网</a>、<a href="http://www.oschina.net/p/petapoco/similar_projects">.NET对象关系映射器PetaPoco</a>、<a href="http://www.cnblogs.com/youring2/category/385980.html">OoC's Blog</a>、<a href="http://www.cnblogs.com/tinyhu/archive/2013/06/02/3113692.html">PetaPoco入门(二）</a>、<a href="http://www.cnblogs.com/tinyhu/archive/2013/06/02/3113652.html">PetaPoco入门(一）</a>、<a href="http://www.cnblogs.com/vento/archive/2013/02/09/2909562.html">小巧方便的ORM类库&mdash;&mdash;PetaPoco</a>（这是我在网上找了很长时间的资料啊），它们都有比较清晰而详细的介绍PetaPoco如何使用。</p>
+</blockquote>
+<blockquote>
+<p>由于是第一次使用PostgreSQL数据库，我在使用的过程中遇到了许多问题，有些问题没有截图，我只把有截图的一个问题给大家贴出来，然后再给大家详解我的代码。</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201405/151648193904964.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/578906/201405/151649131259245.png" alt="image" width="640" height="430" border="0" /></a></p>
+</blockquote>
+<p>这个问题很简单，就是没有找到NpgSql驱动，但是我已经把驱动程序加载到解决方案中了，为什么还会出现这个问题呢，我在google上找了很多资料，包括Petapoco 的源码和单元测试，都没有找到解决方案。后来在一个国外的交流网站上找到了解决方案，因为mvc应用程序需要自己手动配置webconfig文件中的驱动程序，所以我在配置文件中加了如下的配置：</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">system.data</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">DbProviderFactories</span><span style="color: #0000ff;">&gt;</span>
+      <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">add </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">="Npgsql Data Provider"</span><span style="color: #ff0000;">
+           invariant</span><span style="color: #0000ff;">="Npgsql"</span><span style="color: #ff0000;">
+           support</span><span style="color: #0000ff;">="FF"</span><span style="color: #ff0000;">
+           description</span><span style="color: #0000ff;">=".Net Framework Data Provider for Postgresql Server"</span><span style="color: #ff0000;">
+           type</span><span style="color: #0000ff;">="Npgsql.NpgsqlFactory, Npgsql"</span> <span style="color: #0000ff;">/&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">DbProviderFactories</span><span style="color: #0000ff;">&gt;</span>
+  <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">system.data</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>这样问题就轻松的解决了。看效果图：（示例地址：<a href="http://www.cnicode.com/">http://www.cnicode.com/</a>）<a href="http://images.cnitblog.com/blog/578906/201405/151649250627526.gif"><img style="display: inline;" title="mvc演示" src="http://images.cnitblog.com/blog/578906/201405/151649376563707.gif" alt="mvc演示" width="640" height="399" /></a></p>
+<blockquote>
+<p>下面，我们来看一下代码实现：</p>
+<p>1. 在看代码前，我们需要将NpgSql和Petapoco 加载到当前项目中来，我将使用Nuget来添加到当前项目，分别如下：</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>Install-Package Npgsql</pre>
+</div>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>Install-Package PetaPoco</pre>
+</div>
+<p>2.下面看一下Web.config中的重要代码</p>
+<p>1&gt;数据库连接字符串</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">connectionStrings</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">add </span><span style="color: #ff0000;">name </span><span style="color: #0000ff;">="Postgresql"</span><span style="color: #ff0000;"> connectionString</span><span style="color: #0000ff;">="Server=127.0.0.1;User id=postgres;password=123;Database=mono_test;"</span><span style="color: #ff0000;"> providerName</span><span style="color: #0000ff;">="Npgsql"</span><span style="color: #0000ff;">/&gt;</span>
+  <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">connectionStrings</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>2&gt;NpgSql驱动配置文件</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #008000;">&lt;!--</span><span style="color: #008000;">provider驱动的配置文件</span><span style="color: #008000;">--&gt;</span>
+  <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">system.data</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">DbProviderFactories</span><span style="color: #0000ff;">&gt;</span>
+      <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">add </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">="Npgsql Data Provider"</span><span style="color: #ff0000;">
+           invariant</span><span style="color: #0000ff;">="Npgsql"</span><span style="color: #ff0000;">
+           support</span><span style="color: #0000ff;">="FF"</span><span style="color: #ff0000;">
+           description</span><span style="color: #0000ff;">=".Net Framework Data Provider for Postgresql Server"</span><span style="color: #ff0000;">
+           type</span><span style="color: #0000ff;">="Npgsql.NpgsqlFactory, Npgsql"</span> <span style="color: #0000ff;">/&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">DbProviderFactories</span><span style="color: #0000ff;">&gt;</span>
+  <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">system.data</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>3.看一下整体的项目结构</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201405/151649405622196.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="http://images.cnitblog.com/blog/578906/201405/151649410629281.png" alt="image" width="251" height="480" border="0" /></a></p>
+</blockquote>
+<p>&nbsp; 4.UserInfo.cs实体类中的代码</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">namespace</span><span style="color: #000000;"> PetaPoco
+{
+    [TableName(</span><span style="color: #800000;">"</span><span style="color: #800000;">userinfo</span><span style="color: #800000;">"</span><span style="color: #000000;">)]
+    [PrimaryKey(</span><span style="color: #800000;">"</span><span style="color: #800000;">id</span><span style="color: #800000;">"</span><span style="color: #000000;">)]
+    [ExplicitColumns]
+    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> UserInfo
+    {
+        [Column(</span><span style="color: #800000;">"</span><span style="color: #800000;">id</span><span style="color: #800000;">"</span><span style="color: #000000;">)]
+        </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">int</span> Id { <span style="color: #0000ff;">get</span>; <span style="color: #0000ff;">set</span><span style="color: #000000;">; }
+
+        [Column(</span><span style="color: #800000;">"</span><span style="color: #800000;">name</span><span style="color: #800000;">"</span><span style="color: #000000;">)]
+        </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">string</span> Name { <span style="color: #0000ff;">get</span>; <span style="color: #0000ff;">set</span><span style="color: #000000;">; }
+
+        [Column(</span><span style="color: #800000;">"</span><span style="color: #800000;">age</span><span style="color: #800000;">"</span><span style="color: #000000;">)]
+        </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">int</span> Age { <span style="color: #0000ff;">get</span>; <span style="color: #0000ff;">set</span><span style="color: #000000;">; }
+
+        [Column(</span><span style="color: #800000;">"</span><span style="color: #800000;">qq</span><span style="color: #800000;">"</span><span style="color: #000000;">)]
+        </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">int</span> Qq { <span style="color: #0000ff;">get</span>; <span style="color: #0000ff;">set</span><span style="color: #000000;">; }
+    }
+}</span></pre>
+</div>
+<p>5.Controllers中的代码</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">using</span><span style="color: #000000;"> System;
+</span><span style="color: #0000ff;">using</span><span style="color: #000000;"> System.Collections.Generic;
+</span><span style="color: #0000ff;">using</span><span style="color: #000000;"> System.Linq;
+</span><span style="color: #0000ff;">using</span><span style="color: #000000;"> System.Web;
+</span><span style="color: #0000ff;">using</span><span style="color: #000000;"> System.Web.Mvc;
+</span><span style="color: #0000ff;">using</span><span style="color: #000000;"> PetaPoco;
+
+</span><span style="color: #0000ff;">namespace</span><span style="color: #000000;"> PostgreSqlDemo.Controllers
+{
+    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> HomeController : Controller
+    {
+        </span><span style="color: #008000;">//</span>
+        <span style="color: #008000;">//</span><span style="color: #008000;"> GET: /Home/</span>
+        Database db = <span style="color: #0000ff;">new</span> PetaPoco.Database(<span style="color: #800000;">"</span><span style="color: #800000;">Postgresql</span><span style="color: #800000;">"</span><span style="color: #000000;">);
+        </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> ActionResult Index()
+        {
+            ViewData.Model </span>= db.Query&lt;UserInfo&gt;(<span style="color: #800000;">"</span><span style="color: #800000;">select * from userinfo</span><span style="color: #800000;">"</span><span style="color: #000000;">);
+            </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> View();
+        }
+
+        </span><span style="color: #008000;">//</span>
+        <span style="color: #008000;">//</span><span style="color: #008000;"> GET: /Home/Details/5</span>
+
+        <span style="color: #0000ff;">public</span> ActionResult Details(<span style="color: #0000ff;">int</span><span style="color: #000000;"> id)
+        {
+            ViewData.Model </span>= db.SingleOrDefault&lt;UserInfo&gt;(<span style="color: #800000;">"</span><span style="color: #800000;">select * from userinfo where id=@0</span><span style="color: #800000;">"</span><span style="color: #000000;">, id);
+            </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> View();
+        }
+
+        </span><span style="color: #008000;">//</span>
+        <span style="color: #008000;">//</span><span style="color: #008000;"> GET: /Home/Create</span>
+
+        <span style="color: #0000ff;">public</span><span style="color: #000000;"> ActionResult Create()
+        {
+            </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> View();
+        }
+
+        </span><span style="color: #008000;">//</span>
+        <span style="color: #008000;">//</span><span style="color: #008000;"> POST: /Home/Create</span>
+<span style="color: #000000;">
+        [HttpPost]
+        </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> ActionResult Create(UserInfo user)
+        {
+            </span><span style="color: #0000ff;">try</span><span style="color: #000000;">
+            {
+                db.Insert(user);
+                </span><span style="color: #0000ff;">return</span> RedirectToAction(<span style="color: #800000;">"</span><span style="color: #800000;">Index</span><span style="color: #800000;">"</span><span style="color: #000000;">);
+            }
+            </span><span style="color: #0000ff;">catch</span><span style="color: #000000;">
+            {
+                </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> View();
+            }
+        }
+
+        </span><span style="color: #008000;">//</span>
+        <span style="color: #008000;">//</span><span style="color: #008000;"> GET: /Home/Edit/5</span>
+
+        <span style="color: #0000ff;">public</span> ActionResult Edit(<span style="color: #0000ff;">int</span><span style="color: #000000;"> id)
+        {
+            ViewData.Model </span>= db.SingleOrDefault&lt;UserInfo&gt;(<span style="color: #800000;">"</span><span style="color: #800000;">where id=@0</span><span style="color: #800000;">"</span><span style="color: #000000;">, id);
+            </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> View();
+        }
+
+        </span><span style="color: #008000;">//</span>
+        <span style="color: #008000;">//</span><span style="color: #008000;"> POST: /Home/Edit/5</span>
+<span style="color: #000000;">
+        [HttpPost]
+        </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> ActionResult Edit(UserInfo user)
+        {
+            </span><span style="color: #0000ff;">try</span><span style="color: #000000;">
+            {
+                db.Update(user);
+                </span><span style="color: #0000ff;">return</span> RedirectToAction(<span style="color: #800000;">"</span><span style="color: #800000;">Index</span><span style="color: #800000;">"</span><span style="color: #000000;">);
+            }
+            </span><span style="color: #0000ff;">catch</span><span style="color: #000000;">
+            {
+                </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> View();
+            }
+        }
+
+        </span><span style="color: #008000;">//</span>
+        <span style="color: #008000;">//</span><span style="color: #008000;"> GET: /Home/Delete/5</span>
+
+        <span style="color: #0000ff;">public</span> ActionResult Delete(<span style="color: #0000ff;">int</span><span style="color: #000000;"> id)
+        {
+            ViewData.Model </span>= db.SingleOrDefault&lt;UserInfo&gt;(<span style="color: #800000;">"</span><span style="color: #800000;">where id=@0</span><span style="color: #800000;">"</span><span style="color: #000000;">,id);
+            </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> View();
+        }
+
+        </span><span style="color: #008000;">//</span>
+        <span style="color: #008000;">//</span><span style="color: #008000;"> POST: /Home/Delete/5</span>
+<span style="color: #000000;">
+        [HttpPost]
+        </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> ActionResult Delete(UserInfo user)
+        {
+            </span><span style="color: #0000ff;">try</span><span style="color: #000000;">
+            {
+                db.Delete(user);
+                </span><span style="color: #0000ff;">return</span> RedirectToAction(<span style="color: #800000;">"</span><span style="color: #800000;">Index</span><span style="color: #800000;">"</span><span style="color: #000000;">);
+            }
+            </span><span style="color: #0000ff;">catch</span><span style="color: #000000;">
+            {
+                </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> View();
+            }
+        }
+    }
+}</span></pre>
+</div>
+<p>6.view中的代码，会使用asp.net mvc 就能写出，这里就不贴出代码了。</p>
+<blockquote>
+<p>ASP.NET MVC 使用 Petapoco 微型ORM框架+NpgSql驱动连接 PostgreSQL数据库就基本结束了，后面我会录制一个和这篇博文对应的视频教程，源码和视频教程会在稍后的博文中发布。</p>
+<p>最后感谢<a href="http://home.cnblogs.com/u/shanyou/">张善友</a>老师和<a href="http://www.cnblogs.com/xiaodiejinghong/">小蝶惊鸿</a>的博客，尤其感谢<a href="http://www.cnblogs.com/xiaodiejinghong/">小蝶惊鸿</a>在QQ上给我的帮助。</p>
+<p>作者：郝喜路&nbsp;&nbsp;&nbsp; 2014年5月15日16:47:44</p>
+<p>博客地址：<a href="http://www.cnblogs.com/haoxilu/" target="_blank">http://www.cnblogs.com/haoxilu/</a></p>
+</blockquote>]]></description></item><item><title>JqueryEasyUI浅谈---视频教程公布</title><link>http://www.cnblogs.com/haoxilu/archive/2014/05/09/3718320.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Fri, 09 May 2014 02:18:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/05/09/3718320.html</guid><description><![CDATA[<p><a title="http://pan.baidu.com/s/1pJqGXez" href="http://pan.baidu.com/s/1pJqGXez">http://pan.baidu.com/s/1pJqGXez</a></p>
+<blockquote>
+<p>前两天我在博客园发了一个关于<a href="http://www.cnblogs.com/haoxilu/p/3715559.html" target="_blank">JqueryEasyUI浅谈本地化应用</a>的博客，我简单的介绍了JqueryEasyUI的应用，今天我录制了了一期有关<a href="http://www.cnblogs.com/haoxilu/p/3715559.html" target="_blank">JqueryEasyUI浅谈本地化应用</a>的视频教程。目前已经发布到我的百度网盘上了，希望大家下载。</p>
+<p>在网盘中我上传的是压缩包文件，压缩包中包括的文件如下：</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201405/091017273232188.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="http://images.cnitblog.com/blog/578906/201405/091017280425574.png" alt="image" width="341" height="71" border="0" /></a></p>
+</blockquote>
+<blockquote>
+<p>src中是视频教程的源代码</p>
+<p>文档资料包是有关JqueryEasyUI的文件和帮助文档</p>
+<p>剩下的那个就是视频教程了。</p>
+<p><strong><span style="color: #ff0000; font-size: large;">视频下载地址：<a href="http://pan.baidu.com/s/1pJqGXez" target="_blank">http://pan.baidu.com/s/1pJqGXez</a></span></strong></p>
+<p><strong><span style="color: #ff0000; font-size: large;">或者直接点击： <a href="http://pan.baidu.com/s/1pJqGXez" target="_blank">下载</a></span></strong></p>
+<p><strong><span style="color: #ff0000; font-size: large;">或者直接点击</span></strong>：</p>
+<a href="http://www.tudou.com/programs/view/NERNLisOhDs/?resourceId=374939362_06_02_99" target="_blank">播放</a></blockquote>
+<blockquote><strong><span style="color: #ff0000; font-size: large;">如果大家支持我请将<a href="http://www.2345.com/?k1192717523" target="_blank">http://www.2345.com/?k1192717523</a>设为浏览器的主页，或者点击一下支持一下。</span></strong>
+<p><a href="http://www.2345.com/?k1192717523" target="_blank"><strong><span style="color: #f79646; font-size: xx-large;">支持作者</span></strong></a></p>
+</blockquote>
+<blockquote>
+<p>郝喜路 2014年5月9日10:17:31</p>
+</blockquote>]]></description></item><item><title>JqueryEasyUI浅谈本地化应用</title><link>http://www.cnblogs.com/haoxilu/archive/2014/05/08/3715559.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 08 May 2014 02:16:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/05/08/3715559.html</guid><description><![CDATA[<p><strong>JqueryEasyUI</strong><strong>浅谈本地化应用</strong></p>
+<p>Jquery是对javascript一种封装，使我们开发人员使用起来更加方便，同时也解决了不同浏览器中javascript的兼容性。JqueryEasyUi是基于Jquery上开发的UI组件，和它并行的是JqueryUI，个人认为JqueryUi没有JqueryEasyUi好用，也没有JqueryEasyUi显得专业。</p>
+<p>下面先简单介绍一线JqueryEasyUI的使用，在用JqueryEasyUI之前需要引用几个js和css文件</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>1. <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">link </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">="../jqeryEasyUi/jquery-easyui-1.3.1/themes/default/easyui.css"</span><span style="color: #ff0000;"> rel</span><span style="color: #0000ff;">="stylesheet"</span><span style="color: #ff0000;">
+
+2.     type</span><span style="color: #0000ff;">="text/css"</span> <span style="color: #0000ff;">/&gt;</span><span style="color: #000000;">
+
+3. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">link </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">="../jqeryEasyUi/jquery-easyui-1.3.1/themes/icon.css"</span><span style="color: #ff0000;"> rel</span><span style="color: #0000ff;">="stylesheet"</span><span style="color: #ff0000;">
+
+4.     type</span><span style="color: #0000ff;">="text/css"</span> <span style="color: #0000ff;">/&gt;</span><span style="color: #000000;">
+
+5. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script </span><span style="color: #ff0000;">src</span><span style="color: #0000ff;">="../jqeryEasyUi/jquery-easyui-1.3.1/jquery-1.8.0.min.js"</span><span style="color: #ff0000;"> type</span><span style="color: #0000ff;">="text/javascript"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+6. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script </span><span style="color: #ff0000;">src</span><span style="color: #0000ff;">="../jqeryEasyUi/jquery-easyui-1.3.1/jquery.easyui.min.js"</span><span style="color: #ff0000;"> type</span><span style="color: #0000ff;">="text/javascript"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>这几个文件在相应的JqueryEasyUI包中存在。（下载地址：<a href="http://www.jeasyui.com/download/v123.php）简单介绍一下几个JqueryEasyUI的例子。这些demo">http://www.jeasyui.com/download/v123.php）简单介绍一下几个JqueryEasyUI的例子。这些demo</a>其实都可以在<a href="http://images.cnitblog.com/blog/578906/201405/081015186352321.jpg"><img style="display: inline;" title="clip_image002" src="http://images.cnitblog.com/blog/578906/201405/081015199791065.jpg" alt="clip_image002" width="554" height="351" /></a>找到。</p>
+<p>一、Dialog 弹出的窗口</p>
+<p>效果图：<a href="http://images.cnitblog.com/blog/578906/201405/081015215884823.jpg"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image004" src="http://images.cnitblog.com/blog/578906/201405/081015219484165.jpg" alt="clip_image004" width="558" height="247" border="0" /></a></p>
+<p>文件引用代码同上。</p>
+<p>Script代码：</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>1. $(<span style="color: #0000ff;">function</span><span style="color: #000000;"> () {
+
+</span>2.            $('#d2').dialog('close'<span style="color: #000000;">);
+
+</span>3<span style="color: #000000;">.        });
+
+</span>4. <span style="color: #0000ff;">function</span><span style="color: #000000;"> open1() {
+
+</span>5.            $('#d2').dialog('open'<span style="color: #000000;">);
+
+</span>6.        }</pre>
+</div>
+<p>窗口处代码（其实就是使用了div）：</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>1. <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="d2"</span><span style="color: #ff0000;"> class</span><span style="color: #0000ff;">="easyui-dialog"</span><span style="color: #ff0000;"> title</span><span style="color: #0000ff;">="处?|理&curren;&uml;a派&uml;|工?&egrave;信?息?&eacute;"</span><span style="color: #ff0000;"> style</span><span style="color: #0000ff;">="width: 400px; height: 200px;
+
+2.        left: 100px; top: 150px; padding: 10px"</span><span style="color: #ff0000;"> data-options</span><span style="color: #0000ff;">="toolbar:'#dlg-toolbar',buttons:'#dlg-buttons',resizable:true"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+3. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">table </span><span style="color: #ff0000;">width</span><span style="color: #0000ff;">="100%"</span><span style="color: #ff0000;"> border</span><span style="color: #0000ff;">="0"</span><span style="color: #ff0000;"> cellpadding</span><span style="color: #0000ff;">="4"</span><span style="color: #ff0000;"> cellspacing</span><span style="color: #0000ff;">="1"</span><span style="color: #ff0000;"> class</span><span style="color: #0000ff;">="show-table"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+4. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">tr</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+5. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">td</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+6. 维?修T人&uml;?员?&agrave;：&ecirc;o
+
+7. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">td</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+8. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">td</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+9. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp:DropDownList </span><span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="ddlMan"</span><span style="color: #ff0000;"> runat</span><span style="color: #0000ff;">="server"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+10. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">asp:DropDownList</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+11. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">td</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+12. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">tr</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+13. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">tr</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+14. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">td</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+15. 维?修T负o责e人&uml;?：&ecirc;o
+
+16. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">td</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+17. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">td</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+18. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp:DropDownList </span><span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="ddlHeadMan"</span><span style="color: #ff0000;"> runat</span><span style="color: #0000ff;">="server"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+19. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">asp:DropDownList</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+20. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">td</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+21. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">tr</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+22. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">table</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+23. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+24. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="dlg-buttons"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+25. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">a </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">="#"</span><span style="color: #ff0000;"> class</span><span style="color: #0000ff;">="easyui-linkbutton"</span><span style="color: #ff0000;"> onclick</span><span style="color: #0000ff;">="allot()"</span><span style="color: #0000ff;">&gt;</span>分&curren;?配?<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">a</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+26. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">a </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">="#"</span><span style="color: #ff0000;"> class</span><span style="color: #0000ff;">="easyui-linkbutton"</span><span style="color: #ff0000;"> onclick</span><span style="color: #0000ff;">="javascript:$('#d2').dialog('close')"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+27. 取&uml;?消?</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">a</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+28. </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>总结：对于dialog的使用，最好的方式就是看下载包内的demo，其他的方式也是看demo。</p>
+<p>二、日历显示（这里遇到了一点小问题，关于本地化的问题，后面我会贴出解决方案）</p>
+<p>效果图：<a href="http://images.cnitblog.com/blog/578906/201405/081015223386452.jpg"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image006" src="http://images.cnitblog.com/blog/578906/201405/081015238703253.jpg" alt="clip_image006" width="558" height="268" border="0" /></a></p>
+<p>这是最终的效果，显示的额都是中文，但是当我第一次引用的时候显示的是<a href="http://images.cnitblog.com/blog/578906/201405/081015241515039.jpg"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image008" src="http://images.cnitblog.com/blog/578906/201405/081015250263939.jpg" alt="clip_image008" width="517" height="338" border="0" /></a></p>
+<p>我引用js和css文件都是同上，就是显示是英文的，我想这是什么问题呢，难道这是外国人写的，不支持中文，后来想想也不对，如果外国人写的没有中文的话，目前这么火也会有大神写一个中文包吧。或者他的文件中有猫腻。</p>
+<p>然后我就打开了jquery-easyui-1.3.2的包，发现了一个文件件<a href="http://images.cnitblog.com/blog/578906/201405/081015262763655.jpg"><img style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="clip_image010" src="http://images.cnitblog.com/blog/578906/201405/081015265575441.jpg" alt="clip_image010" width="244" height="11" border="0" /></a></p>
+<p>我在想这个会不会就是有关本地化的东西。当我打开后发现，果然就是本地化的东西<a href="http://images.cnitblog.com/blog/578906/201405/081015279488198.jpg"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image012" src="http://images.cnitblog.com/blog/578906/201405/081015282299984.jpg" alt="clip_image012" width="557" height="405" border="0" /></a></p>
+<p>。看来外国人写这个软件的时候就已经想到了本地化的东西，看来这个值得我们以后学习。废话不说，直接把easyui-lang-zh_CN.js引用，一切都OK了。</p>
+<p>Js和css引用代码：</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>1. <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">link </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">="../jqeryEasyUi/jquery-easyui-1.3.1/themes/default/easyui.css"</span><span style="color: #ff0000;"> rel</span><span style="color: #0000ff;">="stylesheet"</span><span style="color: #ff0000;">
+
+2.     type</span><span style="color: #0000ff;">="text/css"</span> <span style="color: #0000ff;">/&gt;</span><span style="color: #000000;">
+
+3. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">link </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">="../jqeryEasyUi/jquery-easyui-1.3.1/themes/icon.css"</span><span style="color: #ff0000;"> rel</span><span style="color: #0000ff;">="stylesheet"</span><span style="color: #ff0000;">
+
+4.     type</span><span style="color: #0000ff;">="text/css"</span> <span style="color: #0000ff;">/&gt;</span><span style="color: #000000;">
+
+5. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script </span><span style="color: #ff0000;">src</span><span style="color: #0000ff;">="../jqeryEasyUi/jquery-easyui-1.3.1/jquery-1.8.0.min.js"</span><span style="color: #ff0000;"> type</span><span style="color: #0000ff;">="text/javascript"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+6. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script </span><span style="color: #ff0000;">src</span><span style="color: #0000ff;">="../jqeryEasyUi/jquery-easyui-1.3.1/jquery.easyui.min.js"</span><span style="color: #ff0000;"> type</span><span style="color: #0000ff;">="text/javascript"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+7. </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script </span><span style="color: #ff0000;">src</span><span style="color: #0000ff;">="../jqeryEasyUi/jquery-easyui-1.3.1/locale/easyui-lang-zh_CN.js"</span><span style="color: #ff0000;"> type</span><span style="color: #0000ff;">="text/javascript"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>Div显示日历的代码：</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>1. <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">input </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">="ctl00$title$TextBox1"</span><span style="color: #ff0000;"> type</span><span style="color: #0000ff;">="text"</span><span style="color: #ff0000;"> id</span><span style="color: #0000ff;">="ctl00_title_TextBox1"</span><span style="color: #ff0000;"> class</span><span style="color: #0000ff;">="easyui-datebox"</span><span style="color: #ff0000;"> required</span><span style="color: #0000ff;">="true"</span> <span style="color: #0000ff;">/&gt;</span></pre>
+</div>
+<p>使用起来就是这么的简单。</p>
+<p>郝喜路 2014年5月8日09:53:13</p>]]></description></item><item><title>【基础知识】Sql和Ado.Net第12天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570816.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:46:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570816.html</guid><description><![CDATA[<p>一、 主键（PrimaryKey）</p>
+<p>1. 主键是数据行的唯一标识。不能重复，不可为空，主键建议选择一般不会修改的列！</p>
+<p>2. 主键的作用：保证表中的每条数据的唯一性。</p>
+<p>3. 主键的分类：</p>
+<p>a) 逻辑主键：选择无实际意义的自动标号或GuId列为主键（建议使用）。</p>
+<p>b) 业务主键：使用过程中有实际意义的列作为主键</p>
+<p>4. 组合主键（复合主键）：同时选择多列作为一个主键（一般不建议使用）</p>
+<p>5. 选择主键的策略（选什么样的列作为主键）：</p>
+<p>a) 主键，建议选择那些一般不会被修改的列。</p>
+<p>b) 选择单列，不要选择多列（不用组合主键）</p>
+<p>c) 选择简单列（整数列（自动编号））</p>
+<p>二、 外键（ForeignKey）</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270945568334609.png"><img style="display: inline; border: 0px;" title="wps_clip_image-12691" src="http://images.cnitblog.com/blog/578906/201402/270945584585139.png" alt="wps_clip_image-12691" width="244" height="148" border="0" /></a></p>
+<p>1. 两张表都有主键。商品表的主键是，商品Id。厂家表的主键是，厂家Id。但是，在商品表中需要引用厂家表。所以在商品表中增加一列，这一列是用来引用厂家表的主键（厂家Id）的。所以在商品表中增加的这列就叫外键。商品表就叫外键表，厂家表叫主键表。</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270945595691812.png"><img style="display: inline; border: 0px;" title="wps_clip_image-8441" src="http://images.cnitblog.com/blog/578906/201402/270946011123313.png" alt="wps_clip_image-8441" width="244" height="56" border="0" /></a></p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270946025234314.png"><img style="display: inline; border: 0px;" title="wps_clip_image-16538" src="http://images.cnitblog.com/blog/578906/201402/270946037229015.png" alt="wps_clip_image-16538" width="244" height="90" border="0" /></a></p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270946043876914.png"><img style="display: inline; border: 0px;" title="wps_clip_image-11307" src="http://images.cnitblog.com/blog/578906/201402/270946050986002.png" alt="wps_clip_image-11307" width="212" height="57" border="0" /></a></p>
+<p>三、 常见的数据类型</p>
+<p>1. Varchar和char有什么区别：</p>
+<p>Varchar是可变长度，最多可以存储十个字节，如果实际存储的长度不足十个字节，则会动态按照实际的长度。【节省空间】</p>
+<p>char(10)是固定长度，表示数据库中存储的时候战十个空间，超过十个就报错，不够十个就会用空格补全</p>
+<p>2. Nchar(10)和char(10)的区别：</p>
+<p>a) Char用来存储数据的时候，英文占一个字节，中文占2个字节。Char或者varchar的小括号中的最大长度可以写8000</p>
+<p>b) Nchar来存储数据的时候无论存储的是中文还是英文么个字符占两个字节z可以存储10个字符或10个汉字。最大可以写4000</p>
+<p>3. 不建议使用text与ntext，推荐使用varchar(max)与nvarchar(max)</p>
+<p>&nbsp;</p>
+<p>郝喜路</p>
+<p><a title="http://www.cnblogs.com/haoxilu/" href="http://www.cnblogs.com/haoxilu/">http://www.cnblogs.com/haoxilu/</a></p>
+<p>&nbsp;</p>]]></description></item><item><title>【基础知识】.Net基础加强11天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570813.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:44:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570813.html</guid><description><![CDATA[<p>一． 扩展方法</p>
+<p>1. 声明扩展方法的步骤：</p>
+<p>1&gt; 类必须是static,方法是static ,第一个参数是被扩展的对象，前面标注（this 数据类型参数名）。</p>
+<p>2&gt; 使用扩展方法的时候必须保证扩展方法类已经在当前代码中using或者在同一命名空间下。</p>
+<p>2. 扩展方法看起来像Person中的方法，其实根本不是Person类自己的成员，所以在扩展方法中也访问不到类中原来的私有成员。</p>
+<p>3. 一般不建议使用扩展方法。</p>
+<p>二． XML</p>
+<p>1. XML语言规范：标签（Tag）、嵌套（Nest）、属性。标签要闭合，属性值要用&rdquo;&rdquo;包围吗，标签可以互相嵌套。</p>
+<p>2. XML树，父节点、子节点、兄弟节点（siblings）</p>
+<p>3. XML和HTML的区别</p>
+<p>a) XML有且只能有一个根元素；</p>
+<p>b) XML中元素必须关闭；</p>
+<p>c) XML中元素的属性值必须用引号；</p>
+<p>d) XML大小写敏感（CaseSensitive）</p>
+<p>三. 深拷贝（深层克隆）-浅拷贝（浅表拷贝）(无论是深拷贝还是浅拷贝都是又创建了一个新的对象)</p>
+<p>1. 深拷贝和浅拷贝的区别</p>
+<p>2. 面试题</p>
+<p>1&gt;请编程实现一个对象的深拷贝与浅拷贝</p>
+<p>3&gt; <a href="http://images.cnitblog.com/blog/578906/201402/270943408024950.png"><img style="display: inline; border: 0px;" title="wps_clip_image-12282" src="http://images.cnitblog.com/blog/578906/201402/270943413552752.png" alt="wps_clip_image-12282" width="244" height="170" border="0" /></a><a href="http://images.cnitblog.com/blog/578906/201402/270943421104381.png"><img style="display: inline; border: 0px;" title="wps_clip_image-8378" src="http://images.cnitblog.com/blog/578906/201402/270943431887109.png" alt="wps_clip_image-8378" width="244" height="46" border="0" /></a></p>
+<p>四、 Attrivute（特性、标记）</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>2014年2月27日09:43:21</p>
+<p>郝喜路</p>
+<p><a title="http://www.cnblogs.com/haoxilu/" href="http://www.cnblogs.com/haoxilu/">http://www.cnblogs.com/haoxilu/</a></p>]]></description></item><item><title>【基础知识】.Net基础加强10天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570794.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:37:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570794.html</guid><description><![CDATA[<p>一、 复习</p>
+<p>1. 委托是类型，还是一种引用类型。</p>
+<p>2. 使用委托的时候必须new一个委托对象。即便看到代码中没有new委托对象，编译器也会在编译的时候帮我们new赋值给委托的方法，其实是存储在委托对象中的。</p>
+<p>3. 使用委托的步骤：</p>
+<p>1&gt; 定义一个委托类型：public delegate voi d 委托的名称(参数列表);</p>
+<p>2&gt; 声明一个委托变量:委托名称wd = new委托名称(方法名称);</p>
+<p>3&gt; 调用委托：</p>
+<p>在调用委托之前需要判断一下是否为空</p>
+<p>If (wd !=null)</p>
+<p>{</p>
+<p>//开始调用委托</p>
+<p>Wd();或者wd.Invoke();</p>
+<p>}</p>
+<p>4. 委托的作用：</p>
+<p>当一个类型中需要嵌入一段代码，但是这段代码具有不确定性，是根据使用这个类型的用户来确定代码的，这种情况下就可以在该类型中使用一个委托，保证在某种情况下会调用这个方法。（简述：在一段代码中动态添加一个方法。）</p>
+<p>自定义控件是的事件会大量用到委托。（些事件的时候用到委托）</p>
+<p>/.、可以把静态方法或私有方法赋值给委托变量，赋值后只要能使用到该委托变量的地方就能使用该方法。打破了访问修饰符的限制。</p>
+<p>二、 多播委托</p>
+<p>1. 多播委托中方法调用的顺序与增加方法时的顺序是一致的，但是不要依赖于这个顺序。</p>
+<p>微软并没有承诺一定是按这种顺序。</p>
+<p>2. 多播委托中，如果要是有返回值，只会得到最后一个方法调用的返回结果。</p>
+<p>3. 多播委托获取返回值：</p>
+<p>a) 通过遍历，调用委托中的每个方法，实现获取每个方法的返回值。</p>
+<p>b) 通过调用GetInvocationList()方法，返回当前委托中的所有方法，返回值类型是一个Delegate数组（委托数组）</p>
+<p>c) 多播委托内部是将绑定在当前委托对象上的每个方法，都转换为一个委托对象，并且存储在了一个叫_invocationLIst的object 数组中。</p>
+<p>d) 然后当调用委托的时候，其实就是循环遍历_invocationList数组，并且调用其中的每一个委托。</p>
+<p>4. 多播委托中如果其中一个方法执行是发生异常时，则后续方法不执行。</p>
+<p>5. 去掉一个方法，md = md &ndash; m4;</p>
+<p>6. 使用多播委托时，如果不是用+=而是直接使用=赋值，会将前面绑定的所有方法（委托）覆盖掉。</p>
+<p>7. 委托的不可变性：</p>
+<p>a) 委托有类似于string的不可变性</p>
+<p>b) <a href="http://images.cnitblog.com/blog/578906/201402/270936515619988.png"><img style="display: inline; border: 0px;" title="wps_clip_image-10979" src="http://images.cnitblog.com/blog/578906/201402/270936523492334.png" alt="wps_clip_image-10979" width="244" height="168" border="0" /></a></p>
+<p>8. 建议使用的时候尽量少定义委托自己的委托，尽量使用系统中已经有的委托。减少程序集中定义的类型的个数。</p>
+<p>9. 委托的一些应用:</p>
+<p>a) 多线程</p>
+<p>b) 自定义类(控件/通信类/(事件))</p>
+<p>c) 正则表达式中替换Email掩码</p>
+<p>三、 事件</p>
+<p>1. 通过委托实现事件的功能的问题;（因此不用委托而用事件）</p>
+<p>a) 可以在类的外部触发。因为委托变量访问修饰符是public 的，所以在任何地方都可以触发。 如果把委托变量的访问修饰符改成private 的。那么的确不能在外部触发了，但是也不能在外部赋值了。</p>
+<p>b) 由于委托可以使用等号来赋值，所以就有可能将前面所有已经注册的事件处理程序覆盖掉。</p>
+<p>2. 什么事件？</p>
+<p>a) 在使用事件之前必须定义委托，否则无法使用事件。</p>
+<p>b) 定义了委托类型之后开始使用事件：public event 委托类型 m;</p>
+<p>3. 使用事件的好处：</p>
+<p>a) 因为事件只能通过+=或者-=来赋值，所以避免了使用=赋值覆盖的问题。</p>
+<p>b) 事件不能在定义事件的类的外部触发，只能在那个类内部触发。所以也就避免了冒充事件触发的问题。</p>
+<p>4. 事件就是一个私有的委托变量和两个共有的方法Add和Remove，分别是来实现事件的+=和-=</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270936535793806.png"><img style="display: inline; border: 0px;" title="wps_clip_image-12372" src="http://images.cnitblog.com/blog/578906/201402/270936541089135.png" alt="wps_clip_image-12372" width="244" height="64" border="0" /></a><a href="http://images.cnitblog.com/blog/578906/201402/270936546986249.png"><img style="display: inline; border: 0px;" title="wps_clip_image-27360" src="http://images.cnitblog.com/blog/578906/201402/270936552211107.png" alt="wps_clip_image-27360" width="244" height="66" border="0" /></a></p>
+<p>四、 委托和事件的区别（常考）</p>
+<p>1. 委托和事件没有可比性，因为委托是类型，事件是对象（可以理解为对委托变量的封装。d），下面说的是委托的对象（用委托方式实现的事件）和（标准的event方式实现）事件的区别。事件的内部是用委托实现的。（举例子：三种实现事件方式的区别）</p>
+<p>2. 因为对于事件来讲，外部只能&ldquo;注册自己+=、注销自己-=&rdquo;，外界不可以注销其他的注册者，外界不可以主动触发事件，因此如果用Delegate就没法进行上面的控制，因此诞生了事件这种语法。add、remove。</p>
+<p>3. 事件是用来阉割委托实例的。事件只能add、remove自己，不能赋值。事件只能+=、-=，不能=、不能外部触发事件。</p>
+<p>五、 程序集(Assembly)</p>
+<p>1. 只是在.net中的概念。.net中exe和dll 都是程序集。（exe和dll的区别：exe包含主函数可以被执行，dl不包含主函数，不可执行）</p>
+<p>2. 程序集包含：类型元数据(描述在代码中定义的每一类型和成员,二进制形式)、程序集元数据（程序集清单、版本号、名称等）、IL代码(这些都被装在exe或dll中)、资源文件。每个程序集都有自己的名称、版本等信息。这些信息可以通过AssemblyInfo.cs文件来自己定义。</p>
+<p>六、 反射</p>
+<p>1. Type类</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270936561147250.png"><img style="display: inline; border: 0px;" title="wps_clip_image-17811" src="http://images.cnitblog.com/blog/578906/201402/270936570234394.png" alt="wps_clip_image-17811" width="244" height="181" border="0" /></a></p>
+<p>课后小项目：&nbsp;</p>
+<p><a title="记事本+插件开发" href="http://pan.baidu.com/s/1dDId1ux" target="_blank">记事本+插件开发</a>，这是我根据本课内容写的小程序。</p>
+<p>2014年2月27日09:41:23 &nbsp; 郝喜路&nbsp;</p>
+<p>&nbsp;</p>]]></description></item><item><title>【基础知识】.Net基础加强09天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570781.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:34:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570781.html</guid><description><![CDATA[<p>委托：</p>
+<p>1. 委托是一种数据类型，像类一样{可以声明委托变量类型}</p>
+<p>2. deleate关键字定义委托 ： public delegate void MethodDelegate();//这就是定义了一个委托</p>
+<p>如果这个委托将来要存储的方法没有返回值，那么委托也要定义为void，那么在将来传递的参数也不能有参数。</p>
+<p>3. 委托的作用：可以在某个代码内部，嵌入一段外部代码。相当于注入。（委托只是把方法中变的地方提取出来。便于写出通用的代码。）</p>
+<p>4. 作业1：08窗体之间回传值时使用委托</p>
+<p>作业2：打印一串数组，使用委托。09委托案例-循环修改字符串数组中的每个字符串</p>
+<p>作业3：10通过委托实现通用的比较方法（Max）</p>
+<p>作业5：</p>
+<p>匿名方法</p>
+<p>Xxx md = delegate()</p>
+<p>{</p>
+<p>Console.WriteLine(&ldquo;哈哈哈，我是匿名方法！&rdquo;);</p>
+<p>}</p>
+<p>Lambda表达式：</p>
+<p>面试题：谈谈你对lambda表达式的理解：</p>
+<p>Lambda其实就是一个匿名函数而已，编译的时候会将lambda表达式编译成一个c#匿名方法，但是使用lambda表达式会在很多时候减少代码量。</p>]]></description></item><item><title>【基础知识】.Net基础加强08天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570779.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:33:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570779.html</guid><description><![CDATA[<p>一、 文件的读取</p>
+<p>1. 有FileStrem，为什么还要StreamWriter和StreamRead</p>
+<p>StreamWriter和StreamRead是用来读取文本文件的，每次只读取一行文本文件</p>
+<p>二、 对象的序列化（二进制序列化）</p>
+<p>1. 对象序列化是什么呢？</p>
+<p>对象序列化是将对象（比如Person对象）。对象是稍纵即逝的，不仅程序重启、操作系统重启会造成对象的消失，就是退出函数范围等都可能造成对象的消失，序列化/反序列化就是为了保持对象的持久化。就像用DV录像（序列化）和播放器播放（反序列化）一样。</p>
+<p>2. 反序列化步骤：</p>
+<p>a) 创建二进制序列化器（或者叫做格式化器）</p>
+<p>BinaryFormatter bf = new BinaryFormatter();</p>
+<p>b) 开始执行反序列化</p>
+<p>3. 为什么反序列化的时候需要原来定义Person类的那个程序集？</p>
+<p>反序列化的时候，要返回一个对象，这个对象必须根据原来Person所在的程序集才能创建，也就是说Person.bin中包含的仅仅是一些数据，根据这些数据是无法在内存中创建对象的。只能是根据原来Person类型的程序集来创建对象，然后把person.bin中的数据一一对应进行赋值。</p>
+<p>4. 总结：</p>
+<p>对象序列化，只是对象的一些状态信息进行序列化（比如字段）。</p>
+<p>对于方法之类的根本不进行序列化，也就是说person.bin中只包含字段名和字段值，根本没有方法信息。</p>
+<p>但是反序列化的时候，，返回的是一个对象，那么只根据这些字段信息是无法创建对象的，所以这个时侯需要先根据原来的程序集，获取Person类型，然后在内存中创建一个Person对象然后在把反序列化得到的字段信息赋值给这个Person对象。</p>
+<p>三、 正则表达式</p>]]></description></item><item><title>【基础知识】.Net基础加强07 天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570763.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:30:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570763.html</guid><description><![CDATA[<p>一、 自定义泛型</p>
+<p>1. 泛型的目的:提高代码的复用性。</p>
+<p>2. T:一般叫做&ldquo;类型参数&rdquo;，把数据类型作为参数传递</p>
+<p>。一般用T类表示或者以大写T开头的比如：TKey,TValue、TOutput、TResult&hellip;</p>
+<p>3. .net2.0版本中引入的泛型</p>
+<p>4. 泛型类、泛型接口、泛型委托（★）</p>
+<p>5. 泛型的约束（where）</p>
+<p>===============使用where关键字进行类型约束=====================</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270929214024698.png"><img style="display: inline; border: 0px;" title="wps_clip_image-9487" src="http://images.cnitblog.com/blog/578906/201402/270929217872284.png" alt="wps_clip_image-9487" width="244" height="108" border="0" /></a></p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270929229301498.png"><img style="display: inline; border: 0px;" title="wps_clip_image-15550" src="http://images.cnitblog.com/blog/578906/201402/270929237312843.png" alt="wps_clip_image-15550" width="244" height="75" border="0" /></a></p>
+<p>public&nbsp; class&nbsp; Person&lt;T,T1,T2&gt;&nbsp;&nbsp; where T : struct//约束T必须为数值类型</p>
+<p>where T1 : class //后面必须是引用类型</p>
+<p>where T2 : new() //这个类必须带有一个无参构造函数，非抽象、非私有</p>
+<p>二、 装箱和拆箱 box&nbsp;&nbsp;&nbsp; unbox(面试的时候经常涉及)</p>
+<p>1. 装箱：将【值类型】转换为【引用类型】的过程，叫&nbsp; 装箱。</p>
+<p>2. 拆箱： 将【引用类型】转换为【值类型】的过程，叫&nbsp; 拆箱。</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270929242764943.png"><img style="display: inline; border: 0px;" title="wps_clip_image-22665" src="http://images.cnitblog.com/blog/578906/201402/270929248135571.png" alt="wps_clip_image-22665" width="244" height="108" border="0" /></a></p>
+<p>6. 注意： 装箱的时候使用什么类型装箱，就必须使用什么类型来拆箱。</p>
+<p>7. <a href="http://images.cnitblog.com/blog/578906/201402/270929256203687.png"><img style="display: inline; border: 0px;" title="wps_clip_image-30925" src="http://images.cnitblog.com/blog/578906/201402/270929263598544.png" alt="wps_clip_image-30925" width="244" height="100" border="0" /></a></p>
+<p>8. 装箱和拆箱的性能问题： 性能 会降低。因此写程序的时候尽量不要发生装箱的过程。</p>
+<p>三、 foreach()的执行原理</p>
+<p>1. 任何类型，只要想使用foreach来循环遍历，就必须在当前类型中存在：</p>
+<p>Public&nbsp; IEnumerator GetEnumerator()方法，（一般情况我们会通过实现IEnumerable接口，创建该方法）</p>
+<p>2. Public&nbsp; IEnumerator GetEnumerator()这个方法的作用不是用来遍历的，二十用来获取一个对象，这个对象才是用来遍历的。</p>
+<p>四、 文件操作相关的类</p>
+<p>1. File //操作文件,静态类，对文件整体操作。拷贝、删除、剪切等。</p>
+<p>Directory //操作目录（文件夹），静态类。</p>
+<p>DirectoryInfo //文件夹的一个&ldquo;类&rdquo;，用来描述一个文件夹对象（获取指定目录下的所有目录时返回一个DirectoryInfo数组。）</p>
+<p>FileInfo//文件类，用来描述一个文件对象。获取指定目录下的所有文件时，返回一个FileInfo数组。</p>
+<p>Path//对文件或目录的路径进行操作（很方便）【字符串】</p>
+<p>Stream//文件流，抽象类。</p>
+<p>FileStream//文件流,MemoryStream(内存流),NetworkStream(网络流)</p>
+<p>StreamReader //快速读取文本文件</p>
+<p>StreamWriter//快速写入文本文件</p>
+<p>2. Path类</p>
+<p>a) Path类中的方法基本上只是对字符串的操作，与实际存储在磁盘上的文件没有任何关系。</p>
+<p>3. Directory类：</p>
+<p>a) 创建一些目录</p>
+<p>b) DirectoryInfo dirInfo = new DirectoryInfo(@&rdquo;c:\abc&rdquo;);</p>
+<p>把一个文件夹当作对象来用。</p>
+<p>五、 什么是递归？</p>
+<p>递归就是自己调用自己。</p>
+<p>如果递归的时候没有停止条件，则肯定会死递归。最后报异常，栈溢出。</p>
+<p>所以一般递归的时候肯定会有一个终止条件</p>
+<p>或者是在某种条件下调用自己（递归）</p>
+<p>六、 windowfrom中</p>
+<p>Tag，没有意义，但是可以用来存放用户的数据。</p>
+<p>l 获取当前exe文件执行的路径：</p>
+<p>Assembly.GetExecutingAssembly().Location;</p>
+<p>Application.StartupPath</p>
+<p>七、 File类，主要是操作文件的</p>
+<p>1. 判断文件是否存在</p>
+<p>File.Exists(文件路径名);</p>
+<p>File.Delete(string);文件的删除，即便文件不存在也不报异常</p>
+<p>&bull; string[] ReadAllLines(string path) 读取文本文件到字符串数组中</p>
+<p>&bull; string ReadAllText(string path) 读取文本文件到字符串中</p>
+<p>&bull; void WriteAllText(string path, string contents)将文本contents保存到文件path中，会覆盖旧内容。</p>
+<p>&bull; WriteAllLines(string path,string[] contents)，将字符串数组逐行保存到文件path中，会覆盖旧内容。</p>
+<p>&bull; void AppendAllText(string path, string contents)，将文本contents附加到文件path中</p>
+<p>File.Create(&ldquo; path&rdquo;);//创建文件</p>
+<p>2. 文件流：</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270929268375158.png"><img style="display: inline; border: 0px;" title="wps_clip_image-10375" src="http://images.cnitblog.com/blog/578906/201402/270929275946787.png" alt="wps_clip_image-10375" width="237" height="102" border="0" /></a></p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270929281253117.png"><img style="display: inline; border: 0px;" title="wps_clip_image-25981" src="http://images.cnitblog.com/blog/578906/201402/270929284568917.png" alt="wps_clip_image-25981" width="244" height="36" border="0" /></a></p>
+<p>字符串和byte数组的转换</p>
+<p>1. 字符串转换成byte字节数组</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270929288881517.png"><img style="display: inline; border: 0px;" title="wps_clip_image-4381" src="http://images.cnitblog.com/blog/578906/201402/270929292879574.png" alt="wps_clip_image-4381" width="244" height="80" border="0" /></a></p>]]></description></item><item><title>【基础知识】.Net基础加强06天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570756.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:28:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570756.html</guid><description><![CDATA[<p>一、 垃圾回收</p>
+<p>1. 垃圾回收的目的：提高内存的利用效率。</p>
+<p>2. 垃圾回收器： 只回收托管堆中的内存资源，不回收其他资源（数据库连接、文件句柄、网络端口等）；</p>
+<p>3. 什么时候垃圾回收？</p>
+<p>a) 当对象没有任何变量指向的时候就可以被垃圾回收了。（可以被回收，但是不知道什么时候可以回收，回收是由系统决定的</p>
+<p>b) GC.Collect(); //手动调用垃圾回收（一般不需要手动调用垃圾回收，由系统自动调用）</p>
+<p>c) 不要手动调用，因为垃圾回收会调用一系列的算法，需要移动对象等等，这时为了达到目的，需要暂停应用程序的已处理，这时如果频繁的调用垃圾回收反而会影响性能。</p>
+<p>4. 垃圾回收器中的&ldquo;代&rdquo;的概念</p>
+<p>a) 垃圾回收中的代有三代：</p>
+<p>i. 回收的时候优先回收第0代，没有回收的移动到第一代，第一代和第二代要倒满的时候才能回收。</p>
+<p>b) 垃圾回收采用代的概念，避免了每次垃圾回收都遍历所有的对象，减少了垃圾回收的时间。</p>
+<p>第0代的回收频率高，第1代次之，第2代再次之。</p>
+<p>效果：越老的对象活的越长。</p>
+<p>5. 除了内存资源之外的其他资源。</p>
+<p>a) 使用Dispose();释放除内存之外的方法。</p>
+<p>b) ~Class1(){}//析构函数（c++中的名称）在C#中叫Finalize()函数（终结函数）</p>
+<p>与类名相同</p>
+<p>在当前对象被垃圾回收之前会调用Finalize()函数，释放其他资源。</p>
+<p>6. 弱引用：WeakReference，对于创建比较耗时的对象可以使用若引用</p>
+<p>什么时候使用弱引用：一般用在创建比较耗时的对象。</p>
+<p>二、 集合类</p>
+<p>1. ArrayList(非泛型) &ndash;&gt; List&lt;T&gt;(泛型)</p>
+<p>Hashtable(非泛型)---&gt;Dictionary&lt;K,V&gt;(泛型)</p>
+<p>2. 数据的特点：类型统一、长度固定</p>
+<p>3. 集合的常用操作：添加、遍历、移除</p>
+<p>4. ArrayList集合：</p>
+<p>a) ArrayList&nbsp;&nbsp; arr = new ArrayLlist();</p>
+<p>Arr.Count//实际的个数（属性）</p>
+<p>Arr.Capacity;容量。集合的容量是递增翻倍，初始容量是4（属性）</p>
+<p>Arr.TrimToSize();//将总容量&ldquo;收缩&rdquo;为实际容量</p>
+<p>5. Hashtable键值对集合，类似于字典，</p>
+<p>键的地址是算出来的，所以高性能。</p>
+<p>&bull; Hashtable 键值对的集合，类似于字典,Hashtable在查找元素的时候，速度很快。</p>
+<p>&bull; Add(object key,object value);</p>
+<p>&bull; hash[&ldquo;key&rdquo;]</p>
+<p>&bull; hash[&ldquo;key&rdquo;]=&ldquo;修改&rdquo;;</p>
+<p>&bull; .ContainsKey(&ldquo;key&rdquo;);</p>
+<p>&bull; Remove(&ldquo;key&rdquo;);</p>
+<p>&bull; 遍历：</p>
+<p>&bull; hash.Keys</p>
+<p>&bull; hash.Values/DictionaryEntry</p>
+<p>&bull; 键值对集合中的&ldquo;键&rdquo;，绝对不能重复。</p>
+<p>三、 泛型集合（在.Net2.0之后出现的）</p>
+<p>1. 通过泛型可以限定集合中存储的类型</p>
+<p>2. List&lt;int&gt; list = new List();</p>
+<p>a) 由于增加的时候都是int 类型，所以取值的时候获取的值直接就是int 类型，无需类型转换。</p>
+<p>b) 微软推荐使用List&lt;T&gt;泛型集合，他是ArrayList的升级版</p>
+<p>3. Dictionary&lt;string,string&gt; dict = new Dictionary&lt;string,string&gt;();</p>
+<p>a) 用这个来替换Hashtable</p>
+<p>b) 遍历：foreach(KeyValuePair&lt;T,T&gt; kv in dict)//可以将key和value一起遍历出来</p>
+<p>四、 Var关键字简述（是一个强类型，在程序编译的时候就已经替换成相应的数据类型）</p>
+<p>类型推断</p>
+<p>注：在JavaScript中的var是一个弱类型</p>]]></description></item><item><title>【基础知识】.Net基础加强   第05天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570748.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:26:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570748.html</guid><description><![CDATA[<p>一、 . 字符串的特性：不可变性（ToUpper()演示）、字符串池、字符串留用（不常用）</p>
+<p>1. 不可变性：由于字符串是不可变的。所以每次修改字符串都是创建一个单独的字符串副本（有拷贝了一个字符串）；</p>
+<p>2. 字符串池：当程序中有多个相同的字符串常量时，这时，这些字符串都是指向内存中的同一个字符符串，这个特性叫做：字符串池。</p>
+<p>之所以字符串池不会造成程序的混乱，是因为：字符串具有不可变性。</p>
+<p>3. 字符串留用（不常用，因为会有一定的内存损耗）：</p>
+<p>二、 string字符串</p>
+<p>1. string的属性</p>
+<p>1&gt; Length&nbsp; //获得字符串中字符的个数</p>
+<p>2. string的方法</p>
+<p>1&gt; IsNullOrEmpty()&nbsp; //静态方法，判断为null或者为空</p>
+<p>（string str =&ldquo;&rdquo; 和string str= null和 string str = string.Empty的区别：stirng str = &ldquo;&rdquo;;会在堆内存中开辟一块儿内存空间，string str= null 则不会在堆中开辟内存空间,string str = string.Empty;和string str =&rdquo;&rdquo; 在堆内存中的地址是一样的。&nbsp; 使用str.Length == 0 来判断字符串是否为空，不要使用str ==&rdquo;&rdquo;,str.Length==0的效率比较高，微软内部就是这样实现的。）</p>
+<p>2&gt; ToCharArray()&nbsp; //将string 转换为char[]</p>
+<p>3&gt; ToLower()&nbsp; //小写，必须接收返回值。（因为字符串的不可变）</p>
+<p>4&gt; ToUpper()&nbsp; //大写</p>
+<p>5&gt; Equals()&nbsp; //比较两个字符串是否相同。忽略大小写的比较Equals(obj,StringComparation.I&hellip;.)。</p>
+<p>6&gt; IndexOf() //如果没有找到对应的数据，返回-1。返回对应的字符第一次出现未知的索引：//作业：面试题：统计一个字符串中天安门出现的位置</p>
+<p>7&gt; LastIndexOf()&nbsp; //找到字符串最后一次出现的位置的索引，其他同IndexOf</p>
+<p>8&gt; Substring()&nbsp; //截取字符串&nbsp;&nbsp;&nbsp; //作业：动态截取[某某某]，获取第一次出现的索引的位置N1，获取第一次出现的索引位置N2。用N2-N1计算长度</p>
+<p>9&gt; Split() //可以根据字符把字符串分开</p>
+<p>10&gt; Join()&nbsp; //和split()正好是相反的；是将字符用指定的连接符连起来</p>
+<p>11&gt; Format()&nbsp; //利用占位符拼接字符串，并且返回</p>
+<p>12&gt; Trim()&nbsp; //去掉两边的空格</p>
+<p>13&gt; Replace()&nbsp; //执行替换</p>
+<p>三、 StringBuilder</p>
+<p>1.使用Stopwatch来监视程序运行用了多长时间。Start();stop();&nbsp; sw.Elapsed//将最终的结果打印出来&nbsp; //与程序的代码stringbuilder的内容无关</p>
+<p>2. 使用大量字符串拼接的时候，String的问题：</p>
+<p>&nbsp; 1&gt; 内存浪费，产生大量的垃圾内存</p>
+<p>2&gt; 由于String的不可变性，每次拼接都会创建一个新的string对象，每次创建对象的时候本身也是比较耗时耗资源的。所以造成了使用string拼接字符串性能极其低。</p>
+<p>3&gt; 解决方法就是使用stringbuilder</p>
+<p>3. 只有使用大量字符串拼接的时候使用StringBuilder，其他的情况都用string。因为各种方法要求的参数都是string类型，并且string类型具有一些特性：不可变性、字符串池等。</p>
+<p>4. StringBuilder的一些方法：</p>
+<p>StringBuilder sb = new StringBuilder();</p>
+<p>Sb.Append();//追加字符串</p>
+<p>Sb.AppendLine();//拼接完最后添加一个换行</p>
+<p>Sb.ToString();//把StringBuilder转换为字符串</p>
+<p>Sb.Insert();//在指定字符中插入</p>
+<p>Sb.Replace();//在指定的字符串中替换</p>
+<p>四、 字符串的比较</p>
+<p>1. String类型重写了Object类中继承下来的Equals方法。</p>
+<p>重写为：只要两个字符串中的字符完全相同就返回true或者两个字符串是同一个对象也返回true</p>
+<p>2. 由于Equals方法子类可以重写，所以通过Equals 方法判断是否为同一个对象是不正确的，所以判断两个对象是否同一个对象用：</p>
+<p>Object.ReferenceEquals();//这个才是判断对象是否相等的方法。</p>]]></description></item><item><title>【基础知识】.Net基础加强第三天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570742.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:25:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570742.html</guid><description><![CDATA[<p>一、 里氏替换原则--类型转换</p>
+<p>1、 里氏替换原则：当需要一个父类类型对象的时候，可以给一个子类类型的对象。</p>
+<p>2、 里氏替换原则实际也就是发生了隐身转换</p>
+<p>3、&nbsp; a.&gt;把子类类型赋值给父类类型，发生了隐式类型。</p>
+<p>b&gt; 把父类类型变量赋值给子类类型，需要显式类型转换。</p>
+<p>C&gt;前提是如果这个父类类型变量p中，指向的确实是一个子类对象，则可以显式类型转换，如果p指向的不是子类的对象，则显式转换会报异常。（转换失败）&nbsp;&nbsp;&nbsp; is-a可以用来验证继承关系中是否合理</p>
+<p>4、 =======================as===================</p>
+<p>//如果转换成功则将结果赋值给cn变量，</p>
+<p>//如果转换失败也不报错，会将null值赋值给cn;</p>
+<p>//最好在转换后，加一个cn是否为null的验证。</p>
+<p>Chinese cn = per as Chinese;</p>
+<p>if (cn!=null)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</p>
+<p>//做一些事情</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>//如果转换失败会报错！！！</p>
+<p>Chinese cn1 = (Chinese)per;</p>
+<p>============================================================================</p>
+<p>/// &lt;summary&gt;</p>
+<p>/// 父类类型作为参数的一种多态</p>
+<p>/// &lt;/summary&gt;</p>
+<p>/// &lt;param name="per"&gt;&lt;/param&gt;</p>
+<p>static void RenKouDengji(Person per)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; per.DengJi();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>多态的作用：把不同的子类对象都当作父类来看，可以屏蔽不同子类对象之间的差异，写出通用的代码，做出通用的编程，以适应需求的不断变化。</p>
+<p>==============================================</p>
+<p>//如果转换失败报异常</p>
+<p>//Chinese newcn = (Chinese)per;</p>
+<p>// Chinese newcn = per as Chinese;</p>
+<p>////类型转换，如果转换成功，则newcn中为转换后的结果</p>
+<p>////如果转换失败，则newcn为null</p>
+<p>Chinese newcn = per as Chinese;</p>
+<p>二、 抽象类</p>
+<p>1、 抽象方法不能有任何方法体。（不能有任何实现）public abstract void Show();</p>
+<p>2、 抽象成员必须写在抽象类中。不能写在一个实例中。这个类也必须标记为abstract（抽象的）。</p>
+<p>3、 父类中的抽象成员，子类继承后必须重写（例外：除非子类也是一个抽象类）</p>
+<p>4、 抽象类中可以有抽象成员</p>
+<p>5、 抽象类是不能被实例化的。（抽象类的作用就是为了继承）</p>
+<p>6、 抽象类的特点总结</p>
+<p>1&gt; 抽象成员必须标记为abstract，并且不能有任何实现。</p>
+<p>2&gt; 抽象成员必须在抽象类中。</p>
+<p>3&gt; 抽象类不能被实例化。</p>
+<p>4&gt; 子类继承抽象类后，必须把父类中的所有抽象成员都重写。（除非子类也是抽象类，则可以不用重写）</p>
+<p>5&gt; 抽象成员的访问修饰符不能是private</p>
+<p>6&gt; 在抽象类中可以包含实例成员</p>
+<p>7&gt; 抽象类是有构造函数的，虽然不能实例化</p>
+<p>7、 什么时候用抽象类，什么时候用virtual虚方法</p>
+<p>1&gt; 如果父类中的方法有默认的实现，并且父类需要实例化，这是可以考虑将父类定义成一个普通类，使用virtual虚方法来实现多态。</p>
+<p>2&gt; 如果父类中的方法没有默认的实现，父类也不需要被实例化，则可以将该类定义为抽象类。</p>
+<p>3&gt; 类中的成员如果不写访问修饰符默认是私有的</p>
+<p>8、 new关键字隐藏父类的成员（用的很少）</p>
+<p>1&gt; 表示在子类中隐藏了从父类继承过来的那个虚方法，</p>
+<p>子类类型 obj = new 子类类型</p>
+<p>2&gt; 用new标记的方法是子类中的一个全新的方法，与从父类中继承过来的方法没有一点关系（断截了）</p>
+<p>3&gt; 不能多态了。</p>
+<p>9、 简单工厂设计模式</p>
+<p>各种设计模式的本质都是：多态。（充分理解多态，再看设计模式就会觉得轻松很多。）</p>
+<p>三、 接口（使用规范，给接口起名字是以I开头,able结尾）</p>
+<p>1、 什么是接口？</p>
+<p>1&gt; 接口就是一种规范.约定好遵守某种规范就可以写通用的代码。</p>
+<p>2、 接口的语法特点</p>
+<p>1&gt; 接口中只能包含方法（方法，属性，索引器，事件）；</p>
+<p>2&gt; 接口中的方法也不能有任何实现（就像抽象方法一样，直接加分号）；</p>
+<p>3&gt; 接口中的成员不能有任何访问修饰符（哪怕是public），默认是public；</p>
+<p>4&gt; 接口不能被实例化；</p>
+<p>5&gt; 实现接口的类，必须实现接口中所有的成员；</p>
+<p>3、 都已经有类实现多态了，为什还要接口呢？</p>
+<p>(1) 继承具有单根性，不能多继承。接口却可以多实现。</p>
+<p>(2) 接口的主要目的就是要实现多态。</p>
+<p>(3) 当同一个类同时继承了某个类，并且也实现了某个接口的时候，必须要将继承的类写到第一个位置。</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/270924301734824.png"><img style="display: inline; border: 0px;" title="wps_clip_image-8527" src="http://images.cnitblog.com/blog/578906/201402/270924305829652.png" alt="wps_clip_image-8527" width="168" height="69" border="0" /></a><a href="http://images.cnitblog.com/blog/578906/201402/270924312393253.png"><img style="display: inline; border: 0px;" title="wps_clip_image-1247" src="http://images.cnitblog.com/blog/578906/201402/270924321337924.png" alt="wps_clip_image-1247" width="168" height="71" border="0" /></a><a href="http://images.cnitblog.com/blog/578906/201402/270924324806198.png"><img style="display: inline; border: 0px;" title="wps_clip_image-13479" src="http://images.cnitblog.com/blog/578906/201402/270924327633282.png" alt="wps_clip_image-13479" width="27" height="17" border="0" /></a><a href="http://images.cnitblog.com/blog/578906/201402/270924330551840.png"><img style="display: inline; border: 0px;" title="wps_clip_image-1430" src="http://images.cnitblog.com/blog/578906/201402/270924333463626.png" alt="wps_clip_image-1430" width="27" height="17" border="0" /></a><a href="http://images.cnitblog.com/blog/578906/201402/270924335837169.png"><img style="display: inline; border: 0px;" title="wps_clip_image-25314" src="http://images.cnitblog.com/blog/578906/201402/270924340391241.png" alt="wps_clip_image-25314" width="65" height="6" border="0" /></a><a href="http://images.cnitblog.com/blog/578906/201402/270924345161084.png"><img style="display: inline; border: 0px;" title="wps_clip_image-18402" src="http://images.cnitblog.com/blog/578906/201402/270924348161114.png" alt="wps_clip_image-18402" width="65" height="6" border="0" /></a>Public class Student : Person : IFlyable{}</p>
+<p>(4) 当多个类型，都具有某个或某个功能时（方法），但是这几个类型又属于不同的系列（这几个类型没有共同的父类，这时就不能用抽象类了。），所以这时，为了实现多态就可以考虑把这几个类型的共有的方法提取到一个接口中，让这几个类型分别实现该接口。</p>
+<p>(5) 如果一个类实现了一个接口，那么继承他的子类也会有接口里的内容。这个类的类型和这个类子类的类型都是他接口的类型（I&hellip;able）</p>
+<p>4、 老师的建议：</p>
+<p>建议：不要在一个接口中写过多的方法，避免造成接口污染。可以编写多个接口，在每个接口中，分别定义方法。（最终的是有还是要根据需求来定）</p>
+<p>5、 显示实现接口：接口名.接口的方法IFlyable.Fly();</p>]]></description></item><item><title>【基础知识】.Net基础加强  第四天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570736.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 27 Feb 2014 01:23:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/27/3570736.html</guid><description><![CDATA[<p>一、 显示实现接口</p>
+<p>1、 显示实现接口的目的：为了解决法方法重名的问题。</p>
+<p>2、 显示实现接口必须是私有的，不能用public</p>
+<p>3、 （复习）类中成员不写访问修饰符默认是private；类如果不写访问修饰符默认是internal</p>
+<p>二、 接口的总结</p>
+<p>1. 接口是一种规范。为了多态。</p>
+<p>2. 接口不被实例化。</p>
+<p>3. 接口中的成员不能加&ldquo;访问修饰符&rdquo;，接口中的成员访问修饰符为public,不能修改。（默认为public）</p>
+<p>4.接口中的成员不能有任何实现（&ldquo;光说不做&rdquo;，只是定义了一组未实现的成员）。</p>
+<p>5.接口中只能有方法、属性、索引器、事件，不能有&ldquo;字段&rdquo;。</p>
+<p>6.接口与接口之间可以继承，并且可以多继承。</p>
+<p>7.实现接口的子类必须实现该接口的全部成员。</p>
+<p>8.一个类可以同时继承一个类并实现多个接口，如果一个子类同时继承了父类A，并实现了接口IA,那么语法上A必须写在IA的前面。class MyClass:A,IA{}，因为类是单继承的。</p>
+<p>9.当一个抽象类实现接口的时候，如果不想把接口中的成员实现，可以把该成员实现为abstract。(抽象类也能实现接口，用abstrac标记)。（解释：子类可以在实现接口的时候吧接口中的方法实现为virtual或者abstract的类型。）</p>
+<p>10.&ldquo;显示实现接口&rdquo;，只能通过接口变量来调用（因为显示实现接口后成员为private）。</p>
+<p>三、 有关接口的使用建议</p>
+<p>面向抽象编程，使用抽象(父类、抽象类、接口)不使用具体。</p>
+<p>&ldquo;向上转型&rdquo;</p>
+<p>在编程时：</p>
+<p>接口&rarr;抽象类&rarr;父类&rarr;具体类（在定义方法参数、返回值、声明变量的时候能用抽象就不要用具体。）</p>
+<p>能使用接口就不用抽象类，能使用抽象类就不用类，能用父类就不用子类。</p>
+<p>避免定义&ldquo;体积庞大的接口&rdquo;、&ldquo;多功能接口&rdquo;，会造成&ldquo;接口污染&rdquo;。只把相关联的一组成员定义到一个接口中（尽量在接口中少定义成员）。单一职责原则</p>
+<p>定义多个职责单一的接口（小接口）（组合使用）。（印刷术与活字印刷术）</p>
+<p>随着学习的深入再继续体会接口的作用。</p>
+<p>四、 枚举&mdash;普通枚举</p>
+<p>1. 在普通枚举中，枚举值是互斥的。</p>
+<p>2. 枚举中的每个值都有对应的数值来表示。</p>
+<p>2.1 默认数值是整型int，从0开始，依次递增</p>
+<p>2.2 可以手动设置每个枚举对应的整数</p>
+<p>3. 枚举在编译完成后就已经用对应的数值常量来表示了。</p>
+<p>4. 默认枚举都是使用int来替代的，但是也可以指定具体的数据类型。</p>
+<p>枚举：byte（public enmu UserState : byte{}）表示，限制类枚举中的数字类型。</p>
+<p>五、 枚举&mdash;标志枚举</p>
+<p>1. 标志枚举是可以组合的。</p>
+<p>2. 标志枚举的方式</p>
+<p>[Flags]//看加Flags特性后，标志枚举的ToString()返回结果</p>
+<p>public enum GoodPeople</p>
+<p>&nbsp;&nbsp;&nbsp; {</p>
+<p>高 = 1,</p>
+<p>富 = 2,</p>
+<p>帅 = 4,</p>
+<p>白 = 8,</p>
+<p>美 = 16,</p>
+<p>优秀男 = GoodPeople.高 | GoodPeople.富 | GoodPeople.帅,</p>
+<p>优秀女 = GoodPeople.白 | GoodPeople.富 | GoodPeople.美</p>
+<p>&nbsp;&nbsp;&nbsp; }</p>
+<p>3. 判断当前值中是否包含V1： 枚举 mj=&hellip;;&nbsp;&nbsp; if(mj&amp;枚举.V1==枚举.V1)表示存在V1</p>
+<p>六、 结构体</p>
+<p>1. 在没有面向对象的类之前是用结构体来模拟的，进行给变量赋值</p>
+<p>2. 结构与类最大的区别：结构是值类型，类是引用类型</p>
+<p>3. 结构体不能继承但是可以实现接口</p>
+<p>4. 什么时候使用结构体</p>
+<p>4.1 如果需要面向对象的特征，如果存储量比较大&nbsp; &rarr;&nbsp; 使用类</p>
+<p>4.2 如果存储的数据量比较小，不需要面向对象的特征 &rarr; 使用结构体</p>
+<p>七、 类型转换</p>
+<p>类型转换Cast是在内存级别上的转换。内存中的数据没有变化，只是观看的视角不同而已</p>
+<p>1. 隐式类型转换：1&gt;把子类类型赋值给父类类型的时候发生隐式类型转换；2&gt;.将占用字节数小的数据类型赋值给占用字节数大的数据类型可以发生隐式类型转换（前提是这两种数据类型在内存的同一个区域。）</p>
+<p>2. 当实在不知道应该怎么进行类型转换的时候就到Convert</p>
+<p>3. 显示类型转换：</p>
+<p>八、 值类型和引用类型</p>
+<p>1. 值类型：</p>
+<p>int、char、double、float、long、short、byte、bool、enum、struct、decimal</p>
+<p>2. 引用类型：</p>
+<p>string、数组、类（子定义数据类型）、接口、委托、</p>
+<p>3. 所有的引用类型都继承自Object；所有的值类型都继承自System.ValueType，而System.ValueType又继承自Object</p>
+<p>4. 值类型和引用类型作为参数传递（值传递）</p>
+<p>5. 值类型和引用类型作为参数传递（引用传递）</p>
+<p>5.1 ref表示按照引用传递</p>
+<p>6. 值传递：传递的是栈中的内容；ref引用传递：传递的是栈本身的地址。</p>
+<p>7. 对于值类型来说：栈中存储的就是直接使用的数据；对于引用类型来说：栈中存储的是堆中的对象。</p>
+<p>8. 参数传递的时候：</p>
+<p>8.1 值传递，传递的是栈中保存的数据；</p>
+<p>8.2 引用传递，传递的是栈本身的地址。</p>
+<p>九、 异常处理</p>
+<p>1.&nbsp; 1.1 语法错误：语法错误一般编译器会帮我们解决</p>
+<p>1.2 逻辑错误：编译和执行没有问题就是结果不对，一般是因为自己写错了。</p>
+<p>1.3 异常：在运行时发生错误。异常一般会导致程序崩溃。</p>
+<p>2. 如何进行异常处理？</p>
+<p>2.1 try &hellip; catch &hellip; finally 进行异常处理</p>
+<p>&nbsp;&nbsp; 把可能出现异常的代码用try块包围起来</p>
+<p>&nbsp; 在try中，程序发生异常后，后直接跳转到catch块中，当前代码后面的代码都不执行了。</p>
+<p>在catch块中，只有当程序发生异常后才会执行，如果程序不发生异常，则不执行catch块中的代码。</p>
+<p>Finally代码块中的代码无论是否发生异常，都会被执行。finally中的代码会在异常发生崩溃前执行（就算没有捕获到异常也会执行）。即便在catch块中有return还是会执行的。</p>
+<p>3.&nbsp; 异常处理有多种形式</p>
+<p>3.1&nbsp;&nbsp; try{ &hellip; }catch{&hellip; }&nbsp;&nbsp; 可以捕获所有异常</p>
+<p>3.2&nbsp; try { &hellip; } catch(Exception ex){&hellip; } 也可以将所有的异常进行捕获，并且可以将异常信息打印出来。</p>
+<p>3.3 try{&hellip; }catch(XXXException ex){&hellip;.}&nbsp; xxxx中的内容不同可以捕获不同的异常，</p>
+<p>4. Exception 类的主要属性：Message、StackTrace、InnerException</p>
+<p>5. 扔出自己的异常，扔：throw，抓住：catch</p>
+<p>6. 抛出异常：</p>
+<p>throw; 只能在catch块中使用。</p>
+<p>throw new Exception(&ldquo;需要抛出的异常信息&rdquo;);可以在程序的任意地方使用这个抛出自己需要的异常。</p>
+<p>7. 老师的建议：</p>
+<p>尽量通过逻辑判断（if-else）减少异常发生的可能性！异常处理过多会降低程序的性能。</p>
+<p>在多级方法嵌套调用的时候，如果发生了异常，则会终止所有相关方法的调用，并且释放相关的资源。</p>
+<p>十、 可变参数params</p>
+<p>1. 可变参数可以传一个参数，也可以传多个参数，也可以不传参数。</p>
+<p>如果不为可变参数传值，则可变参数的数组是一个长度为0的数组，但是不是null。</p>
+<p>2. 当一个方法中有多个参数时，并且包含可变参数时，可变参数只能放在参数列表的最后。</p>
+<p>3. 可变参数也可以传一个数组进来。</p>
+<p>十一、&nbsp; ref和out</p>
+<p>1. ref必须先初始化，因为是引用，所以必须先&ldquo;有&rdquo;，才能引用，而out则是内部为外部赋值，所以不需要初始化，而且外部初始化也没用。</p>
+<p>2. 使用out参数的时候，没有必须为变量赋值，即便赋值了也没有意义，使用前还是会清空</p>
+<p>在方法中必须为out参数赋值。否则报错。</p>]]></description></item><item><title>【转】JQuery Validate使用总结二</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/21/3559210.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Fri, 21 Feb 2014 04:39:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/21/3559210.html</guid><description><![CDATA[<p><a href="http://www.cnblogs.com/haoxilu/p/3559184.html" target="_blank">Jquery Validate使用总结一</a></p>  <p>五、常用方法及注意问题   <br />1.用其他方式替代默认的SUBMIT    <br />$().ready(function() {    <br /> $(&quot;#signupForm&quot;).validate({    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; submitHandler:function(form){    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; alert(&quot;submitted&quot;);&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; form.submit();    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }&#160;&#160;&#160; <br />&#160;&#160;&#160; });    <br />});    <br />可以设置validate的默认值，写法如下：    <br />$.validator.setDefaults({    <br /> submitHandler: function(form) { alert(&quot;submitted!&quot;);form.submit(); }    <br />});    <br />如果想提交表单, 需要使用form.submit()而不要使用$(form).submit()    <br />2.debug，只验证不提交表单    <br />如果这个参数为true，那么表单不会提交，只进行检查，调试时十分方便 </p>  <p>$().ready(function() {   <br /> $(&quot;#signupForm&quot;).validate({    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; debug:true    <br />&#160;&#160;&#160; });    <br />});    <br />如果一个页面中有多个表单都想设置成为debug，用    <br />$.validator.setDefaults({    <br />&#160;&#160; debug: true    <br />})    <br />3.ignore：忽略某些元素不验证    <br />ignore: &quot;.ignore&quot;    <br />4.更改错误信息显示的位置    <br />errorPlacement：Callback     <br /> Default: 把错误信息放在验证的元素后面     <br />指明错误放置的位置，默认情况是：error.appendTo(element.parent());即把错误信息放在验证的元素后面     <br />errorPlacement: function(error, element) {&#160; <br />&#160;&#160;&#160; error.appendTo(element.parent());&#160; <br />}    <br />//示例：    <br />&lt;tr&gt;    <br />&#160;&#160;&#160; &lt;td class=&quot;label&quot;&gt;&lt;label id=&quot;lfirstname&quot; for=&quot;firstname&quot;&gt;First Name&lt;/label&gt;&lt;/td&gt;    <br />&#160;&#160;&#160; &lt;td class=&quot;field&quot;&gt;&lt;input id=&quot;firstname&quot; name=&quot;firstname&quot; type=&quot;text&quot; value=&quot;&quot; maxlength=&quot;100&quot; /&gt;&lt;/td&gt;    <br />&#160;&#160;&#160; &lt;td class=&quot;status&quot;&gt;&lt;/td&gt;    <br />&lt;/tr&gt;    <br />&lt;tr&gt;    <br />&#160;&#160;&#160; &lt;td style=&quot;padding-right: 5px;&quot;&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;input id=&quot;dateformat_eu&quot; name=&quot;dateformat&quot; type=&quot;radio&quot; value=&quot;0&quot; /&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;label id=&quot;ldateformat_eu&quot; for=&quot;dateformat_eu&quot;&gt;14/02/07&lt;/label&gt;    <br />&#160;&#160;&#160; &lt;/td&gt;    <br />&#160;&#160;&#160; &lt;td style=&quot;padding-left: 5px;&quot;&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;input id=&quot;dateformat_am&quot; name=&quot;dateformat&quot; type=&quot;radio&quot; value=&quot;1&quot;&#160; /&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;label id=&quot;ldateformat_am&quot; for=&quot;dateformat_am&quot;&gt;02/14/07&lt;/label&gt;    <br />&#160;&#160;&#160; &lt;/td&gt;    <br />&#160;&#160;&#160; &lt;td&gt;&lt;/td&gt;    <br />&lt;/tr&gt;    <br />&lt;tr&gt;    <br />&#160;&#160;&#160; &lt;td class=&quot;label&quot;&gt;&amp;nbsp;&lt;/td&gt;    <br />&#160;&#160;&#160; &lt;td class=&quot;field&quot; colspan=&quot;2&quot;&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;div id=&quot;termswrap&quot;&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;input id=&quot;terms&quot; type=&quot;checkbox&quot; name=&quot;terms&quot; /&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;label id=&quot;lterms&quot; for=&quot;terms&quot;&gt;I have read and accept the Terms of Use.&lt;/label&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/div&gt;    <br />&#160;&#160;&#160; &lt;/td&gt;    <br />&lt;/tr&gt;    <br />errorPlacement: function(error, element) {    <br />&#160;&#160;&#160; if ( element.is(&quot;:radio&quot;) )    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; error.appendTo( element.parent().next().next() );    <br />&#160;&#160;&#160; else if ( element.is(&quot;:checkbox&quot;) )    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; error.appendTo ( element.next() );    <br />&#160;&#160;&#160; else    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; error.appendTo( element.parent().next() );    <br />}    <br />代码的作用是：一般情况下把错误信息显示在&lt;td class=&quot;status&quot;&gt;&lt;/td&gt;中，如果是radio显示在&lt;td&gt;&lt;/td&gt;中，如果是 checkbox显示在内容的后面    <br />errorClass：String&#160; Default: &quot;error&quot;     <br />指定错误提示的css类名，可以自定义错误提示的样式    <br />errorElement：String&#160; Default: &quot;label&quot;     <br />用什么标签标记错误，默认的是label你可以改成em    <br />errorContainer：Selector     <br />显示或者隐藏验证信息，可以自动实现有错误信息出现时把容器属性变为显示，无错误时隐藏，用处不大    <br />errorContainer: &quot;#messageBox1, #messageBox2&quot;    <br />errorLabelContainer：Selector    <br />把错误信息统一放在一个容器里面。    <br />wrapper：String    <br />用什么标签再把上边的errorELement包起来    <br />一般这三个属性同时使用，实现在一个容器内显示所有错误提示的功能，并且没有信息时自动隐藏    <br />errorContainer: &quot;div.error&quot;,    <br />errorLabelContainer: $(&quot;#signupForm div.error&quot;),    <br />wrapper: &quot;li&quot;    <br />5更改错误信息显示的样式    <br />设置错误提示的样式，可以增加图标显示，在该系统中已经建立了一个validation.css专门用于维护校验文件的样式    <br />input.error { border: 1px solid red; }    <br />label.error {    <br />&#160; background:url(&quot;./demo/images/unchecked.gif&quot;) no-repeat 0px 0px;    <br />&#160; padding-left: 16px;    <br />&#160; padding-bottom: 2px;    <br />&#160; font-weight: bold;    <br />&#160; color: #EA5200;    <br />}    <br />label.checked {    <br />&#160; background:url(&quot;./demo/images/checked.gif&quot;) no-repeat 0px 0px;    <br />}    <br />6每个字段验证通过执行函数    <br />success：String,Callback    <br />要验证的元素通过验证后的动作，如果跟一个字符串，会当做一个css类，也可跟一个函数    <br />success: function(label) {    <br />&#160;&#160;&#160; // set &amp;nbsp; as text for IE    <br />&#160;&#160;&#160; label.html(&quot;&amp;nbsp;&quot;).addClass(&quot;checked&quot;);    <br />&#160;&#160;&#160; //label.addClass(&quot;valid&quot;).text(&quot;Ok!&quot;)    <br />}    <br />添加&quot;valid&quot; 到验证元素, 在CSS中定义的样式&lt;style&gt;label.valid {}&lt;/style&gt;    <br />success: &quot;valid&quot;    <br />7验证的触发方式修改    <br />下面的虽然是boolean型的，但建议除非要改为false,否则别乱添加。    <br />onsubmit：Boolean&#160; Default: true     <br />提交时验证. 设置唯false就用其他方法去验证    <br />onfocusout：Boolean&#160; Default: true     <br />失去焦点是验证(不包括checkboxes/radio buttons)    <br />onkeyup：Boolean&#160; Default: true     <br />在keyup时验证.    <br />onclick：Boolean&#160; Default: true     <br />在checkboxes 和 radio 点击时验证    <br />focusInvalid：Boolean&#160; Default: true     <br />提交表单后，未通过验证的表单(第一个或提交之前获得焦点的未通过验证的表单)会获得焦点    <br />focusCleanup：Boolean&#160; Default: false     <br />如果是true那么当未通过验证的元素获得焦点时，移除错误提示。避免和 focusInvalid 一起用    <br />// 重置表单    <br />$().ready(function() {    <br /> var validator = $(&quot;#signupForm&quot;).validate({    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; submitHandler:function(form){    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; alert(&quot;submitted&quot;);&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; form.submit();    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }&#160;&#160;&#160; <br />&#160;&#160;&#160; });    <br />&#160;&#160;&#160; $(&quot;#reset&quot;).click(function() {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; validator.resetForm();    <br />&#160;&#160;&#160; });    <br />});    <br />8异步验证    <br />remote：URL    <br />使用ajax方式进行验证，默认会提交当前验证的值到远程地址，如果需要提交其他的值，可以使用data选项    <br />remote: &quot;check-email.php&quot;    <br />remote: {    <br />&#160;&#160;&#160; url: &quot;check-email.php&quot;,&#160;&#160;&#160;&#160; //后台处理程序    <br />&#160;&#160;&#160; type: &quot;post&quot;,&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; //数据发送方式    <br />&#160;&#160;&#160; dataType: &quot;json&quot;,&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; //接受数据格式&#160;&#160; <br />&#160;&#160;&#160; data: {&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; //要传递的数据    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; username: function() {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; return $(&quot;#username&quot;).val();    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }    <br />&#160;&#160;&#160; }    <br />} </p>  <p>远程地址只能输出 &quot;true&quot; 或 &quot;false&quot;，不能有其它输出   <br />9添加自定义校验    <br />addMethod：name, method, message    <br />自定义验证方法 </p>  <p>// 中文字两个字节   <br />jQuery.validator.addMethod(&quot;byteRangeLength&quot;, function(value, element, param) {    <br />&#160;&#160;&#160; var length = value.length;    <br />&#160;&#160;&#160; for(var i = 0; i &lt; value.length; i++){    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; if(value.charCodeAt(i) &gt; 127){    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; length++;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }    <br />&#160;&#160;&#160; }    <br />&#160; return this.optional(element) || ( length &gt;= param[0] &amp;&amp; length &lt;= param[1] );&#160;&#160; <br />}, $.validator.format(&quot;请确保输入的值在{0}-{1}个字节之间(一个中文字算2个字节)&quot;)); </p>  <p>// 邮政编码验证&#160;&#160; <br />jQuery.validator.addMethod(&quot;isZipCode&quot;, function(value, element) {&#160;&#160; <br />&#160;&#160;&#160; var tel = /^[0-9]{6}$/;    <br />&#160;&#160;&#160; return this.optional(element) || (tel.test(value));    <br />}, &quot;请正确填写您的邮政编码&quot;);    <br />10radio和checkbox、select的验证    <br />1.radio的required表示必须选中一个    <br />&lt;input&#160; type=&quot;radio&quot; id=&quot;gender_male&quot; value=&quot;m&quot; name=&quot;gender&quot; class=&quot;{required:true}&quot; /&gt;    <br />&lt;input&#160; type=&quot;radio&quot; id=&quot;gender_female&quot; value=&quot;f&quot; name=&quot;gender&quot;/&gt;    <br />2.checkbox的required表示必须选中    <br />&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; id=&quot;agree&quot; name=&quot;agree&quot; class=&quot;{required:true}&quot; /&gt;    <br />checkbox的minlength表示必须选中的最小个数,maxlength表示最大的选中个数,rangelength:[2,3]表 示选中个数区间 </p>  <p>&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; id=&quot;spam_email&quot; value=&quot;email&quot; name=&quot;spam[]&quot; class=&quot;{required:true, minlength:2}&quot; /&gt;   <br />&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; id=&quot;spam_phone&quot; value=&quot;phone&quot; name=&quot;spam[]&quot; /&gt;    <br />&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; id=&quot;spam_mail&quot; value=&quot;mail&quot; name=&quot;spam[]&quot; /&gt;    <br />&#160;&#160;&#160; 3.select的required表示选中的value不能为空    <br />&lt;select id=&quot;jungle&quot; name=&quot;jungle&quot; title=&quot;Please select something!&quot; class=&quot;{required:true}&quot;&gt;    <br />&#160;&#160;&#160; &lt;option value=&quot;&quot;&gt;&lt;/option&gt;    <br />&#160;&#160;&#160; &lt;option value=&quot;1&quot;&gt;Buga&lt;/option&gt;    <br />&#160;&#160;&#160; &lt;option value=&quot;2&quot;&gt;Baga&lt;/option&gt;    <br />&#160;&#160;&#160; &lt;option value=&quot;3&quot;&gt;Oi&lt;/option&gt;    <br />&lt;/select&gt;    <br />select的minlength表示选中的最小个数（可多选的select）,maxlength表示最大的选中个 数,rangelength:[2,3]表示选中个数区间    <br />&lt;select id=&quot;fruit&quot; name=&quot;fruit&quot; title=&quot;Please select at least two fruits&quot; class=&quot;{required:true, minlength:2}&quot; multiple=&quot;multiple&quot;&gt;    <br />&#160;&#160;&#160; &lt;option value=&quot;b&quot;&gt;Banana&lt;/option&gt;    <br />&#160;&#160;&#160; &lt;option value=&quot;a&quot;&gt;Apple&lt;/option&gt;    <br />&#160;&#160;&#160; &lt;option value=&quot;p&quot;&gt;Peach&lt;/option&gt;    <br />&#160;&#160;&#160; &lt;option value=&quot;t&quot;&gt;Turtle&lt;/option&gt;    <br />&lt;/select&gt;</p>]]></description></item><item><title>【转】JQuery Validate使用总结1</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/21/3559184.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Fri, 21 Feb 2014 04:17:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/21/3559184.html</guid><description><![CDATA[<p>一、导入js库   <br />&lt;script src=&quot;../js/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;    <br />&lt;script src=&quot;../js/jquery.validate.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; </p>  <p>二、默认校验规则   <br />(1)required:true&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 必输字段    <br />(2)remote:&quot;check.php&quot;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 使用ajax方法调用check.php验证输入值    <br />(3)email:true&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 必须输入正确格式的电子邮件    <br />(4)url:true&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 必须输入正确格式的网址    <br />(5)date:true&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 必须输入正确格式的日期 日期校验ie6出错，慎用    <br />(6)dateISO:true&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 必须输入正确格式的日期(ISO)，例如：2009-06-23，1998/01/22 只验证格式，不验证有效性    <br />(7)number:true&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 必须输入合法的数字(负数，小数)    <br />(8)digits:true&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 必须输入整数    <br />(9)creditcard:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 必须输入合法的信用卡号    <br />(10)equalTo:&quot;#field&quot;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 输入值必须和#field相同    <br />(11)accept:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 输入拥有合法后缀名的字符串（上传文件的后缀）    <br />(12)maxlength:5&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 输入长度最多是5的字符串(汉字算一个字符)    <br />(13)minlength:10&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 输入长度最小是10的字符串(汉字算一个字符)    <br />(14)rangelength:[5,10]&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 输入长度必须介于 5 和 10 之间的字符串&quot;)(汉字算一个字符)    <br />(15)range:[5,10]&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 输入值必须介于 5 和 10 之间    <br />(16)max:5&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 输入值不能大于5    <br />(17)min:10&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 输入值不能小于10    <br />三、默认的提示    <br />messages: {    <br />&#160;&#160;&#160; required: &quot;This field is required.&quot;,    <br />&#160;&#160;&#160; remote: &quot;Please fix this field.&quot;,    <br />&#160;&#160;&#160; email: &quot;Please enter a valid email address.&quot;,    <br />&#160;&#160;&#160; url: &quot;Please enter a valid URL.&quot;,    <br />&#160;&#160;&#160; date: &quot;Please enter a valid date.&quot;,    <br />&#160;&#160;&#160; dateISO: &quot;Please enter a valid date (ISO).&quot;,    <br />&#160;&#160;&#160; dateDE: &quot;Bitte geben Sie ein g眉ltiges Datum ein.&quot;,    <br />&#160;&#160;&#160; number: &quot;Please enter a valid number.&quot;,    <br />&#160;&#160;&#160; numberDE: &quot;Bitte geben Sie eine Nummer ein.&quot;,    <br />&#160;&#160;&#160; digits: &quot;Please enter only digits&quot;,    <br />&#160;&#160;&#160; creditcard: &quot;Please enter a valid credit card number.&quot;,    <br />&#160;&#160;&#160; equalTo: &quot;Please enter the same value again.&quot;,    <br />&#160;&#160;&#160; accept: &quot;Please enter a value with a valid extension.&quot;,    <br />&#160;&#160;&#160; maxlength: $.validator.format(&quot;Please enter no more than {0} characters.&quot;),    <br />&#160;&#160;&#160; minlength: $.validator.format(&quot;Please enter at least {0} characters.&quot;),    <br />&#160;&#160;&#160; rangelength: $.validator.format(&quot;Please enter a value between {0} and {1} characters long.&quot;),    <br />&#160;&#160;&#160; range: $.validator.format(&quot;Please enter a value between {0} and {1}.&quot;),    <br />&#160;&#160;&#160; max: $.validator.format(&quot;Please enter a value less than or equal to {0}.&quot;),    <br />&#160;&#160;&#160; min: $.validator.format(&quot;Please enter a value greater than or equal to {0}.&quot;)    <br />},    <br />如需要修改，可在js代码中加入：    <br />jQuery.extend(jQuery.validator.messages, {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: &quot;必选字段&quot;,    <br />&#160; remote: &quot;请修正该字段&quot;,    <br />&#160; email: &quot;请输入正确格式的电子邮件&quot;,    <br />&#160; url: &quot;请输入合法的网址&quot;,    <br />&#160; date: &quot;请输入合法的日期&quot;,    <br />&#160; dateISO: &quot;请输入合法的日期 (ISO).&quot;,    <br />&#160; number: &quot;请输入合法的数字&quot;,    <br />&#160; digits: &quot;只能输入整数&quot;,    <br />&#160; creditcard: &quot;请输入合法的信用卡号&quot;,    <br />&#160; equalTo: &quot;请再次输入相同的值&quot;,    <br />&#160; accept: &quot;请输入拥有合法后缀名的字符串&quot;,    <br />&#160; maxlength: jQuery.validator.format(&quot;请输入一个 长度最多是 {0} 的字符串&quot;),    <br />&#160; minlength: jQuery.validator.format(&quot;请输入一个 长度最少是 {0} 的字符串&quot;),    <br />&#160; rangelength: jQuery.validator.format(&quot;请输入 一个长度介于 {0} 和 {1} 之间的字符串&quot;),    <br />&#160; range: jQuery.validator.format(&quot;请输入一个介于 {0} 和 {1} 之间的值&quot;),    <br />&#160; max: jQuery.validator.format(&quot;请输入一个最大为{0} 的值&quot;),    <br />&#160; min: jQuery.validator.format(&quot;请输入一个最小为{0} 的值&quot;)    <br />}); </p>  <p>推荐做法，将此文件放入messages_cn.js中，在页面中引入   <br />&lt;script src=&quot;../js/messages_cn.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; </p>  <p>四、使用方式1.将校验规则写到控件中   <br />&lt;script src=&quot;../js/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;    <br />&lt;script src=&quot;../js/jquery.validate.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;    <br />&lt;script src=&quot;./js/jquery.metadata.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;    <br />$().ready(function() {    <br /> $(&quot;#signupForm&quot;).validate();    <br />}); </p>  <p>&lt;form id=&quot;signupForm&quot; method=&quot;get&quot; action=&quot;&quot;&gt;   <br />&#160;&#160;&#160; &lt;p&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;label for=&quot;firstname&quot;&gt;Firstname&lt;/label&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;input id=&quot;firstname&quot; name=&quot;firstname&quot; class=&quot;required&quot; /&gt;    <br />&#160;&#160;&#160; &lt;/p&gt;    <br /> &lt;p&gt;    <br />&#160; &lt;label for=&quot;email&quot;&gt;E-Mail&lt;/label&gt;    <br />&#160; &lt;input id=&quot;email&quot; name=&quot;email&quot; class=&quot;required email&quot; /&gt;    <br /> &lt;/p&gt;    <br /> &lt;p&gt;    <br />&#160; &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;    <br />&#160; &lt;input id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; class=&quot;{required:true,minlength:5}&quot; /&gt;    <br /> &lt;/p&gt;    <br /> &lt;p&gt;    <br />&#160; &lt;label for=&quot;confirm_password&quot;&gt;确认密码&lt;/label&gt;    <br />&#160; &lt;input id=&quot;confirm_password&quot; name=&quot;confirm_password&quot; type=&quot;password&quot; class=&quot;{required:true,minlength:5,equalTo:'#password'}&quot; /&gt;    <br /> &lt;/p&gt;    <br />&#160;&#160;&#160; &lt;p&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;input class=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Submit&quot;/&gt;    <br />&#160;&#160;&#160; &lt;/p&gt;    <br />&lt;/form&gt;    <br />使用class=&quot;{}&quot;的方式，必须引入包：jquery.metadata.js    <br />可以使用如下的方法，修改提示内容：    <br />class=&quot;{required:true,minlength:5,messages:{required:'请输入内容'}}&quot;    <br />在使用equalTo关键字时，后面的内容必须加上引号，如下代码：    <br />class=&quot;{required:true,minlength:5,equalTo:'#password'}&quot;    <br />2.将校验规则写到js代码中    <br />$().ready(function() {    <br /> $(&quot;#signupForm&quot;).validate({    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; rules: {    <br />&#160;&#160; firstname: &quot;required&quot;,    <br />&#160;&#160; email: {    <br />&#160;&#160;&#160; required: true,    <br />&#160;&#160;&#160; email: true    <br />&#160;&#160; },    <br />&#160;&#160; password: {    <br />&#160;&#160;&#160; required: true,    <br />&#160;&#160;&#160; minlength: 5    <br />&#160;&#160; },    <br />&#160;&#160; confirm_password: {    <br />&#160;&#160;&#160; required: true,    <br />&#160;&#160;&#160; minlength: 5,    <br />&#160;&#160;&#160; equalTo: &quot;#password&quot;    <br />&#160;&#160; }    <br />&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; messages: {    <br />&#160;&#160; firstname: &quot;请输入姓名&quot;,    <br />&#160;&#160; email: {    <br />&#160;&#160;&#160; required: &quot;请输入Email地址&quot;,    <br />&#160;&#160;&#160; email: &quot;请输入正确的email地址&quot;    <br />&#160;&#160; },    <br />&#160;&#160; password: {    <br />&#160;&#160;&#160; required: &quot;请输入密码&quot;,    <br />&#160;&#160;&#160; minlength: jQuery.format(&quot;密码不能小于{0}个字 符&quot;)    <br />&#160;&#160; },    <br />&#160;&#160; confirm_password: {    <br />&#160;&#160;&#160; required: &quot;请输入确认密码&quot;,    <br />&#160;&#160;&#160; minlength: &quot;确认密码不能小于5个字符&quot;,    <br />&#160;&#160;&#160; equalTo: &quot;两次输入密码不一致不一致&quot;    <br />&#160;&#160; }    <br />&#160; }    <br />&#160;&#160;&#160; });    <br />});    <br />//messages处，如果某个控件没有message，将调用默认的信息 </p>  <p>&lt;form id=&quot;signupForm&quot; method=&quot;get&quot; action=&quot;&quot;&gt;   <br />&#160;&#160;&#160; &lt;p&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;label for=&quot;firstname&quot;&gt;Firstname&lt;/label&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;input id=&quot;firstname&quot; name=&quot;firstname&quot; /&gt;    <br />&#160;&#160;&#160; &lt;/p&gt;    <br /> &lt;p&gt;    <br />&#160; &lt;label for=&quot;email&quot;&gt;E-Mail&lt;/label&gt;    <br />&#160; &lt;input id=&quot;email&quot; name=&quot;email&quot; /&gt;    <br /> &lt;/p&gt;    <br /> &lt;p&gt;    <br />&#160; &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;    <br />&#160; &lt;input id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; /&gt;    <br /> &lt;/p&gt;    <br /> &lt;p&gt;    <br />&#160; &lt;label for=&quot;confirm_password&quot;&gt;确认密码&lt;/label&gt;    <br />&#160; &lt;input id=&quot;confirm_password&quot; name=&quot;confirm_password&quot; type=&quot;password&quot; /&gt;    <br /> &lt;/p&gt;    <br />&#160;&#160;&#160; &lt;p&gt;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;input class=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Submit&quot;/&gt;    <br />&#160;&#160;&#160; &lt;/p&gt;    <br />&lt;/form&gt;    <br />required:true 必须有值    <br />required:&quot;#aa:checked&quot;表达式的值为真，则需要验证    <br />required:function(){}返回为真，表时需要验证    <br />后边两种常用于，表单中需要同时填或不填的元素 </p>  <p>demo：   <br />$(&quot;#form1&quot;).validate({//JQ 前端校验    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; rules: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtWebName: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: true,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; maxlength: 500    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtShortName: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; maxlength: 500,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: false    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtKeyWords: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: false,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; maxlength: 500    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtGoodsNo: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: false,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; maxlength: 250    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtRemark: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: false,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; maxlength: 500    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtPageTitle: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: true,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; maxlength: 1000    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtMetaKey: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: false,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; maxlength: 1000    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtShowUrl: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: false,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; maxlength: 2000,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; url: true    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtOtherData: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; required: false,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; maxlength: 1000    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtEC :{ required: true, digits: true},    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtFullEP : {required: true, digits: true},    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtMarketPrice : {required: true, number:true},    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtCash : {required: true,number:true},    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtDurationDays:{required: false,number:true},    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtFullCash:{required: true,number:true}    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; messages: {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtWebName: &quot;*请输入商品名[限500字以内]&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtShortName: &quot;*限500字以内&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtKeyWords: &quot;*500字以内&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtGoodsNo: &quot;*250字以内&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtRemark: &quot;*500字以内&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtPageTitle: &quot;*请输入分类页面的标题&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtMetaKey: &quot;*1000字以内&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtShowUrl: &quot;*请输入正确的URL地址&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtOtherData: &quot;*1000字以内&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtEC:&quot;*只能输入整数&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtFullEP:&quot;*只能输入整数&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtCash:&quot;*请输入正确的现金数&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtFullCash:&quot;*请输入正确的现金数&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtDurationDays:&quot;必须输入数字&quot;,    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ctl00$MainContent$txtMarketPrice:&quot;*请输入正确的市场价格&quot;    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }); //validate</p>]]></description></item><item><title>数据分页和使用存储过程的数据分页</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/20/3556828.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Wed, 19 Feb 2014 16:08:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/20/3556828.html</guid><description><![CDATA[<div class="cnblogs_code" style="border-top: #cccccc 1px solid; border-right: #cccccc 1px solid; border-bottom: #cccccc 1px solid; padding-bottom: 5px; padding-top: 5px; padding-left: 5px; border-left: #cccccc 1px solid; padding-right: 5px; background-color: #f5f5f5">   <pre><span style="color: #008080">--</span><span style="color: #008080">使用存储过程的数据分页 </span><span style="color: #008080">
+--</span><span style="color: #008080">pageSize  一页有多少条 </span><span style="color: #008080">
+--</span><span style="color: #008080">pageIndex  第几页 </span><span style="color: #008080">
+--</span><span style="color: #008080">totalCount 总共有多少条 </span>
+
+<span style="color: #008080">--</span><span style="color: #008080">分页的第一种方法 </span>
+<span style="color: #0000ff">select</span> <span style="color: #0000ff">top</span>(<span style="font-weight: bold; color: #800000">10</span>) <span style="color: #808080">*</span> <span style="color: #0000ff">from</span> Ams_Area <span style="color: #0000ff">where</span> ar_id <span style="color: #808080">not</span> <span style="color: #808080">in</span><span style="color: #000000"> 
+( 
+    </span><span style="color: #0000ff">Select</span> <span style="color: #0000ff">top</span>(<span style="font-weight: bold; color: #800000">0</span>) ar_id <span style="color: #0000ff">from</span> Ams_Area <span style="color: #0000ff">order</span> <span style="color: #0000ff">by</span><span style="color: #000000"> ar_id 
+) 
+</span><span style="color: #0000ff">order</span> <span style="color: #0000ff">by</span><span style="color: #000000"> ar_id 
+
+</span><span style="color: #008080">--</span><span style="color: #008080">分页的第二种方法 </span>
+<span style="color: #0000ff">select</span> <span style="color: #808080">*</span> <span style="color: #0000ff">from</span><span style="color: #000000"> 
+( 
+    </span><span style="color: #0000ff">select</span> <span style="color: #808080">*</span>,ROW_NUMBER() <span style="color: #0000ff">over</span>(<span style="color: #0000ff">order</span> <span style="color: #0000ff">by</span> ar_id)<span style="color: #0000ff">as</span> num <span style="color: #0000ff">from</span><span style="color: #000000"> Ams_Area 
+)</span><span style="color: #0000ff">as</span><span style="color: #000000"> s 
+</span><span style="color: #0000ff">where</span> s.num <span style="color: #808080">between</span> <span style="font-weight: bold; color: #800000">0</span> <span style="color: #808080">and</span> <span style="font-weight: bold; color: #800000">10</span> 
+
+<span style="color: #008080">--</span><span style="color: #008080">使用存储过程的分页方法 </span>
+<span style="color: #0000ff">create</span> <span style="color: #0000ff">proc</span><span style="color: #000000"> GetPageDataBuilding 
+</span><span style="color: #008000">@pageSize</span> <span style="color: #0000ff">int</span>,<span style="color: #008080">--</span><span style="color: #008080">一页有多少条数据 </span>
+<span style="color: #008000">@pageIndex</span> <span style="color: #0000ff">int</span>,<span style="color: #008080">--</span><span style="color: #008080">第几页 </span>
+<span style="color: #008000">@totalCount</span> <span style="color: #0000ff">int</span> output <span style="color: #008080">--</span><span style="color: #008080">总共有多少条 </span>
+<span style="color: #0000ff">as</span> 
+<span style="color: #0000ff">begin</span> 
+<span style="color: #0000ff">declare</span> <span style="color: #008000">@str</span> <span style="color: #0000ff">nvarchar</span>(<span style="font-weight: bold; color: #800000">1000</span><span style="color: #000000">); 
+</span><span style="color: #0000ff">set</span> <span style="color: #008000">@str</span> <span style="color: #808080">=</span> (<span style="color: #ff0000">'</span><span style="color: #ff0000">select top(</span><span style="color: #ff0000">'</span><span style="color: #808080">+</span><span style="color: #ff00ff">CAST</span>(<span style="color: #008000">@pageSize</span> <span style="color: #0000ff">as</span> <span style="color: #0000ff">nvarchar</span>(<span style="font-weight: bold; color: #800000">32</span>))<span style="color: #808080">+</span><span style="color: #ff0000">'</span><span style="color: #ff0000">) * from Ams_Area where ar_id not in(Select top(</span><span style="color: #ff0000">'</span><span style="color: #808080">+</span><span style="color: #ff00ff">CAST</span>(((<span style="color: #008000">@pageIndex</span><span style="color: #808080">-</span><span style="font-weight: bold; color: #800000">1</span>)<span style="color: #808080">*</span><span style="color: #008000">@pageSize</span>) <span style="color: #0000ff">as</span> <span style="color: #0000ff">nvarchar</span>(<span style="font-weight: bold; color: #800000">32</span>))<span style="color: #808080">+</span><span style="color: #ff0000">'</span><span style="color: #ff0000">) ar_id from Ams_Area order by ar_id) order by ar_id</span><span style="color: #ff0000">'</span><span style="color: #000000">) 
+</span><span style="color: #0000ff">print</span> <span style="color: #008000">@str</span> 
+<span style="color: #0000ff">exec</span> (<span style="color: #008000">@str</span><span style="color: #000000">) 
+</span><span style="color: #0000ff">select</span> <span style="color: #008000">@totalCount</span><span style="color: #808080">=</span><span style="color: #ff00ff">Count</span>(<span style="font-weight: bold; color: #800000">1</span>) <span style="color: #0000ff">from</span><span style="color: #000000"> Ams_Area 
+</span><span style="color: #0000ff">end</span> 
+
+<span style="color: #008080">--</span><span style="color: #008080">第二个版本的分页 </span>
+<span style="color: #0000ff">create</span> <span style="color: #0000ff">proc</span><span style="color: #000000"> GetPageDataBuilding 
+</span><span style="color: #008000">@pageSize</span> <span style="color: #0000ff">int</span>,<span style="color: #008080">--</span><span style="color: #008080">一页内有多少条数据 </span>
+<span style="color: #008000">@pageIndex</span> <span style="color: #0000ff">int</span>,<span style="color: #008080">--</span><span style="color: #008080">第几页 </span>
+<span style="color: #008000">@totalCount</span> <span style="color: #0000ff">int</span> output <span style="color: #008080">--</span><span style="color: #008080">共有多少条数据 </span>
+<span style="color: #0000ff">as</span> 
+<span style="color: #0000ff">begin</span> 
+<span style="color: #0000ff">declare</span> <span style="color: #008000">@str</span> <span style="color: #0000ff">nvarchar</span>(<span style="font-weight: bold; color: #800000">1000</span><span style="color: #000000">) 
+</span><span style="color: #0000ff">set</span> <span style="color: #008000">@str</span> <span style="color: #808080">=</span> (<span style="color: #ff0000">'</span><span style="color: #ff0000">select * from 
+( 
+    select *,ROW_NUMBER() over(order by ar_id)as num from Ams_Area 
+)as s 
+where s.num between </span><span style="color: #ff0000">'</span><span style="color: #808080">+</span><span style="color: #ff00ff">CAST</span>((<span style="color: #008000">@pageIndex</span><span style="color: #808080">-</span><span style="font-weight: bold; color: #800000">1</span>)<span style="color: #808080">*</span><span style="color: #008000">@pageSize</span> <span style="color: #0000ff">as</span> <span style="color: #0000ff">nvarchar</span>(<span style="font-weight: bold; color: #800000">32</span>))<span style="color: #808080">+</span><span style="color: #ff0000">'</span><span style="color: #ff0000"> and </span><span style="color: #ff0000">'</span><span style="color: #808080">+</span><span style="color: #ff00ff">CAST</span>(<span style="color: #008000">@pageSize</span><span style="color: #808080">*</span><span style="color: #008000">@pageIndex</span> <span style="color: #0000ff">as</span> <span style="color: #0000ff">nvarchar</span>(<span style="font-weight: bold; color: #800000">32</span>))<span style="color: #808080">+</span><span style="color: #ff0000">''</span><span style="color: #000000">) 
+</span><span style="color: #0000ff">print</span> <span style="color: #008000">@str</span> 
+<span style="color: #0000ff">exec</span>(<span style="color: #008000">@str</span><span style="color: #000000">) 
+</span><span style="color: #0000ff">select</span> <span style="color: #008000">@totalCount</span><span style="color: #808080">=</span><span style="color: #ff00ff">COUNT</span>(<span style="font-weight: bold; color: #800000">1</span>) <span style="color: #0000ff">from</span><span style="color: #000000"> Ams_Area 
+</span><span style="color: #0000ff">end</span> 
+
+<span style="color: #008080">--</span><span style="color: #008080">执行上面分页的存储过程 </span>
+<span style="color: #0000ff">declare</span> <span style="color: #008000">@Count</span> <span style="color: #0000ff">int</span> 
+<span style="color: #0000ff">exec</span> GetPageDataBuilding <span style="font-weight: bold; color: #800000">10</span>,<span style="font-weight: bold; color: #800000">2</span>,<span style="color: #008000">@Count</span><span style="color: #000000"> output 
+</span><span style="color: #0000ff">print</span> <span style="color: #008000">@Count</span> 
+
+<span style="color: #008080">--</span><span style="color: #008080">删除存储过程 </span>
+<span style="color: #0000ff">drop</span> <span style="color: #0000ff">proc</span> GetPageDataBuilding</pre>
+</div>
+
+<p></p>
+
+<p>使用到的数据库地址：<a href="http://pan.baidu.com/s/1bngTErH" target="_blank">点击下载</a>&#160;&#160; </p>
+
+<p>下载的文件包括：</p>
+
+<p>&#160;<a href="http://images.cnitblog.com/blog/578906/201402/200008010369714.png"><img title="image" style="border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px; display: inline" border="0" alt="image" src="http://images.cnitblog.com/blog/578906/201402/200008013763286.png" width="244" height="78" /></a> </p>
+
+<p><a href="http://images.cnitblog.com/blog/578906/201402/200008018671372.png"><img title="博客园版权" style="border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px; display: inline" border="0" alt="博客园版权" src="http://images.cnitblog.com/blog/578906/201402/200008023087673.png" width="246" height="51" /></a>&#160;</p>
+
+<p>&#160;</p>
+
+<p>作者：<a href="http://www.cnblogs.com/haoxilu/">郝喜路</a>
+
+  <br />出处：<a href="http://www.cnblogs.com/haoxilu/">http://www.cnblogs.com/haoxilu/</a>
+
+  <br />本文版权归作者和博客园共有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。
+
+  <br />关注互联网信息：：<a href="http://weibo.com/haoxilu">新浪微博</a> <a href="http://t.qq.com/haoxilu">腾讯微博</a></p>]]></description></item><item><title>【转】让你10分钟搞定Mac－－最简单快速的虚拟安装</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551650.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sun, 16 Feb 2014 10:49:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551650.html</guid><description><![CDATA[<p>文章出处：让你10分钟搞定Mac－－最简单快速的虚拟安装<a href="http://bbs.itheima.com/thread-106643-1-1.html">http://bbs.itheima.com/thread-106643-1-1.html</a>    <br />(出处: 黑马程序员训练营论坛)    <br /></p>  <p>首先说明一下。   <br />第一，这不是一篇教程，我本人第一次安装Mac，没有资格教导大家。这篇文章是我在网上看到的一篇英文（想看原文的可以看<a href="http://www.sysprobs.com/steps-install-mac-snow-leopard-vmware-player-pre-installed-vmware-image">这里</a>，如果需要,我可以翻译），结合我安装的过程写出来的步骤。    <br />第二。该版本“安装”及其简单。我的理解是可以保证你百分百的一次成功。为什么这么说呢？ 就是因为这个版本是个预先安装好了的版本，根本就不需要你安装。你要做的就是在VMware中加载系统即可。第一次的时间也就那么十几分钟（其中不少时间还是看着桌面的俄语在发呆）。    <br />第三。可能根据个人的配置不同，像声卡，网卡或解像度可能需要更改(我说的是可能，目前我不清楚)。    <br />第四。如果我说的或理解的有误的话，请大家指正。同时你在安装过程中如果出现错误。我帮不了你。你可以提出来，懂的人可以帮你解决。同时也希望你如果安装成功后，把你的系统，配置及经验和大家分享一下。    <br />下面我先来回答一下大家可能关心的问题：    <br />1.安装方式    <br />安装方式为Windows 平台下的VMWare模拟安装。而非硬盘分区后的windows 和 MAC双驱动安装。模拟安装的好处是系统之间的转换及其方便，缺点是资源占用多，硬件配置要求相对高。    <br />2.该版本是否适合你    <br />基本上讲适合所有平台（我的理解）    <br />－－该版本适合intel 和 AMD芯片。但是需要芯片支持虚拟技术。    <br />点这里<a href="http://www.cpuid.com/softwares/cpu-z.html">下载CPU-Z</a>查看你硬件信息。    <br /><img src="http://bbs.itheima.com/data/attachment/forum/201402/13/081816jkky5kwtwonloqwo.jpg.thumb.jpg" />    <br />点这里<a href="http://www.grc.com/securable.htm">下载Securable</a>查看你CPU是否支持虚拟。如果支持的话，还要确认在BIOS是“Enabled”的。    <br /><img src="http://bbs.itheima.com/data/attachment/forum/201402/13/081817b1snjhpnp4jhu7u1.png.thumb.jpg" />    <br />－－适合xp,vista, windows 7, 32 bit 或 64 bit,单核或双核。    <br />－－我自己的配置（配置比较低，毕竟才花了$299）：    <br />Windows 7 64 bit    <br />AMD v120 单核    <br />RAM: 2G    <br />HD: 250G    <br />3. 版本及升级    <br />版本是Snow Leopard 10.6.2.据作者讲升级到10.6.3和10.6.4没有问题。    <br />为什么要安装这个版本：    <br />1) 安装及其简单，费时不过十几分钟。    <br />2) 此为预先安装完成的版本，不需要DVD盘，ＩＳＯ镜像。    <br />3) 不需要你安装，也不需要打补丁。    <br />4) 各种驱动（kexts）都已预先装好，声音，网络及解像度工作良好。（作者的说法，我的还没时间试）。    <br />5) 成功升级到10.6.3 及10.6.4。    <br />6) 无需安装各种Boot loaders.    <br />你所需要的软件及工具：    <br />1.Snow Leopard系统及VMware Workstation 7. 用torrent下载&#160;&#160; <img border="0" alt="" src="http://bbs.weiphone.com/static/image/filetype/torrent.gif" width="32" height="32" /> <img border="0" alt="" src="http://bbs.itheima.com/static/image/filetype/zip.gif" /><a href="http://bbs.itheima.com/forum.php?mod=attachment&amp;aid=MzQ4MDZ8OWM0NjBmMjF8MTM5MjU0NzE1N3w4NzAwNXwxMDY2NDM%3D">MAC_OSX_10-6-2_VMWARE_7.torrent.zip</a> <em>(15.31 KB, 下载次数: 16)</em>    <br />2. 下载Darwin.iso。注意，如果你是ＡＭＤ用户，或者是64 bit用户，<a href="http://www.sendspace.com/file/0f4urs">下载Darwin_legacy_iso</a>    <br />下载完成了我们就开始吧！    <br />安装步骤    <br />第一。解压你下载后的系统文件（最好单建一个文件夹）    <br />第二。安装VMware workstation 7后，在VM下去file =&gt; open,打开你刚解压的一个文件：Mac OS Snow Leopard.vmx。根据你自己的配置对参数进行修改。主要是RAM分配多少，硬盘分配多少空间，单核就不要改动了（该文件我什么都没有改动）。注意：AMD或64 bit用户要在cd drive设置中改成用darwin_legacy.iso。    <br />第三。按 power on图标开机。这时你会看到窗口中会出现了卡通一样的人物，不用搭理他，图中间有两个图，一个是“VM tools”,另一个是“MAC”.用鼠标或“箭头键”点击Mac（如果看不到鼠标，按ctrl + alt切换）,然后回车，你就会看到系统在加载，不一会就可以看到snow leopard的桌面了。。。。    <br />然后呢？没有然后了，你已经在snow leopard系统上了。你用的时间是多少，不会超过10分钟吧？</p>  <p><a href="http://bbs.itheima.com/misc.php?mod=tag&amp;id=197">网站</a>, <a href="http://bbs.itheima.com/misc.php?mod=tag&amp;id=306">资源</a></p> <dl><dt></dt><dd>     <p><a href="http://bbs.itheima.com/forum.php?mod=attachment&amp;aid=MzQ3OTZ8ODczYjBmM2N8MTM5MjU0NzE1N3w4NzAwNXwxMDY2NDM%3D&amp;nothumb=yes">vm3.png</a> <em>(96.4 KB, 下载次数: 0)</em></p>      <p><a href="http://bbs.itheima.com/"><img title="vm3.png" alt="vm3.png" src="http://bbs.itheima.com/data/attachment/forum/201402/13/081820z07wpwb7cjccc9zz.png.thumb.jpg" /></a></p>   </dd></dl><dl><dt></dt><dd>     <p><a href="http://bbs.itheima.com/forum.php?mod=attachment&amp;aid=MzQ3OTd8NDc4ZjU1MWV8MTM5MjU0NzE1N3w4NzAwNXwxMDY2NDM%3D&amp;nothumb=yes">vm4.png</a> <em>(32.17 KB, 下载次数: 0)</em></p>      <p><a href="http://bbs.itheima.com/"><img title="vm4.png" alt="vm4.png" src="http://bbs.itheima.com/data/attachment/forum/201402/13/081821udkk5k5c545ld4ci.png.thumb.jpg" /></a></p>   </dd></dl><dl><dt></dt><dd>     <p><a href="http://bbs.itheima.com/forum.php?mod=attachment&amp;aid=MzQ3OTh8MmU0ZTQyMjB8MTM5MjU0NzE1N3w4NzAwNXwxMDY2NDM%3D&amp;nothumb=yes">vm5.png</a> <em>(27.55 KB, 下载次数: 0)</em></p>      <p><a href="http://bbs.itheima.com/"><img title="vm5.png" alt="vm5.png" src="http://bbs.itheima.com/data/attachment/forum/201402/13/081822dbosrtch7nsnbs3t.png.thumb.jpg" /></a></p>   </dd></dl>  <p>声明：本人转载此文章只是用于学习收藏的用途，如果其他想转载请勿用于商业活动，否则后果自负。本文的版权归文章的原作者和黑马训练营论坛所有。</p>]]></description></item><item><title>使开发更便捷——Visual  Studio 使用技巧——快捷键</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551129.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sun, 16 Feb 2014 01:43:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551129.html</guid><description><![CDATA[<p>下面是.Net开发中常用的快捷键，熟练使用可以提高开发效率：</p>  <p>Ctrl + K + C //注释代码</p>  <p>Ctrl + K + U //取消代码注释</p>  <p>Ctrl + k + d //快速格式化代码</p>  <p>Shift + alt + f10 //</p>  <p>Ctrl + . //上面和这个快捷键都是当vs想给你提示的候 安一下就会提示的。还可以导入命名空间</p>  <p>Ctrl + R +E //进行封装字段</p>  <p>Ctrl + w + s:打开隐藏的解决方案资源管理器</p>  <p>Ctrl + w + x : 打开隐藏的工具箱</p>  <p>Shift + Esc ：将可隐藏的窗口隐藏</p>  <p>Ctrl + k + s :插入外侧代码</p>  <p>Ctrl + Shift + 空格：显示参数信息</p>  <p>F12 ：转到定义</p>]]></description></item><item><title>【基础知识】.Net基础加强  第二天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551121.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sun, 16 Feb 2014 01:27:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551121.html</guid><description><![CDATA[<p>第02天 .Net基础加强</p>
+<p>1、 封装</p>
+<p>1&gt; 属性的封装：</p>
+<p>属性封装字段：把变化封装一下，保留用户的使用方式</p>
+<p>2&gt; 把方法的多个参数封装成一个对象</p>
+<p>3&gt; 将一堆代码封装到一个方法中</p>
+<p>4&gt; 将一些功能封装到几个类中</p>
+<p>5&gt; 将一些具有相同功能的代码封装到了一个程序集中（dll、exe），并且对外提供统一的访问接口。（属性名、方法名等。）</p>
+<p>2、 继承(:表示继承)</p>
+<p>1&gt; Base Class &agrave; 基类 Parent Class &agrave; 父类</p>
+<p>2&gt; Derived Class&agrave; 派生类 Child Class &agrave; 子类</p>
+<p>3&gt; 好处：提高代码的重用性；多态</p>
+<p>4&gt; 继承的特性</p>
+<p>a&gt; 继承的单根性:只能继承一个父类</p>
+<p>b&gt; 继承的传递性：子类继承父类是同时继承了父类从他的父类中继承的属性、字段和方法</p>
+<p>6&gt; C#任何一个类都默认继承自Object类，如果一个类没有继承任何类，则默认继承Object类。如果继承了一个类，则将覆盖默认继承的Object类。</p>
+<p>3、 继承中的构造函数▲</p>
+<p>1&gt; 继承的时候，构造函数不能被继承。</p>
+<p>2&gt; 子类的构造函数会默认去调用父类中的无参数的构造函数。</p>
+<p>3&gt; 如果父类中没有无参数的构造函数，子类继承父类时会报错的，解决方案：</p>
+<p>方案一： 在父类中增加一个无参数的构造函数。这时子类的构造函数就可以找到父类中的无参构造函数了。</p>
+<p>方案二： 不修改父类，而是在子类中的构造函数后面通过:base(),显示去调用父类的某个构造函数，而不去调用无参的构造函数。</p>
+<p>4、 通过this调用构造函数</p>
+<p>作用：</p>
+<p>1&gt; 在当前类的构造函数后面通过:this()来调用当前类自己的其他构造函数。</p>
+<p>public Person(string name) : this(string name,0,0，null){}</p>
+<p>5、 对象初始化器(语法糖)</p>
+<p>Person p = new Person(){Name=&rdquo;yzk&rdquo;,Age=18,Email=&rdquo;yzk365@qq.com&rdquo;}</p>
+<p>6、 集合初始化器</p>
+<p>List&lt;int&gt; list = new List&lt;int&gt;(){10,20,30,40}</p>
+<p>7、 通过this和base调用类的成员</p>
+<p>在一般情况下，如果子类继承了父类的成员。那么在子类中，通过this.成员或base.成员都是访问的是一样的。</p>
+<p>除非父类中的成员子类继承后又重写了。</p>
+<p>8、 五种常用的访问修饰符</p>
+<p>1&gt; private:私有的，只能在当前类内部来使用</p>
+<p>2&gt; protected：受保护的，只能在当前类内部，以及所有当前类子类的内部。</p>
+<p>3&gt; internal：只能在当前程序集内部访问，跨程序集是不能访问的</p>
+<p>4&gt; protected internal：相当于同时具有protected和internal的权限。可以在当前程序集或子类中（不同程序集也可以访问）访问。</p>
+<p>5&gt; public：任何地方都能访问</p>
+<p>6&gt; protected和internal没有可比性。protected是当前类内部与所有子类内吧可访问，而internal是在同一个程序集中可访问。 假如不在一个程序集中，但是依然存在继承关系，那么protected访问修饰符修饰类型依然可以访问。</p>
+<p>9、 关于父类中私有成员的继承问题</p>
+<p>（私有字段到底是有没有继承，这是一个有很大分歧的问题！！）</p>
+<p>我认为子类并不能继承父类的私有属性和字段</p>
+<p>10、 访问级别的约束(类的访问修饰符只有两种，一种是public 另一种是internal。如果什么都不写，默认是internal)</p>
+<p>1&gt; 子类的访问级别不能比父类的高（如果比父类的访问级别高的话，会暴露父类的成员）</p>
+<p>2&gt; 方法的参数和返回值类型必须与方法本身的访问修饰符一致</p>
+<p>3&gt; 属性的访问级别和属性的类型的访问级别（类的访问修饰符和类属性或字段的访问修饰符都高于【参数】的访问修饰符）</p>
+<p>以上三种用于解决访问级别不一致的错误</p>
+<p>11、 通过虚方法（virtual修饰）实现多态</p>
+<p>1&gt; 虚方法，virtual：是虚方法的时候，那么这个方法的子类中就可以被重写(override)了.当子类继承父类后，可以直接使用该方法，也可以将该方法重写。</p>
+<p>2&gt; 子类如果要重写父类中的方法，则需要在子类的Show方法前加一个override关键字。 子类重写父类的方法必须并且只能用override关键字。 此时，如果在子类中用this来调用则调用的是子类重用后的Show方法，如果在子类中用base来调用，则调用的依旧是父类中的Show方法。</p>
+<p>3&gt; 虚方法可以给父类中的方法一个实现，比如ToString()方法</p>
+<p>虚方法必须有实现部分，哪怕是空实现。</p>
+<p>12、 多态（为了保护程序的可扩展性）：多态就是多种表现形态。</p>
+<p>1&gt; 开放封闭原则（对修改封闭，对扩展开放）</p>
+<p>2&gt; 多态就是指不同对象收到相同消息时，会产生不同行为，同一个类在不同的场合下表现出不同的行为特征。</p>
+<p>3&gt; 多态的作用：把不同的子类对象都当做父类来看，可以屏蔽不同子类对象之间存在的差异，写出通用代码，做出通用的编程，以适应需求的不断变化。</p>
+<p>13、 静态成员-静态类 static</p>
+<p>1&gt; 调用静态方法的时候必须通过类名来直接调用，不能通过对象来调用。 也就是说，使用静态成员不需要实例化对象。</p>
+<p>2&gt; 静态成员会在整个应用程序退出时，才会释放资源，所以可以在整个应用程序中共享数据。</p>
+<p>3&gt; 静态类不能被实例化。不能被继承。</p>
+<p>4&gt; 由于静态成员会在整个程序退出时，才释放资源，所以尽量避免写静态字段和静态属性，最好只写静态方法。</p>
+<p>5&gt; 当给一个普通类添加静态字段后，系统会默认为该类生成静态构造函数【静态构造函数不能有访问修饰符、并且不能带参数】</p>
+<p>6&gt; 静态类的构造函数，只会在第一次使用静态类之前，执行，并且只会执行一次。 静态构造函数不能有访问修饰符，不能有参数。</p>
+<p>7&gt; 静态类不能多态。</p>
+<p>8&gt; 什么时候使用静态类和静态成员</p>
+<p>a&gt;什么情况下要将一个类标记为静态类</p>
+<p>一般情况下是，当这个类是一个工具类，里面都是方法。为了让用户调用的时候方便，不需要实例化对象，这是可以给该类标记为static类（静态类），此时该类中只能包含静态成员不能包含实例成员。比如：Convert、Math、File、Console&hellip;.</p>
+<p>b&gt;什么情况下需要在一个普通类中编写一个静态成员，而这个类不能标记为static</p>
+<p>当这个类需要别实例化的时候，如果这个类中有一个成员是所有对象都共享的数据，这是可以 将该类中的成员标记为静态的，但是这个类还是一个实例类。</p>
+<p>14、 静态类的补充&mdash;密封类 (sealed关键字)</p>
+<p>1&gt; 作用：</p>
+<p>a&gt; 不能被继承</p>
+<p>b&gt; 不能被重写</p>
+<p>2&gt; 是一个密封类，不能被继承</p>
+<p>3&gt; Sealed关键字，表示类不能被继承</p>
+<p>4&gt; 密封类表示不能别继承。String类。.Net系统中本身对字符串有很多特殊处理（为String开了很多&ldquo;绿灯&rdquo;，String有很多特权，比如：不可变性，字符串池等等&hellip;），防止别的类继承后照成混乱。商业问题。</p>
+<p>5&gt; 禁止子类重写父类的方法。</p>]]></description></item><item><title>【基础知识】.Net基础加强第01天</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551118.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sun, 16 Feb 2014 01:25:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551118.html</guid><description><![CDATA[<p>&nbsp;</p>
+<p>1、#region *** 可以将一个代码块折叠起来</p>
+<p>#endregion</p>
+<p>2、Visiual stdio 快捷方式</p>
+<p>Ctrl + K + C //注释代码</p>
+<p>Ctrl + K + U //取消代码注释</p>
+<p>Ctrl + k + d //快速格式化代码</p>
+<p>Shift + alt + f10 //</p>
+<p>Ctrl + . //上面和这个快捷键都是当vs想给你提示的候 安一下就会提示的。还可以导入命名空间</p>
+<p>Ctrl + R +E //进行封装字段</p>
+<p>Ctrl + w + s:打开隐藏的解决方案资源管理器</p>
+<p>Ctrl + w + x : 打开隐藏的工具箱</p>
+<p>Shift + Esc ：将可隐藏的窗口隐藏</p>
+<p>3、public string name;//这是声明一个字段</p>
+<p>public string Name{set;get;};//（自动属性）这是声明一个属性</p>
+<p>4、1&gt;在父类中声明一个可以重写的方法的格式（方法默认不可重写）：</p>
+<p>public virtual void SayHi(){}//virtual这是一个虚方法，表示子类可以重写</p>
+<p>2&gt;在子类中重写父类的方法使用override</p>
+<p>poublic override SayHi(){}//override重写父类中的方法</p>
+<p>5、面向对象</p>
+<p>1&gt; 面向对象的三大特征：继承、封装、多态</p>
+<p>2&gt; 类是模具，创建对象的模具，抽象的。</p>
+<p>* 类是一种数据类型，用户自定义的数据类型</p>
+<p>（类抽取各对象的特性）</p>
+<p>* 类组成：字段、属性、方法、构造函数等。</p>
+<p>3&gt; 对象是具体的，是类的具体实例。对象具有属性（特征）和方法（行为）</p>
+<p>6、添加项目的引用</p>
+<p>1&gt; 新建一个类库项目：</p>
+<p>解决方案管理器&agrave;添加项目&agrave;添加类库</p>
+<p>2&gt; 类访问修饰符默认：internal，如果添加引用后还是不能使用，请使用public访问修饰符。</p>
+<p>7、变量作用域</p>
+<p>1&gt; 变量作用域：离声明该变量最近的那对包含声明语句的大括号内部。</p>
+<p>2&gt; 局部变量在使用之前必须声明并且赋值。</p>
+<p>3&gt; 成员变量：声明时没有赋值则会有默认值。数字类型默认0，string类型默认null，boolean类型默认false。</p>]]></description></item><item><title>【基础知识】Asp.Net基础三</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551116.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Sun, 16 Feb 2014 01:24:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/16/3551116.html</guid><description><![CDATA[<p>服务器端控件一般用于访问量不高的网站，要做到物尽其用。</p>
+<p>服务器端控件：</p>
+<p>FIleUpload控件：向服务器上传文件</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">if</span> (<span style="color: #0000ff;">this</span><span style="color: #000000;">.FileUpload1.HasFile)
+
+{
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> Path.GetFileName();返う?回?指?定&uml;文?件t的?文?件t名?和&iacute;扩?展1名?</span>
+
+<span style="color: #0000ff;">string</span> filename = Path.GetFileName(<span style="color: #0000ff;">this</span><span style="color: #000000;">.FileUpload1.FileName);
+
+</span><span style="color: #0000ff;">string</span> phyPath = Server.MapPath(<span style="color: #800000;">"</span><span style="color: #800000;">upload/</span><span style="color: #800000;">"</span>+filename);<span style="color: #008000;">//</span><span style="color: #008000;">上?传?的?物?理え?路&middot;径?</span>
+
+<span style="color: #0000ff;">this</span>.FileUpload1.SaveAs(phyPath);<span style="color: #008000;">//</span><span style="color: #008000;">保馈?存?在&uacute;服务?器&divide;的?路&middot;径?</span>
+<span style="color: #000000;">
+Response.Write(</span><span style="color: #800000;">"</span><span style="color: #800000;">上?传?成&eacute;功|了?！?</span><span style="color: #800000;">"</span>+<span style="color: #000000;">phyPath);
+
+}</span></pre>
+</div>
+<p>Equals：微软提供Equals虚方法是为了能让程序员自己定义类对象相等比较规则</p>
+<p>1、HTML控件：ASP.NET把HTML控件当成普通字符串渲染到浏览器端，不去检查正确性，无法再服务器端进行处理。</p>
+<p>2、ASP.NET服务端控件：经过asp.net高度封装的控件，使用简单，运行在服务器端，可以在服务器端使用c#代码进行操作，会渲染到客户端为html控件。</p>
+<p>3、runat=server的Html控件:在Html的基础上添加runat=&rdquo;server&rdquo;,也是运行在服务器端的，也可以在服务端使用c#代码进行操作，也会渲染到客户端，不想asp.net服务端那样高度封装，暴露的属性大部分是普通的HtMl属性。和asp.net服务端控件相比的好出是：当需要在服务器端要对控件进行操作的时候，如果控件没有被asp.net服务端控件封装的时候，用runat=server的html控件很方便，runat=server的html控件也会对虚拟路径(~/)、id--&gt;ClientID进行处理，所以在使用虚拟路径、UserControl中也能会用到</p>
+<p>Onmouseover=&rdquo;document.getElementById(&lsquo;&lt;%=TextBox.ClientID%&gt;&rsquo;).value=&rsquo;哈哈&rsquo;&rdquo;</p>
+<p>4、runat=server的html控件的好处，中庸</p>
+<p>1&gt;不像asp.net服务器端控件那样重量级，封装那么多，程序员可以比较好的控制生成的内容的质量。更容易让美工来使用，因为美工不认得&lt;asp:TextBox</p>
+<p>2&gt;想对于html的控件：</p>
+<p>能够在服务端代码中操控、能够自动处理虚拟路径~、可以处理ClientID</p>
+<p>3&gt;选择的顺序：HTML-&gt; runat=server的Html-&gt; ASP.net服务端控件。</p>
+<p>5、数据绑定控件</p>
+<p>ObjectDataSource</p>]]></description></item><item><title>【基础知识】文件的读写操作</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547460.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 13 Feb 2014 01:01:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547460.html</guid><description><![CDATA[<p>文件的读写：</p>
+<p>1、FileStream:读取文件 <br />FileStream fs = new FileStream(,,,);     <br />2、StreamReader：要读的流     <br />StreamReader sr = ne StreamReader(,,Encoding.Default);//Encoding.Default这是有关编码的问题     <br />3、读取文件     <br />sr.ReadToEnd();//读取到最后(EndOfStream属性指示是否读到末尾 ReadLine和EndOfStream)     <br />4、关闭读取器     <br />sr.Close();     <br />5、关闭文件流对象     <br />fs.Close();</p>]]></description></item><item><title>【基础知识】winfrom窗体的属性</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547458.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 13 Feb 2014 01:00:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547458.html</guid><description><![CDATA[<p>窗体的属性： <br />Icon：窗体的右上角图标     <br />FormBoarderStyle：窗体的边线样式     <br />MaximizeBox： 最大化按钮是否可用     <br />MinimizeBox：最小化按钮是否可用     <br />Opacity：透明度     <br />ShowInTaskbar：是否在任务栏上显示     <br />StartPosition:启动程序时显示的位置     <br />Text：标题栏的名称     <br />TopMost:保持在最前端，true.false     <br />WindowState:指示窗体初始时最大化还是最小化还是正常     <br />默认确认按钮：AcceptButton     <br />默认取消按钮：CancelButton</p>
+<p>窗体的事件：</p>
+<p>Load（默认）：窗体显示之前最后一个触发的事件，所以我们一般在这个事件中对窗体的控件进行赋值初始化    <br />Activated：窗体获得焦点是触发     <br />Deactivate窗体失去焦点是触发     <br />注意：窗体的Enter和Leave事件被取消，请不要使用FormClosed     <br />FormClosing：窗体进入关闭前触发的事件     <br />Resize:当窗体的大小发生改变时触发的事件</p>
+<p>窗体的方法：</p>
+<p>Close()：窗体关闭    <br />Hide()：隐藏窗体（隐藏窗体）     <br />Show():以非模态显示窗体（显示窗体）     <br />ShowDialog()：以模态的方式打开窗体</p>
+<p>TextBox:用来接收用户输入的文本的文本框    <br />属性：     <br />Multiline：true可以多行输入，False单行输入     <br />MaxLength：最多输入的文本内容     <br />PasswordChar：掩码，将用户的输入改成指定的字符掩盖     <br />ReadOnly：文本框内容只读     <br />ScollBars：滚动条     <br />TextAlign：文本的对齐方式     <br />事件：     <br />Enter：获得焦点时触发     <br />Leave：失去焦点时触发     <br />KeyPress:用户按键触发     <br />TextChange：当用户更改时触发     <br />KeyPress：键盘按一次是触发的事件     <br />方法：     <br />Focus()：获得焦点     <br />Select():设置选中的文字     <br />SelectAll()：选中所有文字     <br />Selectionstart：如果选中一段文本，则是起点位置，如果没选中，则指示光标的位置</p>
+<p>PictureBox    <br />属性：     <br />Image：设置显示的图片     <br />SizeModel：显示的样式     <br />事件：     <br />Image.FromFile(图片的路径)：返回一个Image类型，这是载入到内存中的图片</p>
+<p>设置Tab键的跳转顺序    <br />视图--Tab键顺序     <br />TabStop:是否允许该控件获得焦点，true可以，false不可以</p>
+<p>Sender中存的就是触发事件的控件对象</p>
+<p>ComBox：    <br />属性     <br />AutoCompleteC..     <br />为赋值</p>
+<p>CheckBox:    <br />属性：     <br />ChackState</p>
+<p>所有控件都继承Controls</p>
+<p>radioButton单选框</p>]]></description></item><item><title>【基础知识】ASP.NET[基础一（ashx）]</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547457.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Thu, 13 Feb 2014 00:59:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547457.html</guid><description><![CDATA[<p>一、ASP.NET介绍</p>
+<p>1、ASP.NET包括：</p>
+<p>一般处理程序（ashx）；WebForm ( aspx )；MVC（Model view con~~）；</p>
+<p>2、ASP.NET的常用文件（重点）：</p>
+<p>1&gt;.ashx:一般处理程序，ASP.NET核心程序，一般用.aspx;</p>
+<p>2&gt;.aspx:常用程序WebForm，用于创建网页和对网页进行编译程序的核心类型（前台文件），和aspx.cs 文件配套使用。</p>
+<p>3&gt;.aspx.cs:常用程序，用于编写大量C#业务代码，和.aspx配套使用</p>
+<p>二、请求过程</p>
+<p><img src="http://img.blog.csdn.net/20130913192601093?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaGFveGlsdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="" /></p>
+<p>三、服务器整体请求图</p>
+<p><img src="http://img.blog.csdn.net/20130913192628687?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaGFveGlsdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="" /></p>
+<p>四、asp.net系统对象</p>
+<p>在一般处理程序里，通过ProcessResult方式的参数HttpContext context 调用</p>
+<p>&nbsp; 1、Page&nbsp; 指向页面自身的方式。作用域为页面执行期</p>
+<p>&nbsp; 2、Request 读取客户端在Web请求期间发送的值（http请求报文数据）&nbsp; 包括Form QueryString&nbsp; Parames</p>
+<p>&nbsp; 3、Response 封装了页面执行期的状态对象（http响应报文数据）</p>
+<p>Write()方法：直接在页面输出内容、Redirect()：重定向到另一个页面、End():结束输出；</p>
+<p>4、Application 作用于整个程序运行期的状态对象</p>
+<p>&nbsp; 5、Session 会话期状态保持对象，用于跟踪单一用户的会话</p>
+<p>&nbsp; 6、Cookie 客户端保持会话信息的一种方式</p>
+<p>&nbsp; 7、 Server 提供对服务器的方法和属性的访问</p>
+<p>Request本身可以看作是一个客户端提交过来所有参数的集合：</p>
+<p>Request.Form包含的只有客户端通过post提交过来的参数集合</p>
+<p>Request.QueryString 包含的只有客户端通过get方式提交过来的参数集合</p>
+<p>浏览器状态码302：命令浏览器重定向</p>
+<p>context.Server.MapPath(&ldquo;虚拟路径&rdquo;);//根据虚拟路径获得物理路径</p>
+<p>File.ReadAllText(strPath);//读&aacute;取?页?面?的?所&ugrave;有瓺信?息￠</p>
+<p>Replace对?字?符?串?进?行D替?换?</p>
+<p>五 Method中的post 和 get</p>
+<p>get 传参数是有数量限制的(url)</p>
+<p>六、http长连接，短连接</p>
+<p>短连接：服务器没次响应完浏览器的连接后，就会立马关闭当前连接。（Socked）</p>
+<p>缺点：尽管用户只想访问一个html页面，但是浏览器还会向服务器发送 多次新的请求，建立了多次新的连接，消耗了双方的资源和时间。</p>
+<p>&nbsp;&nbsp;&nbsp; 长连接：服务器不会立刻在发送完数据后关闭连接通道（套接字），而是会等一小 段时间（2秒【假如】），两秒之内，如果相同浏览器再次发送请求过来，那么 将继续使用此连接通道向浏览器输出数据。然后在等一小段时间（2秒【假如 】），直到两秒后没有新的请求过来，那么服务器才关闭连接通道。</p>]]></description></item><item><title>【基础知识】Dom基础</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547376.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Wed, 12 Feb 2014 16:17:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547376.html</guid><description><![CDATA[<p>【学习日记】Dom基础</p>
+<p>1、&nbsp;&nbsp; 内容：使用JavaScript操作Dom进行DHTML开发</p>
+<p>2、&nbsp;&nbsp; 目标：能共使用JavaScript操作Dom实现常见的DHTML效果</p>
+<p>3、&nbsp;&nbsp; DHTML= CSS + JavaScript +Dom</p>
+<p>4、&nbsp;&nbsp; Dom中的事件</p>
+<p>1&gt; 当鼠标点击按钮时弹出&ldquo;大家好&rdquo;对话框</p>
+<p>&lt;inputtype="button" value="你好"</p>
+<p>onclick="alert('大家好');"/&gt;</p>
+<p>2&gt; 将弹出对话框的代码写到&lt;head&gt;&lt;/head&gt;标签中</p>
+<p>&lt;scripttype="text/javascript"&gt;</p>
+<p>function mouseDown() {</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert("大家好");</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>&lt;/script&gt;</p>
+<p>下面的代码就可以直接调用上面的一段JavaScript代码</p>
+<p>&lt;inputtype="button" value="你好"onclick="mouseDown()"/&gt;</p>
+<p>3&gt; 可以在代码中动态的设置事件响应函数</p>
+<p>方法一：</p>
+<p>functionf1() {</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert("我是f1");</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>方法二;</p>
+<p>functionf2() {</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert("我是f2");</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>&lt;!--双击之后让其显示事件document.ondblclick--&gt;</p>
+<p>&lt;inputtype="button" onclick="document.ondblclick=f1" value="关联事件t1"/&gt;</p>
+<p>&lt;inputtype="button" onclick="document.ondblclick=f2" value="关联事件二"/&gt;</p>
+<p>5、&nbsp;&nbsp; window对象（浏览器当前页面的窗口）</p>
+<p>1&gt; alert(&ldquo;a&rdquo;);其实应该是window.alert(&ldquo;&rdquo;);</p>
+<p>window可以省略</p>
+<p>2&gt; confirm:弹出确定、取消按钮的对话框</p>
+<p>//弹&Igrave;&iexcl;&yen;出?是&ordm;?否&curren;?确&uml;&iexcl;&curren;定&iexcl;&sect;的&Igrave;?对?话&iexcl;&atilde;框&uml;&deg;</p>
+<p>function confirmDemo() {</p>
+<p>if (confirm("是否进入?")) {</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert("已经进入了");</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>else {</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert("您被拒绝了");</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>3&gt; 重新导向到指定的地址</p>
+<p>navigate('www.baidu.com')</p>
+<p>4&gt; setInterval：每隔一段时间执行指定的代码，第一个参数为代码的字符串，第二个参数为间隔时间（单位：毫秒），返回值为定时器</p>
+<p>setInterval("alert('hello')",5000);//每隔5秒弹出一次对话框</p>
+<p>5&gt; clearInterval：取消setInterval的定时执行，相当一Timer中的Enabled=False。</p>
+<p>因为setInterval可以设定多个定时，所以clearInterval要指定要清除哪个定时器的标识，即setInterval的返回值。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var setinterval = setInterval("alert('hello')",5000);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; clearInterval(setinterval);//清除了定时操作</p>
+<p>6&gt; setTimeout要是定时执行，但是不像setInterval那样重复的定时执行，而是只执行一次。clearTimeout也是要消除定时。</p>
+<p>//定时操作，间隔时间，只执行一次操作</p>
+<p>var settimeout = setTimeout("alert('你?好?')", 5000);</p>
+<p>//取消只执行一次的定时操作</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; clearTimeout(settimeout);</p>
+<p>6、&nbsp;&nbsp; 实现浏览器标题的跑马灯效果</p>
+<p>functionleftScoll() {</p>
+<p>vartitle = document.title;//获取浏览器的标题</p>
+<p>varfirstch = title.charAt(0);//获取标题的第一个字符</p>
+<p>varleststr = title.substring(1, title.length);//获取剩余标题</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.title = leststr + firstch;</p>
+<p>varresult = setInterval("leftScoll()",500);//设置标题滚动的时间</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>7、&nbsp;&nbsp; &lt;body&gt;&lt;/body&gt;、document对象的事件</p>
+<p>1&gt;&nbsp; onload:网页加载完毕时触发</p>
+<p>元素的onload事件是元素本身加载完成时触发，把onload放到&lt;body onload=&rdquo;&rdquo;&gt;里面才是网页全部加载完成时才触发。</p>
+<p>2&gt; onunload：网页关闭（或离开）后触发</p>
+<p>3&gt;&nbsp; onbeforeunload:在网页准备关闭（或离开）时触发。</p>
+<p>在事件中用window.event.returnValue赋值（需要显示的警告消息）</p>
+<p>&lt;bodyonload="btn.value='呵呵'"onunload="alert('不要走嘛?，在多呆一会儿啊?')"</p>
+<p>onbeforeunload="window.event.returnValue='退出?"&gt;</p>
+<p>4&gt; 其他事件：（event.）</p>
+<p>onclick(单击); ondblclick(双击);onkeydown(按键&lsquo;下&rsquo;);onkeypress(点击按键);onkeyup(按键释放);onmousedown(鼠标按下);onmousemove(鼠标移动);onmouseou(鼠标离开元素范围);onmouseover(鼠标移动到的位置);onmouseup(鼠标按键释放)&hellip;</p>
+<p>8、&nbsp;&nbsp; window对象属性1</p>
+<p>1&gt;（取得和设置）当前页面的地址：</p>
+<p>alert('本页地址：+window.location.href)</p>
+<p>重新导向新的地址，和navigate的用法效果一样。 window.location.reload()刷新页面</p>
+<p>&lt;inputtype="button" value="获取本页地址"onclick="alert('本页地址：&ecirc;o'+window.location.href)"/&gt;</p>
+<p>&lt;inputtype="button" value="修改本页地址"onclick="window.location.href='Demo1.htm'"/&gt;</p>
+<p>&lt;inputtype="button" value="刷新?"onclick="window.location.reload()"/&gt;</p>
+<p>2&gt;&nbsp;&nbsp; window.event属于事件对象，用于获得发生事件的信息，事件不局限于window对象，所用的元素都可以通过event属性获得相关的信息。</p>
+<p>--&gt;1、altKey属性（bool类型），表示事件发生时alt键是否被按下。类似的属性还有ctrlKey、shiftKey属性。</p>
+<p>例子：</p>
+<p>&lt;inputtype="button" value="按住shift键&uml;&sup1;"onclick="if(event.shiftKey){alert('shift事件');}else{alert('普通事件');}"/&gt;</p>
+<p>--&gt;2、clientX、clientY发生事件时鼠标在客户区的坐标；screenX、screenY发生事件时鼠标在屏幕上的坐标；offsetX、offsetY发生事件时鼠标相对于事件源（比如点击按钮onclick）的坐标。</p>
+<p>--&gt;2、【重点】returnValue属性：默认事件的处理=true</p>
+<p>取消默认设置false（设为false可以禁用默认设置）</p>
+<p>&lt;ahref="http://www.baidu.com"onclick="alert('禁止访问'+href);window.event.returnValue=false"&gt;百度&lt;/a&gt;</p>
+<p>9、&nbsp;&nbsp; window对象属性2</p>
+<p>1&gt; screen对象，屏幕的信息</p>
+<p>&lt;inputtype="button" value="获取当前的屏幕信息"</p>
+<p>onclick="alert(screen.width+'*'+screen.height);"/&gt;</p>
+<p>//结果是打印出屏幕的分辨率</p>
+<p>2&gt; clipboardData对象，对粘贴板的操作。</p>
+<p>clearData(&ldquo;Text&rdquo;)清空粘贴板</p>
+<p>getData(&ldquo;Text&rdquo;)读取粘贴板的值，返回为粘贴板的内容</p>
+<p>setData(&ldquo;Text&rdquo;)设置粘贴板的值</p>
+<p>&lt;inputtype="button" value="分享给小伙伴"</p>
+<p>onclick="clipboardData.setData('Text','推荐给你的小伙伴一个很黄很暴力的网站，'+location.href); alert('已经复制到粘贴板上了，赶快分享给你的小伙伴吧！"/&gt;</p>
+<p>(1)oncopy：oncopy= alert('禁止复制');&nbsp; return false")//禁止复制</p>
+<p>(2)onpaste:&nbsp; onpaste="alert('禁止粘贴'); return false;"//禁止粘贴</p>
+<p>(3）网站复制文章时，自动在文章的后面添加小尾巴</p>
+<p>&lt;scripttype="text/javascript"&gt;</p>
+<p>functionmodifyClipboard() {</p>
+<p>vartxt = clipboardData.getData("Text");</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; txt = txt + "本文转载自追梦无悔的个人主页" + location.href;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; clipboardData.setData("Text", txt);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>&lt;/script&gt;</p>
+<p>&lt;bodyoncopy="setTimeout('modifyClipboard()',100)"&gt;//用户复制动作发生一秒后再去更改粘贴板中的内容</p>
+<p>（注：不能直接在oncopy中执行对粘贴板的操作，因此设定定时器，0.1秒后执行，这样就不用oncopy执行调用堆栈了）</p>
+<p>3&gt; history操作历史记录</p>
+<p>window.history.back();后退</p>
+<p>window.history.forward();前进</p>
+<p>也可调用window.history.go(-1);后退</p>
+<p>window.history.go(1);前进</p>
+<p>&lt;inputtype="button" value="后退"onclick="window.history.back()"/&gt;</p>
+<p>10、&nbsp; document属性（window.document）</p>
+<p>1&gt; document.write(内容);用于动态向页面写入东西，经常用于广告版块</p>
+<p>document.write("&lt;ahref='http://www.baidu.com'&gt;百度&lt;/a&gt;")</p>
+<p>在onclick等事件中写代码会冲掉页面的内容，只有在页面加载过程中write才会与原来的内容融合在一起。</p>
+<p>{有关广告模块：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 广告：heim8.com 获取广告脚本</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新闻：news.baidu.com/newscode.html</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 访问流量统计CMZZ（www.cnzz.com）:如鹏网(<a href="http://www.rupeng.xn--com%29:123456-ub1y835f7dht9kow2eu2d">www.rupeng.com)数据查看密码：123456</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 百度地图API：http://developer.baidu.com/map/</p>
+<p>}</p>
+<p>2&gt; getElementById方法【非常常用】</p>
+<p>function getText1() {</p>
+<p>var text = document.getElementById("textbox1");//获取一个标签的id</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert(text.value);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>&lt;inputtype="text" id="textbox1" /&gt;</p>
+<p>&lt;inputtype="button" value="点一下" onclick="getText1()"/&gt;</p>
+<p>3&gt; getElementsByName(&ldquo;&rdquo;)，根据元素的内容获取对象</p>
+<p>由于页面中元素的name可以重复，因此getElementsByName(&ldquo;&rdquo;)的返回值是一个数组</p>
+<p>//getElementByName("")获得的name值是一个数组 function getRadio() {</p>
+<p>varradios = document.getElementsByName("sex");</p>
+<p>for(var i = 0; i &lt; radios.length; i++) {</p>
+<p>varradio = radios[i];</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert(radio.value);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>&lt;inputtype="radio" name="sex" value="男"/&gt;男</p>
+<p>&lt;inputtype="radio" name="sex" value="女"/&gt;女</p>
+<p>&lt;inputtype="radio" name="sex" value="保密&uml;&sup1;"/&gt;保密&uml;&sup1;</p>
+<p>4&gt; getElementsTagName(&ldquo;&rdquo;)根据元素的标签来获得对象</p>
+<p>function getTagName() {</p>
+<p>var texts =document.getElementsByTagName("input");</p>
+<p>for (vari = 0; i &lt; texts.length; i++) {</p>
+<p>var text = texts[i];</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text.value = "你好，世界";</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p>&lt;inputtype="text"/&gt;</p>
+<p>&lt;inputtype="text"/&gt;</p>
+<p>&lt;inputtype="text"/&gt;</p>
+<p>&lt;br/&gt;</p>
+<p>&lt;inputtype="button" value="点我啊"onclick="getTagName()"/&gt;</p>
+<p>5&gt;&nbsp;&nbsp; window.event.srcElement取得引发事件的控件</p>]]></description></item><item><title>【基础知识】JavaScript基础</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547375.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Wed, 12 Feb 2014 16:16:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547375.html</guid><description><![CDATA[<p>【学习日记】JavaScript基础</p>
+<p>1,一般写在&lt;head&gt;&lt;/head&gt;中（其实可以放到任意位置）;</p>
+<p>2,弹出对话框</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>&lt;scripttype="text/javascript"&gt;<span style="color: #000000;">
+
+        alert(newDate().toLocaleDateString());
+
+</span>&lt;/script&gt;</pre>
+</div>
+<p>3，JavaScript可以写在外部文件中</p>
+<p>1&gt;&nbsp; 在外部文件text.JavaScript中编写JavaScript代码</p>
+<p>2&gt;&nbsp; 在heml页面引入外部文件</p>
+<p>&lt;scriptsrc="text.JavaScript"type="text/javascript"&gt;</p>
+<p>&lt;/script&gt;</p>
+<p>4,JavaScript的变量</p>
+<p>1&gt;&nbsp; 可以使用单引号和双引号声明字符串（这是为了和Html集成，避免转义的麻烦）</p>
+<p>2&gt; null:表示空;undefined:表示变量还未初始化（即，未指向任何对象）</p>
+<p>3&gt; 声明变量没有类型一说，变量直接用var修饰</p>
+<p>var i = 10;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i ="abc";//嫁鸡随鸡，嫁狗随狗</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert(i);</p>
+<p>4&gt;&nbsp; 变量中不用var修饰的变量是&ldquo;全局变量&rdquo;（模拟的）,（一般不适用&ldquo;全局变量&rdquo;）</p>
+<p>5,JavaScript中调试和除错</p>
+<p>&nbsp;&nbsp; 在visual studio2010中可以向调试c#应用程序一样进行断点调试</p>
+<p>6,判断变量参数初始化（三种方法）</p>
+<p>1&gt;（一般不使用）</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">var</span><span style="color: #000000;"> x;
+
+</span><span style="color: #0000ff;">if</span> (x== <span style="color: #0000ff;">null</span><span style="color: #000000;">) {
+
+            alert(</span>"null"<span style="color: #000000;">);
+
+        }</span></pre>
+</div>
+<p>2&gt;(一般不使用)</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">if</span> (<span style="color: #0000ff;">typeof</span> (x) =="undefined"<span style="color: #000000;">){
+
+            alert(</span>"undefined"<span style="color: #000000;">);
+
+        }</span></pre>
+</div>
+<p>3&gt;（推荐使用的）</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">var</span><span style="color: #000000;"> x;
+
+</span><span style="color: #0000ff;">if</span> (!<span style="color: #000000;">x){
+
+            alert(</span>"不?x"<span style="color: #000000;">);
+
+        }</span></pre>
+</div>
+<p>7，函数的声明</p>
+<p>1&gt;&nbsp; 函数的声明方式</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">function</span><span style="color: #000000;"> add(i1, i2) {
+
+</span><span style="color: #0000ff;">return</span> i1 +<span style="color: #000000;"> i2;
+
+        }</span></pre>
+</div>
+<p>2&gt; 不需要什么返回值类型、参数类型。函数定义以function开头</p>
+<p>3&gt; JavaScript中不像c#中要所有的值都要有返回值类型</p>
+<p>8，匿名函数</p>
+<p>声明匿名函数，用类似于c#中的委托来执行他</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">var</span> f1= <span style="color: #0000ff;">function</span> (i1, i2) { returni1 +<span style="color: #000000;"> i2 }
+
+                alert(f1(</span>5,6));</pre>
+</div>
+<p>9，用JavaScript的对象来模拟&ldquo;类&rdquo;</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>functionPerson(name, age) {<span style="color: #008000;">//</span><span style="color: #008000;">声&brvbar;&uml;&acute;明&iexcl;&Acirc;一&deg;?个?类&curren;&uml;&curren;库a用&reg;?来&curren;&iexcl;&auml;调&Igrave;&iexcl;&Acirc;用&reg;?</span>
+
+<span style="color: #0000ff;">this</span>.Name= name;<span style="color: #008000;">//</span><span style="color: #008000;">this就&uml;&ordf;是&ordm;?动&iexcl;&yen;态&not;?生&brvbar;&uml;&sup2;成&uml;&brvbar;的&Igrave;?对?象&uml;&reg;</span>
+
+<span style="color: #0000ff;">this</span>.Age=<span style="color: #000000;"> age;
+
+</span><span style="color: #0000ff;">this</span>.SayHello=<span style="color: #0000ff;">function</span><span style="color: #000000;">(){
+
+                alert(</span><span style="color: #0000ff;">this</span>.Name+","+<span style="color: #0000ff;">this</span><span style="color: #000000;">.Age);
+
+            }
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;">下?面?进?行D调&Igrave;&iexcl;&Acirc;用&reg;?</span>
+
+<span style="color: #0000ff;">var</span> p1= <span style="color: #0000ff;">new</span> Person("Tom",18<span style="color: #000000;">);
+
+                p1.SayHello();</span></pre>
+</div>
+<p>10,Arry对象（数组对象：动态生成）:无需预订大小，动态生成</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>varnames = <span style="color: #0000ff;">new</span><span style="color: #000000;"> Array();
+
+        names[</span>0] = "hxl"<span style="color: #000000;">;
+
+        names[</span>1] = "ws"<span style="color: #000000;">;
+
+</span><span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">var</span> i = 0; i &lt; names.length; i++<span style="color: #000000;">) {
+
+            alert(names[i]);
+
+        }</span></pre>
+</div>
+<p>11，JavaScript中的Dictionary</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre>varpinyin = <span style="color: #0000ff;">new</span><span style="color: #000000;"> Array();
+
+        pinyin[</span>"人"] ="ren"<span style="color: #000000;">;
+
+        pinyin[</span>"生"] ="sheng"<span style="color: #000000;">;
+
+        pinyin[</span>"如"] ="ru"<span style="color: #000000;">;
+
+        pinyin[</span>"此"] ="ci"<span style="color: #000000;">;
+
+        pinyin[</span>"美"] ="mei"<span style="color: #000000;">;
+
+        pinyin[</span>"好"] ="hao"<span style="color: #000000;">;
+
+        alert(pinyin[</span>"生"]);</pre>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; 遍历（类似于java中的foreach），打印出的是数组的序号</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">var</span><span style="color: #000000;"> kin pinyin) {
+
+            alert(k);
+
+        }</span></pre>
+</div>
+<p>12，获取对象所用成员</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">var</span><span style="color: #000000;"> ein document) {
+
+        alert(e);
+
+    }</span></pre>
+</div>]]></description></item><item><title>【基础知识】C#数据库中主键类型的选择</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547374.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Wed, 12 Feb 2014 16:12:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547374.html</guid><description><![CDATA[<p>主键在数据库中占有很大的地位，对于表的关联性，和数据的唯一识别性有重要的作用：</p>
+<p>1，在C#开发中，Int自增字段和Guid（数据库中是uniqueidentifier类型）可设置为主键；</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&gt;Guid：可以产生唯一标识的高效算法，使用网卡mac地址及时间、芯片id码计算出来的</p>
+<p>2，int自增字段和Guid的优缺点：</p>
+<p><a href="http://images.cnitblog.com/blog/578906/201402/130012034696332.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/578906/201402/130012041547176.png" alt="image" width="554" height="167" border="0" /></a></p>]]></description></item><item><title>【基础知识】ASP.NET[基础二（aspx）]</title><link>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547367.html</link><dc:creator>郝喜路</dc:creator><author>郝喜路</author><pubDate>Wed, 12 Feb 2014 16:04:00 GMT</pubDate><guid>http://www.cnblogs.com/haoxilu/archive/2014/02/13/3547367.html</guid><description><![CDATA[<p>1、cs可以调用aspx中的runat=server控件，aspx中也可以访问测试中定义的字段、函数，还可以编写复杂的C#代码，for等所有C#代码都可以写在aspx中（不推荐这样写）；</p>
+<p>2、把代码写到aspx页面中</p>
+<p>&nbsp;&nbsp; 前面 &lt;%=UserName %&gt;&nbsp; &lt;%=SayHello(); %&gt;&nbsp;&nbsp;&nbsp; &lt;%if(UserName == &ldquo;aaa&rdquo;){ UserName = &ldquo;bbb&rdquo;;}%&gt;&nbsp; 后面</p>
+<p>在当前位置输出表达式的值的时候使用&lt;%=UserName %&gt; ,不可丢掉=，相当于在当前位置调用Response.Write(UserName);</p>
+<p>使用的函数、代码相当于在这个位置调用函数、执行代码。注意aspx中调用cs的只能是非私有成员（非private修饰-in为继承关系）</p>
+<p>&lt;% %&gt;中的代码是运行在服务器的，是C#语法，在服务器运行完成才输出到浏览器，其他部分是运行在浏览器前端的，是html、JavaScript语法。</p>
+<p>前台文件和后台文件在运行的时候根本就不是一个类，是两个分开的类。前台文件类继承于后台类文件。</p>
+<p>3、aspx、cs、dll（程序集）的区别</p>
+<p>程序集（.exe .dll）：就是一个项目中所有代码都编译到一个文件里。</p>
+<p>表现层（服务员）---业务层（厨师）---数据层（采购员）</p>
+<p>添加引用：</p>
+<p>表现层（UI）：添加业务层（BLL）引用</p>
+<p>业务层（BLL）：添加数据层（DAL）引用</p>
+<p>UI、BLL、DAL都要添加实体层（MODEL）。</p>
+<p>Dll:反编译出来会生成两个类：一个是public class FirstForm(后台文件类)，另一个是public class firstform_aspx(前台文件类)。</p>
+<p>当网站运行的时候是运行的前台文件类，因为前台文件类继承后台文件类，因此网站运行的时候还是会运行后台文件类。</p>
+<p>Response.Write(this.GetType().Assembly.Location +"&lt;br/&gt;");</p>
+<p>//获得dll文件在资源管理器中的地址</p>
+<p>4、在前台的控件被加上runat=server就会在生成后台页面（父类）的对象(作为父类的变量编译进来)</p>
+<p>5、前台类对象是如何结合后台方法生成整个HTML页面的方法的呢？</p>
+<p>--被请求时，页面控件对象生成。</p>
+<p>控件树负责组织整个页面的内容。（_BuildControlTree()--生成控件树的方法）</p>
+<p>Html页面，childNodes在浏览器的dom树中，其实每个节点都有一个childNodes集合属性，用来保存当前节点的子节点。</p>
+<p>控件树中</p>
+<p>&ldquo;呈现&rdquo;---将服务器端控件类对象转成对应的Html代码。</p>
+<p>页面类对象，通过控件树的方式，帮我们封装了整个页面的Html源代码和c#代码。（都封装到页面类对象的控件集合属性中，那么要生成页面的HTML代码的时候，只需要循环遍历整个控件树，并调用每个控件的_Render_方法获得每个控件的HTML代码，就可以拼成一个完整的页面HTML代码了。）</p>
+<p>在page中添加Trace=&rdquo;true&rdquo;可以在页面中打印出页面的详细信息</p>
+<p>6、服务器是如何通过浏览器的请求生成 html代码的？</p>
+<p>1&gt;浏览器和服务器交互是通过Socket</p>
+<p>2&gt;浏览器和服务器交互的语法是：Http协议</p>
+<p>3&gt;浏览器要和服务器交互的目的：获取服务器的资源（html，图片，js,css）</p>
+<p>4&gt;服务器要做的事情就是想尽办法，满足浏览器的需求。所以一旦浏览器的请求的是动态页面的时候，服务器就要创建页面类对象，并生成里面的方法，最后将生成的Html代码发回给浏览器。</p>
+<p>7、编写登陆页面</p>
+<p>1》为什么在cs文件中可以直接Response.Write(&ldquo;123123&rdquo;);输出信息，而不用context.Response.......</p>
+<p>因为context上下文信息已经封装到Page类了。而cs又继承于Page类。</p>
+<p>服务器中存在一个缓存取，页面信息的内容在输出到浏览器之前先存在缓存区中。</p>
+<p>8、Request中的其他成员：</p>
+<p>Request.UrlReferrer:请求的来源（*就是你从哪个页面过来的）【应用：防盗链】</p>
+<p>Request.UserHostAddress:通过和浏览器通信的套接字的RemoteEndPoint(远程节点)拿到浏览器的IP地址</p>
+<p>Request.MatPath(virtulPath):将虚拟的路径转换成网站物理路径</p>
+<p>9、Response其他成员：</p>
+<p>响应缓存输出：为了提高服务器的性能，ASP.Net向浏览器Write的时候默认并不会每Write一次都会立即输出到浏览器，而是会缓存数据，到合适的时机或者结束才会将缓存区中的数据一起发送给浏览器。</p>
+<p>Response对象的主要成员：</p>
+<p>Response.Flush():将浏览器的缓存发送给浏览器</p>
+<p>Response.Clear():清空浏览器的缓存</p>
+<p>Response.ContentEncoding:输出流的编码</p>
+<p>.....</p>
+<p>10、Server属性</p>]]></description></item></channel></rss>
