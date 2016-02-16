@@ -29,15 +29,18 @@ Or install it yourself as:
 
 require
 
-	require 'cnblog_back_up_to_markdown'
+```ruby
+require 'cnblog_back_up_to_markdown'
+```
 
 use
-	
-	file_path = File.expand_path("app/controllers/CNBlogs_BlogBackup_131_201311_201602.xml")
-      File.open(file_path) do |f|
-        @articles = CnblogBackUpToMarkdown::convert(f)
-      end
-	
+
+```ruby
+file_path = File.expand_path("app/controllers/CNBlogs_BlogBackup_131_201311_201602.xml")
+File.open(file_path) do |f|
+  @articles = CnblogBackUpToMarkdown::convert(f)
+end
+```
 
 ### CommandLine
 It's also possible to convert cnblog's backup file to mrakdown using this library.
