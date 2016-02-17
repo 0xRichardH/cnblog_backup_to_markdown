@@ -1,5 +1,9 @@
 ## Summary
+[![Build Status](https://travis-ci.org/haoxilu/cnblog_back_up_to_markdown.svg?branch=master)](https://travis-ci.org/haoxilu/cnblog_back_up_to_markdown)
+
 Convert [cnblog bakcup](http://i.cnblogs.com/BlogBackup.aspx) to markdown or markdown file.
+
+Github: [https://github.com/haoxilu/cnblog_back_up_to_markdown](https://github.com/haoxilu/cnblog_back_up_to_markdown)
 
 Ruby Gem: [https://rubygems.org/gems/cnblog_back_up_to_markdown](https://rubygems.org/gems/cnblog_back_up_to_markdown)
 ## Requirements
