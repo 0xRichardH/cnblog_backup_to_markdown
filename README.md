@@ -1,5 +1,6 @@
 ## Summary
 [![Build Status](https://travis-ci.org/haoxilu/cnblog_back_up_to_markdown.svg?branch=master)](https://travis-ci.org/haoxilu/cnblog_back_up_to_markdown)
+[![codecov.io](https://codecov.io/github/haoxilu/cnblog_back_up_to_markdown/coverage.svg?branch=master)](https://codecov.io/github/haoxilu/cnblog_back_up_to_markdown?branch=master)
 
 Convert [cnblog bakcup](http://i.cnblogs.com/BlogBackup.aspx) to markdown or markdown file.
 
