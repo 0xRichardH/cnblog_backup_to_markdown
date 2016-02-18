@@ -1,4 +1,5 @@
 ## Summary
+[![Gem Version](https://badge.fury.io/rb/cnblog_back_up_to_markdown.svg)](https://badge.fury.io/rb/cnblog_back_up_to_markdown)
 [![Build Status](https://travis-ci.org/haoxilu/cnblog_back_up_to_markdown.svg?branch=master)](https://travis-ci.org/haoxilu/cnblog_back_up_to_markdown)
 [![codecov.io](https://codecov.io/github/haoxilu/cnblog_back_up_to_markdown/coverage.svg?branch=master)](https://codecov.io/github/haoxilu/cnblog_back_up_to_markdown?branch=master)
 
