@@ -17,7 +17,6 @@ Ruby Gem: [https://rubygems.org/gems/cnblog_back_up_to_markdown](https://rubygem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'reverse_markdown'
 gem 'cnblog_back_up_to_markdown'
 ```
 
